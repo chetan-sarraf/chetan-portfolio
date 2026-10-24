@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mastercks009-ops.github.io/chetan-portfolio/sitemap.xml
