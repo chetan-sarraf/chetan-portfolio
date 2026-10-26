@@ -2,82 +2,27 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <!-- iOS Viewport & Safe Area Optimization -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- ================= STRICT SEO META TAGS ================= -->
   <title>Chetan Kr. Sarraf | Interior Designer & Civil Engineer in Birgunj, Nepal</title>
   <meta name="description" content="Chetan Kr. Sarraf is the best interior designer &amp; civil engineer in Birgunj, Nepal. Offering 3D renders, site planning, tentative floor plans, NBC 205:2024 compliance, and BOQ estimation." />
   <meta name="keywords" content="best interior designer in birgunj, site planning calculator nepal, tentative floor plan generator, nbc 205 2024 calculator nepal, civil engineer interior designer, scale and spaces private limited" />
   <meta name="author" content="Chetan Kumar Sarraf" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="IBW1Eh-JYKAhipDCHpF6wfc2WBQoLed1nZNsuQ0_GtM" />
-
-  <!-- Canonical URL -->
   <link rel="canonical" href="https://chetan-sarraf.github.io/chetan-interior/" />
-
-  <!-- Favicon & Apple Touch Icon -->
   <link rel="icon" type="image/png" href="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" />
   <link rel="apple-touch-icon" href="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" />
 
-  <!-- Open Graph & Twitter Cards -->
-  <meta property="og:title" content="Chetan Kr. Sarraf | Interior Designer in Birgunj, Nepal" />
-  <meta property="og:description" content="Civil engineering accuracy, luxury interior design, interactive cost calculator, 3D realistic rendering, and 360° virtual tours in Birgunj, Nepal." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://chetan-sarraf.github.io/chetan-interior/" />
-  <meta property="og:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Chetan Kr. Sarraf | Interior Designer in Birgunj, Nepal" />
-  <meta name="twitter:description" content="Civil engineering accuracy, luxury interior design, and 3D visualization in Birgunj, Nepal." />
-  <meta name="twitter:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
-
-  <!-- Google Local Business Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Chetan Kumar Sarraf - Civil Engineer & Interior Design Professional",
-    "image": "https://i.postimg.cc/05wwzfcw/Profile-Pic.png",
-    "description": "Best interior designer and civil engineering professional in Birgunj, Parsa, Nepal. Specializing in space planning, 3D visualization, 360° panoramas, and AutoCAD execution blueprints.",
-    "telephone": "+9779766188838",
-    "email": "master.er.cks@outlook.com",
-    "sameAs": [
-      "https://www.facebook.com/chetan.sarraf.3/",
-      "https://www.instagram.com/master.cks009/",
-      "https://np.linkedin.com/in/chetansarraf"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Birgunj",
-      "addressRegion": "Parsa",
-      "postalCode": "44300",
-      "addressCountry": "NP"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 27.0149,
-      "longitude": 84.8773
-    },
-    "url": "https://chetan-sarraf.github.io/chetan-interior/",
-    "priceRange": "$$",
-    "areaServed": ["Birgunj", "Parsa", "Kathmandu", "Nepal"]
-  }
-  </script>
-
-  <!-- Google Fonts: Syne + Plus Jakarta Sans + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-  
-  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <!-- ================= STYLES ================= -->
   <style>
     :root, [data-theme="light"] {
       --bg-canvas: #f7f4ed;
@@ -132,8 +77,8 @@
       --radius-md: 22px;
       --radius-lg: 32px;
       --radius-pill: 9999px;
-      --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Syne', sans-serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -147,8 +92,6 @@
       color: var(--text-main);
       line-height: 1.7;
       transition: background-color 0.35s ease, color 0.35s ease;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       background-image: 
         radial-gradient(var(--border-subtle) 1.2px, transparent 1.2px),
         linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
@@ -159,7 +102,7 @@
     a { text-decoration: none; color: inherit; transition: var(--transition); }
     ul { list-style: none; }
     .container { width: 92%; max-width: 1260px; margin: 0 auto; position: relative; z-index: 2; }
-
+    .section { padding: clamp(4.5rem, 8vw, 7rem) 0; position: relative; }
     .section-with-texture { position: relative; overflow: hidden; }
     .watermark-texture {
       position: absolute; pointer-events: none; user-select: none; z-index: 1;
@@ -190,17 +133,14 @@
     .section-subtitle {
       font-size: 1.05rem; color: var(--text-muted); max-width: 760px; font-weight: 400; line-height: 1.8;
     }
-
-    .section { padding: clamp(4.5rem, 8vw, 7rem) 0; position: relative; }
     .text-center { text-align: center; }
     .text-center .tag-badge { margin-left: auto; margin-right: auto; }
 
-    /* Logo */
+    /* Navbar */
     .brand-logo { display: flex; align-items: center; gap: 0.65rem; font-size: 1.15rem; color: var(--text-main); letter-spacing: -0.02em; }
-    .brand-logo-img { width: 34px; height: 34px; object-fit: contain; display: block; }
+    .brand-logo-img { width: 34px; height: 34px; object-fit: contain; }
     .brand-logo span { color: var(--brand-grey); font-weight: 600; }
 
-    /* Navigation Capsule */
     .navbar-capsule {
       position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 1280px;
       background: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
@@ -208,9 +148,9 @@
       padding: 0.55rem 1.1rem; box-shadow: var(--shadow-subtle); transition: var(--transition);
     }
     .nav-container { display: flex; justify-content: space-between; align-items: center; }
-    .nav-links { display: flex; align-items: center; gap: 0.2rem; }
+    .nav-links { display: flex; align-items: center; gap: 0.15rem; }
     .nav-links a {
-      font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.55rem;
+      font-size: 0.74rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.5rem;
       border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition); white-space: nowrap;
     }
     .nav-links a:hover { color: var(--text-main); background: var(--brand-grey-soft); }
@@ -219,25 +159,21 @@
     .theme-toggle-btn {
       width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border-navy);
       background: var(--bg-surface); color: var(--text-main); display: flex; align-items: center;
-      justify-content: center; cursor: pointer; font-size: 0.95rem; transition: var(--transition); margin-left: 0.35rem;
+      justify-content: center; cursor: pointer; font-size: 0.95rem; margin-left: 0.35rem;
     }
     .theme-toggle-btn:hover { transform: scale(1.08); background: var(--brand-navy); color: #ffffff; }
 
     .btn-nav-capsule { background: var(--brand-navy-soft) !important; border: 1px solid var(--border-navy) !important; color: var(--text-main) !important; }
     .btn-nav-capsule:hover { background: var(--brand-navy) !important; color: #fff !important; }
-    .nav-toggle { display: none; background: none; border: none; font-size: 1.3rem; color: var(--text-main); cursor: pointer; padding: 0.4rem; }
+    .nav-toggle { display: none; background: none; border: none; font-size: 1.3rem; color: var(--text-main); cursor: pointer; }
 
     /* Buttons */
     .btn {
-      display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.9rem 2rem; font-size: 0.86rem;
-      font-weight: 700; letter-spacing: -0.01em; border-radius: var(--radius-pill); cursor: pointer; transition: var(--transition); min-height: 48px;
+      display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1.8rem; font-size: 0.86rem;
+      font-weight: 700; letter-spacing: -0.01em; border-radius: var(--radius-pill); cursor: pointer; transition: var(--transition); min-height: 46px;
     }
-    .btn-primary, .btn-navy {
-      background: var(--brand-navy); color: #ffffff; box-shadow: 0 8px 24px rgba(14, 39, 63, 0.25); border: 1px solid transparent;
-    }
-    .btn-primary:hover, .btn-navy:hover {
-      background: var(--brand-navy-light); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(14, 39, 63, 0.35);
-    }
+    .btn-primary { background: var(--brand-navy); color: #ffffff; border: 1px solid transparent; box-shadow: 0 8px 24px rgba(14, 39, 63, 0.25); }
+    .btn-primary:hover { background: var(--brand-navy-light); transform: translateY(-2px); }
     .btn-outline { border: 1px solid var(--border-navy); color: var(--text-main); background: var(--bg-surface); }
     .btn-outline:hover { border-color: var(--brand-navy); background: var(--brand-navy-soft); transform: translateY(-2px); }
 
@@ -276,17 +212,13 @@
       letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-main); z-index: 3; display: flex; align-items: center; gap: 0.6rem; box-shadow: var(--shadow-subtle);
     }
     .portrait-sub-label .live-dot { width: 7px; height: 7px; background: #25D366; border-radius: 50%; }
-
     .about-text p { color: var(--text-muted); margin-bottom: 1.25rem; font-size: 1.02rem; }
     .credentials-row {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0;
       border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 1.4rem 0;
     }
-    .cred-num {
-      font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.3rem); color: var(--text-main); line-height: 1; font-weight: 800;
-    }
+    .cred-num { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.3rem); color: var(--text-main); line-height: 1; font-weight: 800; }
     .cred-stat p { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--brand-grey); margin-top: 0.35rem; }
-
     .skills-cluster { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
     .skill-tag {
       background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 0.4rem 0.9rem;
@@ -294,7 +226,7 @@
     }
     .skill-tag span { color: var(--accent-azure); font-weight: 700; font-family: var(--font-mono); font-size: 0.72rem; }
 
-    /* ================= 2D SITE PLANNER & TENTATIVE LAYOUT ================= */
+    /* ================= 2D SITE PLANNER TOOL ================= */
     .planner-card {
       background: var(--bg-surface); border: 1px solid var(--border-navy);
       border-radius: var(--radius-lg); padding: clamp(1.8rem, 4vw, 3rem);
@@ -618,6 +550,64 @@
     .article-content .item-title { font-size: 1.45rem; color: var(--text-main); margin-bottom: 0.8rem; line-height: 1.25; }
     .article-content p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.4rem; }
 
+    /* Services & Process */
+    .services-texture { bottom: -40px; left: -80px; width: 650px; height: 650px; max-width: 70vw; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+    .service-card {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);
+      padding: 2.4rem 2rem; transition: var(--transition); display: flex; flex-direction: column; justify-content: space-between;
+      position: relative; z-index: 2; box-shadow: var(--shadow-subtle);
+    }
+    .service-card:hover { border-color: var(--border-navy); transform: translateY(-5px); box-shadow: var(--shadow-elevated); }
+    .service-num { font-family: var(--font-mono); font-size: 0.78rem; color: var(--brand-grey); letter-spacing: 0.12em; margin-bottom: 1.2rem; }
+    .service-card .item-title { font-size: 1.6rem; color: var(--text-main); margin-bottom: 1rem; }
+    .service-card p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .service-features { list-style: none; border-top: 1px solid var(--border-subtle); padding-top: 1.2rem; }
+    .service-features li { font-size: 0.84rem; color: var(--text-muted); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.5rem; }
+    .service-features li i { color: var(--accent-azure); font-size: 0.75rem; }
+
+    .process-section { background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+    .process-texture { top: -40px; right: -60px; width: 620px; height: 620px; }
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+    .process-card {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+      padding: 2.2rem; transition: var(--transition); position: relative; z-index: 2; box-shadow: var(--shadow-subtle);
+    }
+    .process-card:hover { border-color: var(--border-navy); transform: translateY(-4px); }
+    .process-step-num {
+      width: 44px; height: 44px; border-radius: 50%; background: var(--brand-navy);
+      color: #ffffff; font-family: var(--font-mono); font-weight: 700; font-size: 1rem;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1.3rem;
+    }
+    .process-card .item-title { font-size: 1.3rem; color: var(--text-main); margin-bottom: 0.8rem; }
+    .process-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+
+    /* Timeline */
+    .timeline-container {
+      max-width: 860px; margin: 3.5rem auto 0; position: relative;
+      border-left: 2px solid var(--border-navy); padding-left: clamp(1.8rem, 4vw, 2.8rem);
+    }
+    .timeline-item {
+      position: relative; margin-bottom: 3.2rem; background: var(--bg-surface);
+      border: 1px solid var(--border-subtle); padding: 2.2rem; border-radius: var(--radius-md);
+      box-shadow: var(--shadow-subtle); transition: var(--transition);
+    }
+    .timeline-item:hover { border-color: var(--border-navy); transform: translateY(-4px); }
+    .timeline-dot {
+      position: absolute; left: calc(-1.8rem - 8px); top: 32px;
+      width: 14px; height: 14px; border-radius: 50%; background: var(--brand-navy);
+      box-shadow: 0 0 10px rgba(14, 39, 63, 0.4);
+    }
+    @media (min-width: 768px) { .timeline-dot { left: calc(-2.8rem - 8px); } }
+    .timeline-date {
+      font-family: var(--font-mono); font-size: 0.76rem; font-weight: 600;
+      color: var(--accent-azure); letter-spacing: 0.08em; margin-bottom: 0.4rem; text-transform: uppercase;
+    }
+    .timeline-content .item-title { font-size: 1.6rem; color: var(--text-main); margin-bottom: 0.2rem; }
+    .timeline-role { display: inline-block; font-style: italic; color: var(--brand-grey); margin-bottom: 1rem; font-size: 0.92rem; }
+    .timeline-content ul { list-style: disc; margin-left: 1.25rem; color: var(--text-muted); font-size: 0.92rem; }
+    .timeline-content li { margin-bottom: 0.45rem; }
+
     /* Portfolio Carousel */
     .slider-section { background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
     .slider-controls-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.2rem; flex-wrap: wrap; gap: 1.5rem; }
@@ -745,6 +735,20 @@
     .footer { border-top: 1px solid var(--border-subtle); padding: 3rem 0; background: var(--bg-surface); color: var(--text-muted); font-size: 0.9rem; }
     .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
     .footer-social-links { display: flex; gap: 1.2rem; align-items: center; }
+
+    @media (max-width: 950px) {
+      .grid-about-unboxed, .contact-card { grid-template-columns: 1fr; padding: 2rem; gap: 2.5rem; }
+      .nav-toggle { display: block; }
+      .nav-links {
+        position: absolute; top: 115%; left: 0; width: 100%; background: var(--bg-surface);
+        flex-direction: column; padding: 1.8rem; gap: 0.6rem; border: 1px solid var(--border-navy);
+        border-radius: var(--radius-md); box-shadow: var(--shadow-elevated); display: none;
+      }
+      .nav-links.active { display: flex; }
+      .credentials-row { grid-template-columns: 1fr; }
+      .floating-contact-bar { right: 14px; }
+      .ba-badge { font-size: 0.64rem; padding: 0.3rem 0.65rem; }
+    }
   </style>
 </head>
 <body>
@@ -762,7 +766,8 @@
         </button>
         <div class="nav-links" id="navLinks">
           <a href="#home" class="nav-item active">Overview</a>
-          <a href="#site-planner" class="nav-item">Site &amp; Layout Planner</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#site-planner" class="nav-item">Site Planner</a>
           <a href="#team" class="nav-item">Team</a>
           <a href="#posts-gallery" class="nav-item">Live Feed</a>
           <a href="#boq-toolkit" class="nav-item">BOQ Toolkit</a>
@@ -797,13 +802,14 @@
 
   <!-- Hero Section -->
   <header class="hero-section section-with-texture" id="home">
+    <img src="https://i.postimg.cc/Y4RD8Sd9/08t.png" alt="Architectural line pattern" class="watermark-texture hero-texture" width="700" height="700" loading="lazy" />
     <div class="hero-content">
       <div class="tag-badge">
         <span class="dot"></span> Civil Engineering &amp; Interior Architecture
       </div>
       <h1 class="hero-title">Best Interior Designer in <em>Birgunj, Nepal</em></h1>
       <p class="hero-description">
-        I am <strong>Chetan Kumar Sarraf</strong>, a qualified Civil Engineer &amp; Interior Design Professional under <strong>Scale and Spaces Private Limited</strong>. Integrating structural engineering accuracy with 3D photorealism, spatial BOQ valuation, and automated site planning compliant with <strong>NBC 205:2024</strong>.
+        I am <strong>Chetan Kumar Sarraf</strong>, a qualified Civil Engineer &amp; Interior Design Professional under <strong>Scale and Spaces Private Limited</strong>. Integrating structural civil engineering accuracy with 3D photorealism, spatial BOQ valuation, and technical drafting in Birgunj, Parsa, and Nepal.
       </p>
       <div class="hero-actions">
         <a href="#site-planner" class="btn btn-primary">Open Site &amp; Layout Planner <i class="fa-solid fa-compass-drafting"></i></a>
@@ -818,24 +824,51 @@
     </div>
   </header>
 
-  <!-- ================= 2D SITE PLANNER & TENTATIVE LAYOUT ENGINE ================= -->
+  <!-- About Section -->
+  <section class="section about-section section-with-texture" id="about">
+    <img src="https://i.postimg.cc/PLyVKqSW/02t.png" alt="Architectural watermark" class="watermark-texture about-texture" width="560" height="560" loading="lazy" />
+    <div class="container grid-about-unboxed">
+      <div class="portrait-standalone-wrap">
+        <div class="portrait-ambient-glow"></div>
+        <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Chetan Kumar Sarraf" class="portrait-standalone-img" width="420" height="520" />
+        <div class="portrait-sub-label">
+          <span class="live-dot"></span>
+          <span>Chetan Kr. Sarraf • Lead Designer</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="tag-badge"><span class="dot"></span> Professional Profile</div>
+        <h2 class="section-title">Where Engineering Rigor Harmonizes with <em>Interior Luxury</em></h2>
+        <p>Holding an academic background in <strong>Civil Engineering</strong> from Tri-juddha Secondary School, Birgunj, I specialize in constructible technical blueprints, accurate Bill of Quantities (BOQ) cost controls, and immersive architectural visualizations.</p>
+        <div class="credentials-row">
+          <div class="cred-stat"><div class="cred-num">2+</div><p>Years On-Site &amp; Studio</p></div>
+          <div class="cred-stat"><div class="cred-num">100%</div><p>Constructible Blueprints</p></div>
+          <div class="cred-stat"><div class="cred-num">3.30</div><p>Civil Engineering GPA</p></div>
+        </div>
+        <div class="skills-cluster">
+          <div class="skill-tag"><i class="fa-solid fa-cube"></i> Enscape <span>95%</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-cubes"></i> SketchUp <span>95%</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-palette"></i> Canvas <span>85%</span></div>
+          <div class="skill-tag"><i class="fa-solid fa-pen-ruler"></i> AutoCAD <span>70%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2D SITE PLANNER & TENTATIVE LAYOUT ================= -->
   <section class="section section-with-texture" id="site-planner">
     <div class="container">
       <div class="section-header text-center">
-        <div class="tag-badge">
-          <span class="dot"></span> Smart Drafting &amp; Feasibility Engine
-        </div>
+        <div class="tag-badge"><span class="dot"></span> Smart Drafting Engine</div>
         <h2 class="section-title">Interactive Site Planner &amp; <em>Tentative Floor Layout</em></h2>
-        <p class="section-subtitle" style="margin: 0 auto;">Enter 4 boundary lengths. Diagonal D1 is optional. Select your target number of storeys and toggle on the <strong>Tentative Architectural Plan</strong> to visualize room zoning inside your compliant building footprint.</p>
+        <p class="section-subtitle" style="margin: 0 auto;">Input 4 boundaries. Diagonal D1 is optional. Select your target number of storeys and toggle on the <strong>Tentative Architectural Plan</strong> to visualize room zoning inside your compliant building footprint.</p>
       </div>
 
       <div class="planner-card">
         <div class="planner-layout-grid">
-          
           <!-- LEFT CONTROLS -->
           <div class="planner-controls-col">
-            
-            <!-- Section 1: Plot Boundaries -->
+            <!-- 1. Boundaries -->
             <div class="planner-form-section">
               <div class="planner-section-subhead">
                 <span>1. Boundary Dimensions</span>
@@ -883,15 +916,12 @@
               </div>
             </div>
 
-            <!-- Section 2: Storeys & Tentative Concept -->
+            <!-- 2. Storeys & Tentative Concept -->
             <div class="planner-form-section" style="margin-top: 1.5rem;">
-              <div class="planner-section-subhead">
-                <span>2. Storeys &amp; Tentative Layout Idea</span>
-              </div>
-
+              <div class="planner-section-subhead"><span>2. Storeys &amp; Floor Concept</span></div>
               <div class="input-row-4">
                 <div class="plan-input-wrap">
-                  <label for="numFloors">Proposed Storeys / Height:</label>
+                  <label for="numFloors">Proposed Storeys:</label>
                   <select id="numFloors" onchange="redrawSitePlan()">
                     <option value="1">1 Storey (Ground Floor only)</option>
                     <option value="2">2 Storeys (G + 1) [NBC 205 Sec 8]</option>
@@ -902,7 +932,7 @@
                   </select>
                 </div>
                 <div class="plan-input-wrap">
-                  <label for="layoutStyle">Tentative Planning Scheme:</label>
+                  <label for="layoutStyle">Planning Scheme:</label>
                   <select id="layoutStyle" onchange="redrawSitePlan()">
                     <option value="auto" selected>Auto 3BHK Family Residence</option>
                     <option value="2bhk">2BHK Spacious Suite</option>
@@ -919,7 +949,7 @@
               </div>
             </div>
 
-            <!-- Section 3: Municipal Bylaws & Setbacks -->
+            <!-- 3. Municipal Bylaws -->
             <div class="planner-form-section" style="margin-top: 1.5rem;">
               <div class="planner-section-subhead">
                 <span>3. Municipal Bylaws, Coverage &amp; FAR</span>
@@ -961,19 +991,17 @@
                 </div>
               </div>
             </div>
-
           </div>
 
           <!-- RIGHT CANVAS & REPORT -->
           <div class="planner-canvas-col">
-            
             <div class="canvas-container" id="canvasBox">
               <div class="canvas-hud"><i class="fa-solid fa-cube"></i> Architectural 2D Footprint</div>
               <div class="canvas-north"><span>N</span><i class="fa-solid fa-arrow-up" style="font-size: 0.65rem;"></i></div>
               <canvas id="sitePlanCanvas" width="600" height="490"></canvas>
             </div>
 
-            <!-- TELEMETRY CARDS -->
+            <!-- Telemetry Cards -->
             <div class="telemetry-grid">
               <div class="telemetry-card">
                 <div class="telemetry-label">Gross Plot Area</div>
@@ -997,7 +1025,7 @@
               </div>
             </div>
 
-            <!-- TENTATIVE ROOM SCHEDULE TABLE -->
+            <!-- Room Schedule -->
             <div class="room-schedule-wrap" id="roomScheduleBox">
               <table class="room-table">
                 <thead>
@@ -1012,7 +1040,7 @@
               </table>
             </div>
 
-            <!-- NBC 205:2024 COMPLIANCE BANNER -->
+            <!-- NBC 205 Compliance Banner -->
             <div class="compliance-banner pass" id="nbcComplianceCard">
               <i class="fa-solid fa-shield-halved" style="font-size: 1.8rem; color: #25D366;"></i>
               <div>
@@ -1021,45 +1049,12 @@
               </div>
             </div>
 
-            <!-- ACTION BUTTONS -->
             <div class="planner-actions">
-              <button type="button" class="btn btn-outline" onclick="downloadSitePlanImage()">
-                Download Plan Image (PNG) <i class="fa-solid fa-image"></i>
-              </button>
-              <button type="button" class="btn btn-primary" onclick="exportSitePlanPDF()">
-                Download Official PDF Sheet <i class="fa-solid fa-file-pdf"></i>
-              </button>
-              <button type="button" class="btn btn-outline" onclick="sharePlanWhatsApp()">
-                Send to WhatsApp <i class="fa-brands fa-whatsapp"></i>
-              </button>
+              <button type="button" class="btn btn-outline" onclick="downloadSitePlanImage()">Download Plan (PNG) <i class="fa-solid fa-image"></i></button>
+              <button type="button" class="btn btn-primary" onclick="exportSitePlanPDF()">Print Official Report <i class="fa-solid fa-print"></i></button>
+              <button type="button" class="btn btn-outline" onclick="sharePlanWhatsApp()">Send to WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
             </div>
-
           </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="section about-section section-with-texture" id="about">
-    <div class="container grid-about-unboxed">
-      <div class="portrait-standalone-wrap">
-        <div class="portrait-ambient-glow"></div>
-        <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Chetan Kumar Sarraf" class="portrait-standalone-img" width="420" height="520" />
-        <div class="portrait-sub-label">
-          <span class="live-dot"></span>
-          <span>Chetan Kr. Sarraf • Lead Designer</span>
-        </div>
-      </div>
-      <div class="about-text">
-        <div class="tag-badge"><span class="dot"></span> Professional Profile</div>
-        <h2 class="section-title">Where Engineering Rigor Harmonizes with <em>Interior Luxury</em></h2>
-        <p>Holding an academic background in <strong>Civil Engineering</strong> from Tri-juddha Secondary School, Birgunj, I specialize in constructible technical blueprints, accurate Bill of Quantities (BOQ) cost controls, and immersive architectural visualizations.</p>
-        <div class="credentials-row">
-          <div class="cred-stat"><div class="cred-num">2+</div><p>Years On-Site &amp; Studio</p></div>
-          <div class="cred-stat"><div class="cred-num">100%</div><p>Constructible Blueprints</p></div>
-          <div class="cred-stat"><div class="cred-num">3.30</div><p>Civil Engineering GPA</p></div>
         </div>
       </div>
     </div>
@@ -1145,8 +1140,9 @@
     </div>
   </section>
 
-  <!-- BOQ Estimator Toolkit -->
+  <!-- ================= ROOM & PROJECT BOQ ESTIMATOR TOOLKIT ================= -->
   <section class="section section-with-texture" id="boq-toolkit">
+    <img src="https://i.postimg.cc/HJzv3L6V/05t.png" alt="Blueprint geometric texture" class="watermark-texture estimator-texture" width="600" height="600" loading="lazy" />
     <div class="container">
       <div class="section-header text-center">
         <div class="tag-badge"><span class="dot"></span> Full Project Estimator</div>
@@ -1196,29 +1192,445 @@
     </div>
   </section>
 
+  <!-- Before & After Transformation Slider -->
+  <section class="section section-with-texture" id="transformation">
+    <img src="https://i.postimg.cc/xk5pgd6L/04t.png" alt="Line pattern" class="watermark-texture trans-texture" width="600" height="600" loading="lazy" />
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Technical Execution</div>
+        <h2 class="section-title">2D Blueprint to <em>Photorealistic Reality</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Drag the central slider to see how my AutoCAD technical clearances transform into full photorealistic 3D interior renders.</p>
+      </div>
+
+      <div class="before-after-container" id="baContainer">
+        <div class="ba-image-wrapper">
+          <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="3D Bedroom Render" class="ba-img" width="980" height="520" loading="lazy" />
+          <div class="ba-img-overlay" id="baOverlay">
+            <img src="https://i.postimg.cc/jjb8122k/Bedroom-Layout-Project2.png" alt="2D Bedroom Layout" width="980" height="520" loading="lazy" />
+          </div>
+          <div class="ba-handle" id="baHandle"><i class="fa-solid fa-left-right"></i></div>
+          <div class="ba-badge ba-badge-left">AutoCAD 2D Blueprint</div>
+          <div class="ba-badge ba-badge-right">3D Rendered Reality</div>
+          <input type="range" min="0" max="100" value="50" class="ba-slider-range" id="baRange" aria-label="Before After Comparison" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= UNIFIED CALCULATION & ENGINEERING HUB ================= -->
+  <section class="section section-with-texture" id="hub">
+    <img src="https://i.postimg.cc/HJzv3L6V/05t.png" alt="Technical watermark" class="watermark-texture estimator-texture" width="600" height="600" loading="lazy" />
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Engineering &amp; Interior Tools</div>
+        <h2 class="section-title">Studio Calculation &amp; <em>Engineering Hub</em></h2>
+      </div>
+
+      <div class="hub-container">
+        <!-- Main Hub Mode Toggle -->
+        <div class="hub-main-toggle">
+          <button class="hub-toggle-btn active" id="btnModeInterior" onclick="switchHubMode('interior')"><i class="fa-solid fa-couch"></i> Interior Studio</button>
+          <button class="hub-toggle-btn" id="btnModeCivil" onclick="switchHubMode('civil')"><i class="fa-solid fa-trowel-bricks"></i> Civil &amp; Estimation</button>
+          <button class="hub-toggle-btn" id="btnModeNBC" onclick="switchHubMode('nbc')"><i class="fa-solid fa-building-shield"></i> NBC 205 (2081) &amp; Municipal</button>
+        </div>
+
+        <!-- 1. Interior Suite -->
+        <div id="interiorToolsSuite">
+          <div class="tool-selector-grid">
+            <button class="tool-chip active" onclick="switchSubTool(this, 'int-paint')">🎨 Paint &amp; Putty</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'int-ceiling')">💡 False Ceiling &amp; LED</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'int-lighting')">🔆 Room Lux &amp; Downlights</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'int-kitchen')">🍳 Modular Kitchen</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'int-curtain')">🪟 Curtains &amp; Fabric</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'int-ac')">❄️ AC Cooling Tonnage</button>
+          </div>
+
+          <div class="tool-panel active" id="tool-int-paint">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Room Length (Feet):</label><input type="number" id="paintL" value="14" oninput="calcPaint()" /></div>
+              <div class="calc-input-group"><label>Room Width (Feet):</label><input type="number" id="paintW" value="12" oninput="calcPaint()" /></div>
+              <div class="calc-input-group"><label>Ceiling Height (Feet):</label><input type="number" id="paintH" value="10" oninput="calcPaint()" /></div>
+              <div class="calc-input-group"><label>Doors/Windows Deduction (sq.ft):</label><input type="number" id="paintDed" value="50" oninput="calcPaint()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Estimated Surface &amp; Paint Quantities</div>
+              <div class="calc-output-val" id="paintAreaOut">470 sq.ft</div>
+              <div class="calc-breakdown-list" id="paintBreakdown">Wall Putty: ~24 kg • Primer: ~4.7 L • Interior Emulsion: ~8.5 L</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-int-ceiling">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Room Length (Feet):</label><input type="number" id="ceilL" value="16" oninput="calcCeiling()" /></div>
+              <div class="calc-input-group"><label>Room Width (Feet):</label><input type="number" id="ceilW" value="14" oninput="calcCeiling()" /></div>
+              <div class="calc-input-group">
+                <label>Board Size:</label>
+                <select id="ceilBoardSize" onchange="calcCeiling()">
+                  <option value="24" selected>4ft × 6ft (24 sq.ft)</option>
+                  <option value="32">4ft × 8ft (32 sq.ft)</option>
+                </select>
+              </div>
+              <div class="calc-input-group"><label>Cove Light Perimeter (%):</label><input type="number" id="ceilCove" value="100" oninput="calcCeiling()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">False Ceiling Materials &amp; LED Strip</div>
+              <div class="calc-output-val" id="ceilBoardsOut">10 Sheets</div>
+              <div class="calc-breakdown-list" id="ceilBreakdown">Ceiling Area: 224 sq.ft • Perimeter L-Channel: ~60 Rft • LED Strip: ~60 ft</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-int-lighting">
+            <div class="calc-box-grid">
+              <div class="calc-input-group">
+                <label>Room Function:</label>
+                <select id="luxRoomType" onchange="calcLighting()">
+                  <option value="150">Living Room (150 Lux)</option>
+                  <option value="100">Bedroom (100 Lux)</option>
+                  <option value="300" selected>Kitchen / Cooking (300 Lux)</option>
+                  <option value="400">Study / Home Office (400 Lux)</option>
+                </select>
+              </div>
+              <div class="calc-input-group"><label>Floor Area (sq.ft):</label><input type="number" id="luxArea" value="150" oninput="calcLighting()" /></div>
+              <div class="calc-input-group">
+                <label>Downlight Bulb Wattage:</label>
+                <select id="luxWattage" onchange="calcLighting()">
+                  <option value="7">7 Watt LED (~630 Lumens)</option>
+                  <option value="9" selected>9 Watt LED (~810 Lumens)</option>
+                  <option value="12">12 Watt LED (~1080 Lumens)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Recommended Illumination</div>
+              <div class="calc-output-val" id="luxDownlightsOut">6 Downlights</div>
+              <div class="calc-breakdown-list" id="luxBreakdown">Target Lumens: ~4,180 Lm • Total Power: ~54W</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-int-kitchen">
+            <div class="calc-box-grid">
+              <div class="calc-input-group">
+                <label>Kitchen Layout:</label>
+                <select id="kitLayout" onchange="calcKitchen()">
+                  <option value="1.0">Straight (Single Wall)</option>
+                  <option value="1.8" selected>L-Shape (Two Walls)</option>
+                  <option value="2.5">U-Shape (Three Walls)</option>
+                </select>
+              </div>
+              <div class="calc-input-group"><label>Primary Wall Length (Feet):</label><input type="number" id="kitLength" value="10" oninput="calcKitchen()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Modular Kitchen Cabinet Estimate</div>
+              <div class="calc-output-val" id="kitRunningOut">18 Running Feet</div>
+              <div class="calc-breakdown-list" id="kitBreakdown">Base Cabinets: 18 Rft • Overhead: ~14 Rft • Countertop: ~45 sq.ft</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-int-curtain">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Window / Door Width (Inches):</label><input type="number" id="curtW" value="72" oninput="calcCurtains()" /></div>
+              <div class="calc-input-group"><label>Finished Height (Inches):</label><input type="number" id="curtH" value="96" oninput="calcCurtains()" /></div>
+              <div class="calc-input-group">
+                <label>Pleat Fullness Ratio:</label>
+                <select id="curtFullness" onchange="calcCurtains()">
+                  <option value="1.8">Eyelet Pleat (1.8× Fullness)</option>
+                  <option value="2.2" selected>Pinch Pleat (2.2× Fullness)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Drapery Fabric Requirement</div>
+              <div class="calc-output-val" id="curtFabricOut">~9.5 Meters</div>
+              <div class="calc-breakdown-list" id="curtBreakdown">Total Flat Width: 158 Inches • Recommended Rod: 6.5 Feet</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-int-ac">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Room Area (sq.ft):</label><input type="number" id="acArea" value="180" oninput="calcAC()" /></div>
+              <div class="calc-input-group"><label>Ceiling Height (Feet):</label><input type="number" id="acH" value="10" oninput="calcAC()" /></div>
+              <div class="calc-input-group">
+                <label>Floor Level &amp; Sun Exposure:</label>
+                <select id="acExposure" onchange="calcAC()">
+                  <option value="1.0">Intermediate Floor (Shaded)</option>
+                  <option value="1.2" selected>Top Floor with Direct Sun</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Recommended AC Capacity</div>
+              <div class="calc-output-val" id="acTonnageOut">1.5 Ton (18,000 BTU)</div>
+              <div class="calc-breakdown-list" id="acBreakdown">Cooling Load: ~17,200 BTU/hr • Sized for peak summer (40°C+).</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Civil Suite -->
+        <div id="civilToolsSuite" style="display: none;">
+          <div class="tool-selector-grid">
+            <button class="tool-chip active" onclick="switchSubTool(this, 'civ-plinth')">📐 Allowable Plinth &amp; BHK</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'civ-brick')">🧱 Advanced Brickwork</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'civ-cost')">🏠 Building Cost</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'civ-rcc')">🏗️ Concrete RCC Mix</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'civ-steel')">🔩 Rebar &amp; Stirrup</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'civ-land')">🗺️ Nepal Land &amp; Trace</button>
+          </div>
+
+          <div class="tool-panel active" id="tool-civ-plinth">
+            <div class="calc-box-grid">
+              <div class="calc-input-group">
+                <label>Plot Area Unit:</label>
+                <select id="plinthUnit" onchange="calcPlinthArea()">
+                  <option value="terai" selected>Terai (Kattha / Dhur)</option>
+                  <option value="hills">Hills (Ropani / Aana)</option>
+                  <option value="sqft">Square Feet (sq.ft)</option>
+                </select>
+              </div>
+              <div class="calc-input-group"><label>Plot Area Value:</label><input type="number" id="plinthAreaVal" value="10" oninput="calcPlinthArea()" /></div>
+              <div class="calc-input-group"><label>Plot Frontage Width (Feet):</label><input type="number" id="plinthPlotW" value="30" oninput="calcPlinthArea()" /></div>
+              <div class="calc-input-group"><label>Existing Road Width (Feet):</label><input type="number" id="plinthRoadExist" value="14" oninput="calcPlinthArea()" /></div>
+              <div class="calc-input-group"><label>Municipal Road Width (Feet):</label><input type="number" id="plinthRoadMuni" value="20" oninput="calcPlinthArea()" /></div>
+              <div class="calc-input-group"><label>Ground Coverage (%):</label><input type="number" id="plinthCoverage" value="70" oninput="calcPlinthArea()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Permissible Plinth Area</div>
+              <div class="calc-output-val" id="plinthResultOut">1,215 sq.ft</div>
+              <div class="calc-breakdown-list" id="plinthBreakdown">Gross Area: 1,822.5 sq.ft • Road Widening Loss: 90 sq.ft • Recommended: 3BHK</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-civ-brick">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Wall Length (Feet):</label><input type="number" id="brkAdvL" value="30" oninput="calcAdvancedBrick()" /></div>
+              <div class="calc-input-group"><label>Wall Height (Feet):</label><input type="number" id="brkAdvH" value="10" oninput="calcAdvancedBrick()" /></div>
+              <div class="calc-input-group">
+                <label>Thickness:</label>
+                <select id="brkAdvT" onchange="calcAdvancedBrick()">
+                  <option value="9" selected>9 Inch (Main Wall)</option>
+                  <option value="4.5">4.5 Inch (Partition)</option>
+                </select>
+              </div>
+              <div class="calc-input-group">
+                <label>Mortar Ratio:</label>
+                <select id="brkAdvRatio" onchange="calcAdvancedBrick()">
+                  <option value="4">1:4 Cement Sand</option>
+                  <option value="6" selected>1:6 Cement Sand</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Net Brickwork Estimate</div>
+              <div class="calc-output-val" id="brkAdvResultOut">~1,820 Bricks</div>
+              <div class="calc-breakdown-list" id="brkAdvBreakdown">Net Surface: 198 sq.ft • Cement: ~5.2 Bags • Sand: ~32 cu.ft</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-civ-cost">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Ground Plinth Area (sq.ft):</label><input type="number" id="housePlinth" value="1000" oninput="calcHouseCost()" /></div>
+              <div class="calc-input-group">
+                <label>Number of Storeys:</label>
+                <select id="houseStoreys" onchange="calcHouseCost()">
+                  <option value="1">1 Storey</option>
+                  <option value="2" selected>2 Storey</option>
+                  <option value="2.5">2.5 Storey</option>
+                  <option value="3">3 Storey</option>
+                </select>
+              </div>
+              <div class="calc-input-group">
+                <label>Quality &amp; Finishing Tier:</label>
+                <select id="houseQuality" onchange="calcHouseCost()">
+                  <option value="2600">Standard (Rs. 2,600 / sq.ft)</option>
+                  <option value="3200" selected>Premium (Rs. 3,200 / sq.ft)</option>
+                  <option value="3800">Luxury (Rs. 3,800 / sq.ft)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Complete Structural &amp; Finishing Cost</div>
+              <div class="calc-output-val" id="houseCostOut">Rs. 64.0 Lakhs</div>
+              <div class="calc-breakdown-list" id="houseCostBreakdown">Built-up: 2,000 sq.ft • Cement: ~800 Bags • Steel: ~7.6 Tons • Bricks: ~38,000</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-civ-rcc">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Length (Feet):</label><input type="number" id="rccL" value="20" oninput="calcRCC()" /></div>
+              <div class="calc-input-group"><label>Width (Feet):</label><input type="number" id="rccW" value="15" oninput="calcRCC()" /></div>
+              <div class="calc-input-group"><label>Depth (Inches):</label><input type="number" id="rccD" value="5" oninput="calcRCC()" /></div>
+              <div class="calc-input-group">
+                <label>Concrete Grade:</label>
+                <select id="rccGrade" onchange="calcRCC()">
+                  <option value="M15">M15 (1:2:4)</option>
+                  <option value="M20" selected>M20 (1:1.5:3 - NBC 205)</option>
+                  <option value="M25">M25 (1:1:2)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Dry Materials Takeoff</div>
+              <div class="calc-output-val" id="rccCementOut">~24 Bags Cement</div>
+              <div class="calc-breakdown-list" id="rccBreakdown">Sand: ~52 cu.ft • Aggregate (Gitti): ~104 cu.ft</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-civ-steel">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Member Width B (mm):</label><input type="number" id="tieB" value="250" oninput="calcStirrupTie()" /></div>
+              <div class="calc-input-group"><label>Member Depth D (mm):</label><input type="number" id="tieD" value="355" oninput="calcStirrupTie()" /></div>
+              <div class="calc-input-group"><label>Clear Cover (mm):</label><input type="number" id="tieCover" value="25" oninput="calcStirrupTie()" /></div>
+              <div class="calc-input-group"><label>Tie Diameter (mm):</label><input type="number" id="tieDia" value="8" oninput="calcStirrupTie()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Stirrup Cutting Length with 135° Hooks</div>
+              <div class="calc-output-val" id="tieLenOut">1,210 mm (1.21 m)</div>
+              <div class="calc-breakdown-list" id="tieBreakdown">Core: 200×305 mm • 135° Hook: 2×10d • Weight per Tie: ~0.48 kg</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-civ-land">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Cadastral Trace Scale:</label>
+                <select id="traceScale" onchange="calcTraceMap()">
+                  <option value="500">1:500 (1cm = 5m)</option>
+                  <option value="1200" selected>1:1200 (1cm = 12m / 39.37ft)</option>
+                  <option value="2500">1:2500 (1cm = 25m)</option>
+                </select>
+              </div>
+              <div class="calc-input-group"><label>Length on Map (cm):</label><input type="number" id="traceCm" value="5" oninput="calcTraceMap()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Actual Ground Distance</div>
+              <div class="calc-output-val" id="traceGroundOut">60.0 Meters (196.8 Feet)</div>
+              <div class="calc-breakdown-list" id="traceBreakdown">Scale 1:1200 ➔ 1 cm on Lalpurja map equals 12 meters on ground.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. NBC 205 Suite -->
+        <div id="nbcToolsSuite" style="display: none;">
+          <div class="tool-selector-grid">
+            <button class="tool-chip active" onclick="switchSubTool(this, 'nbc-pga')">🇳🇵 753 Local Units PGA (NBC 2024)</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'nbc-detailing')">📋 Member Detailing Schedules</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'nbc-soil')">⚖️ Soil Bearing (Dropping Brick)</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'nbc-far')">🏢 Municipal FAR &amp; BCR</button>
+            <button class="tool-chip" onclick="switchSubTool(this, 'nbc-septic')">🚰 Septic Tank Sizer</button>
+          </div>
+
+          <div class="tool-panel active" id="tool-nbc-pga">
+            <div class="calc-box-grid">
+              <div class="calc-input-group">
+                <label>Select Municipality / Local Unit:</label>
+                <select id="pgaDistrict" onchange="calcPGA()">
+                  <option value="0.35" selected>Parsa - Birgunj Mahanagarpalika (PGA: 0.35)</option>
+                  <option value="0.35">Parsa - Bahudaramai (PGA: 0.35)</option>
+                  <option value="0.40">Parsa - Thori (PGA: 0.40)</option>
+                  <option value="0.35">Bara - Kalaiya (PGA: 0.35)</option>
+                  <option value="0.35">Kathmandu Mahanagarpalika (PGA: 0.35)</option>
+                  <option value="0.40">Chitwan - Bharatpur (PGA: 0.40)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Nepal Gazette NBC 205:2024 Parameters</div>
+              <div class="calc-output-val" id="pgaResultOut">PGA (Z) = 0.35g</div>
+              <div class="calc-breakdown-list" id="pgaBreakdown">Importance Factor I = 1.0 • Ductility Rμ = 4.0 • Bare Frame Analysis</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-nbc-detailing">
+            <div class="calc-box-grid">
+              <div class="calc-input-group">
+                <label>Storey Count:</label>
+                <select id="detailStorey" onchange="calcDetailing()">
+                  <option value="2" selected>Two Storey (Section 8)</option>
+                  <option value="3">Three Storey (Section 9)</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">NBC 205:2024 Schedule</div>
+              <div class="calc-output-val" id="detailSummaryOut">Column: 350×350 mm | Footing: 1.5×1.5 m</div>
+              <div class="calc-breakdown-list" id="detailBreakdown">Column Rebars: 4-16Ø + 4-12Ø Fe500 • Plinth Beam: 250×355 mm • Slab: 125mm</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-nbc-soil">
+            <div class="calc-box-grid">
+              <div class="calc-input-group">
+                <label>Impression Depth (mm) from 4 bricks dropped from 1.5m:</label>
+                <input type="number" id="sbcDepth" value="15" oninput="calcSoilDropping()" />
+              </div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">NBC 205 Cl 3.5 Classification</div>
+              <div class="calc-output-val" id="sbcResultOut">150 kN/m² (Medium Soil)</div>
+              <div class="calc-breakdown-list" id="sbcBreakdown">Impression between 12mm and 17mm. Safe for standard isolated footings.</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-nbc-far">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Total Plot Area (sq.ft):</label><input type="number" id="farPlot" value="2000" oninput="calcFAR()" /></div>
+              <div class="calc-input-group"><label>Ground Floor Plinth (sq.ft):</label><input type="number" id="farPlinth" value="1200" oninput="calcFAR()" /></div>
+              <div class="calc-input-group"><label>Total Built-up All Floors (sq.ft):</label><input type="number" id="farTotalBuilt" value="3200" oninput="calcFAR()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Municipal Compliance</div>
+              <div class="calc-output-val" id="farResultOut">FAR: 1.60 | BCR: 60.0%</div>
+              <div class="calc-breakdown-list" id="farBreakdown">Building Coverage: 60.0% (Limit ≤ 70%). Compliant for submission.</div>
+            </div>
+          </div>
+
+          <div class="tool-panel" id="tool-nbc-septic">
+            <div class="calc-box-grid">
+              <div class="calc-input-group"><label>Number of Household Users:</label><input type="number" id="septicUsers" value="8" oninput="calcSeptic()" /></div>
+            </div>
+            <div class="calc-output-card">
+              <div class="calc-output-title">Septic Tank Dimensions</div>
+              <div class="calc-output-val" id="septicDimOut">7.5 ft × 3.5 ft × 5.0 ft Depth</div>
+              <div class="calc-breakdown-list" id="septicBreakdown">Volume: ~2,400 Liters • Soak Pit Diameter: 4.0 ft (Depth: 8.0 ft)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Showcase -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Live Social Works</div>
+        <h2 class="section-title">Site Updates &amp; <em>360° Tours</em></h2>
+      </div>
+      <div class="showcase-grid" id="showcaseContainer">
+        <article class="showcase-card">
+          <div class="showcase-img-wrap"><img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Reel" width="400" height="260" loading="lazy" /><span class="platform-badge badge-instagram"><i class="fa-brands fa-instagram"></i> Instagram</span></div>
+          <div class="showcase-body">
+            <div><div class="item-title">Master Suite Lighting Walkthrough</div><p>Cove backlighting and joinery execution in Birgunj.</p></div>
+            <a href="https://www.instagram.com/p/DNaXj1fhOpp3EUiDHgaH7RXXu6JHOoyh26gNSA0/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Watch on Instagram <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- Rates Table -->
   <section class="section" id="rates">
     <div class="container">
       <div class="section-header text-center">
         <div class="tag-badge"><span class="dot"></span> Market Intelligence</div>
-        <h2 class="section-title">Birgunj Civil &amp; <em>Interior Rates Index</em></h2>
+        <h2 class="section-title">Birgunj Material &amp; <em>Labour Rates</em></h2>
       </div>
       <div class="rates-table-wrap">
         <table class="rates-table">
           <thead>
-            <tr>
-              <th>Material / Trade Item</th>
-              <th>Category</th>
-              <th>Billing Unit</th>
-              <th>Standard Rate (NPR)</th>
-              <th>Last Updated</th>
-            </tr>
+            <tr><th>Material / Trade Item</th><th>Category</th><th>Unit</th><th>Rate (NPR)</th><th>Updated</th></tr>
           </thead>
           <tbody id="ratesTableBody">
             <tr><td><strong>OPC Cement (Shivam / Hetauda)</strong></td><td>Civil</td><td>50 kg Bag</td><td><span class="rate-pill">Rs. 720 – 770</span></td><td class="auto-date">Oct 2026</td></tr>
-            <tr><td><strong>TMT Steel Rebar (Fe 500 Grade)</strong></td><td>Civil</td><td>Per Kg</td><td><span class="rate-pill">Rs. 92 – 98</span></td><td class="auto-date">Oct 2026</td></tr>
-            <tr><td><strong>Local River Sand (Screened)</strong></td><td>Civil</td><td>Per Tipper (250 cu.ft)</td><td><span class="rate-pill">Rs. 18,500 – 21,000</span></td><td class="auto-date">Oct 2026</td></tr>
-            <tr><td><strong>1st Class Red Clay Bricks</strong></td><td>Civil</td><td>Per 1,000 Pcs</td><td><span class="rate-pill">Rs. 15,000 – 17,000</span></td><td class="auto-date">Oct 2026</td></tr>
+            <tr><td><strong>TMT Steel (Fe 500 Grade)</strong></td><td>Civil</td><td>Per Kg</td><td><span class="rate-pill">Rs. 92 – 98</span></td><td class="auto-date">Oct 2026</td></tr>
           </tbody>
         </table>
       </div>
@@ -1234,14 +1646,14 @@
       </div>
       <div class="articles-grid" id="articlesContainer">
         <article class="article-card">
-          <div class="article-img-wrap"><img src="https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg" alt="Modular Kitchen" width="400" height="240" loading="lazy" /></div>
+          <div class="article-img-wrap"><img src="https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg" alt="Kitchen" width="400" height="240" loading="lazy" /></div>
           <div class="article-content">
             <div>
               <div class="article-meta"><span>Kitchen Planning</span><span class="auto-date">Oct 2026</span></div>
               <div class="item-title">Modular Kitchen vs Carpenter Kitchen in Birgunj</div>
-              <p>Discover the true cost difference and durability of factory-made modular cabinets versus on-site carpentry in Nepal.</p>
+              <p>Durability of factory cabinets vs on-site carpentry in Nepal.</p>
             </div>
-            <a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Discuss Kitchen Scope <i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Discuss Scope <i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </article>
       </div>
@@ -1257,45 +1669,45 @@
           <h2 class="section-title">Design Works &amp; AutoCAD Layouts</h2>
         </div>
         <div class="slider-buttons">
-          <button class="slide-arrow-btn" id="prevSlide" aria-label="Previous Slide"><i class="fa-solid fa-arrow-left"></i></button>
-          <button class="slide-arrow-btn" id="nextSlide" aria-label="Next Slide"><i class="fa-solid fa-arrow-right"></i></button>
+          <button class="slide-arrow-btn" id="prevSlide" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="slide-arrow-btn" id="nextSlide" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
       <div class="slider-viewport" id="sliderViewport">
         <div class="slider-track" id="sliderTrack">
-          <article class="slider-card" onclick="openModal('Modern Luxury Living Room Design', 'Residential Interior', 'Bespoke luxury living room design with warm LED coving and imported tile flooring.', 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg', 'Scale and Spaces')">
+          <article class="slider-card" onclick="openModal('Modern Luxury Living Room Design', 'Residential Interior', 'Bespoke living room with cove lighting.', 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg')">
             <div class="slide-img-box"><img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Living Room" width="400" height="280" loading="lazy" /><div class="slide-overlay"><span>View High-Res</span></div></div>
-            <div class="slide-desc"><span class="slide-tag">RESIDENTIAL LIVING</span><div class="item-title">Modern Luxury Living Room</div><p>Space-planned with custom wall panelling and warm LED coving.</p></div>
+            <div class="slide-desc"><span class="slide-tag">RESIDENTIAL LIVING</span><div class="item-title">Modern Luxury Living Room</div><p>Planned with custom wall panelling.</p></div>
           </article>
-          <article class="slider-card" onclick="openModal('Modern Master Bedroom Design', 'Master Suite', 'Photorealistic 3D interior render showcasing textured headboard accents.', 'https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png', 'Scale and Spaces')">
+          <article class="slider-card" onclick="openModal('Modern Master Bedroom Design', 'Master Suite', 'Photorealistic 3D interior render with floating consoles.', 'https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png')">
             <div class="slide-img-box"><img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Bedroom" width="400" height="280" loading="lazy" /><div class="slide-overlay"><span>View High-Res</span></div></div>
-            <div class="slide-desc"><span class="slide-tag">MASTER BEDROOM</span><div class="item-title">Modern Bedroom Design</div><p>Textured feature headboard with floating consoles.</p></div>
+            <div class="slide-desc"><span class="slide-tag">MASTER BEDROOM</span><div class="item-title">Modern Bedroom Design</div><p>Textured feature headboard.</p></div>
           </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section class="section contact-section" id="contact">
     <div class="container text-center">
       <div class="tag-badge"><span class="dot"></span> Free Consultation</div>
       <h2 class="section-title">Let's Plan Your Interior in Birgunj</h2>
-      <p class="section-subtitle" style="margin: 0 auto 2.5rem;">Book a free design consultation, request 3D photorealistic rendering, or partner for civil BOQ estimation and AutoCAD blueprints.</p>
+      <p class="section-subtitle" style="margin: 0 auto 2.5rem;">Book a design consultation or civil BOQ estimation.</p>
       <a href="https://wa.me/9779766188838" class="btn btn-primary">Chat on WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </section>
 
-  <!-- Lightbox Modal -->
+  <!-- Modal -->
   <div class="modal" id="projectModal">
     <div class="modal-backdrop" onclick="closeModal()"></div>
     <div class="modal-dialog">
       <button class="modal-close" onclick="closeModal()">&times;</button>
-      <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" id="modalImg" alt="Project Preview" />
+      <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" id="modalImg" alt="Preview" />
       <div class="modal-details">
         <span id="modalCategory" class="slide-tag">Architecture</span>
         <div class="modal-title" id="modalTitle">Project Title</div>
-        <p id="modalDesc">Project description</p>
+        <p id="modalDesc">Description</p>
       </div>
     </div>
   </div>
@@ -1304,19 +1716,19 @@
   <footer class="footer">
     <div class="container footer-content">
       <div style="display: flex; align-items: center; gap: 0.8rem;">
-        <img src="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" alt="Chetan Interiors Logo" width="32" height="32" />
+        <img src="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" alt="Logo" width="32" height="32" />
         <p>&copy; <span id="year"></span> <strong>Chetan Kumar Sarraf</strong>. Civil Engineer &amp; Interior Designer. Birgunj, Nepal.</p>
       </div>
       <div class="footer-social-links">
         <a href="https://www.instagram.com/master.cks009/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
         <a href="https://www.facebook.com/chetan.sarraf.3/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-        <a href="https://np.linkedin.com/in/chetansarraf" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
         <a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- ================= JAVASCRIPT & ENGINES ================= -->
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
   <script>
     const GOOGLE_SHEET_ID = "1cQ724gHkaWJCNc5n6b6-qtCgNw6y41YB8ZgQDgTgGO4";
     const currentMonthYear = new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
@@ -1325,10 +1737,7 @@
       if (!url || String(url).trim() === '') return '';
       const str = String(url).trim();
       const driveMatch = str.match(/\/d\/([a-zA-Z0-9_-]+)/) || str.match(/id=([a-zA-Z0-9_-]+)/);
-      if (driveMatch && driveMatch[1]) {
-        return `https://lh3.googleusercontent.com/d/${driveMatch[1]}`;
-      }
-      return str;
+      return (driveMatch && driveMatch[1]) ? `https://lh3.googleusercontent.com/d/${driveMatch[1]}` : str;
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -1348,50 +1757,237 @@
         });
       }
 
-      // Mobile Nav
+      // Mobile Navigation
       const navToggle = document.getElementById('navToggle');
       const navLinks = document.getElementById('navLinks');
       if (navToggle && navLinks) {
         navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => navLinks.classList.remove('active'));
+        });
       }
+
+      // Before/After Slider
+      const baOverlay = document.getElementById('baOverlay');
+      const baHandle = document.getElementById('baHandle');
+      const baRange = document.getElementById('baRange');
+      if (baRange && baOverlay && baHandle) {
+        baRange.addEventListener('input', (e) => {
+          const val = e.target.value;
+          baOverlay.style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
+          baHandle.style.left = `${val}%`;
+        });
+      }
+
+      // Portfolio Carousel
+      const track = document.getElementById('sliderTrack');
+      const cards = document.querySelectorAll('.slider-card');
+      const prevBtn = document.getElementById('prevSlide');
+      const nextBtn = document.getElementById('nextSlide');
+      let currentIndex = 0;
+
+      function updateSlider() {
+        if (!track || cards.length === 0) return;
+        const cardWidth = cards[0].offsetWidth + 28;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      }
+
+      if (nextBtn) nextBtn.addEventListener('click', () => {
+        if (currentIndex < cards.length - 1) currentIndex++;
+        else currentIndex = 0;
+        updateSlider();
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) currentIndex--;
+        else currentIndex = cards.length - 1;
+        updateSlider();
+      });
 
       const yearEl = document.getElementById('year');
       if (yearEl) yearEl.textContent = new Date().getFullYear();
+      document.querySelectorAll('.auto-date').forEach(el => el.textContent = currentMonthYear);
 
-      document.querySelectorAll('.auto-date').forEach(el => { el.textContent = currentMonthYear; });
-
-      // Initialize Calculations & Planner
+      // Run All Hub Tools & Site Planner
       calculateFullBOQ();
+      calcPaint();
+      calcCeiling();
+      calcLighting();
+      calcKitchen();
+      calcCurtains();
+      calcAC();
+      calcPlinthArea();
+      calcAdvancedBrick();
+      calcHouseCost();
+      calcRCC();
+      calcStirrupTie();
+      calcTraceMap();
+      calcPGA();
+      calcDetailing();
+      calcSoilDropping();
+      calcFAR();
+      calcSeptic();
       redrawSitePlan();
 
-      // Load Google Sheets Live Data
+      // Start Google Sheets Sync
       loadGoogleSheetLiveSync(GOOGLE_SHEET_ID);
     });
 
-    // ================= BYLAW PRESETS =================
+    // ================= STUDIO HUB SWITCHING =================
+    function switchHubMode(mode) {
+      document.getElementById('btnModeInterior').classList.toggle('active', mode === 'interior');
+      document.getElementById('btnModeCivil').classList.toggle('active', mode === 'civil');
+      document.getElementById('btnModeNBC').classList.toggle('active', mode === 'nbc');
+      document.getElementById('interiorToolsSuite').style.display = mode === 'interior' ? 'block' : 'none';
+      document.getElementById('civilToolsSuite').style.display = mode === 'civil' ? 'block' : 'none';
+      document.getElementById('nbcToolsSuite').style.display = mode === 'nbc' ? 'block' : 'none';
+    }
+
+    function switchSubTool(btnEl, toolId) {
+      let parent = toolId.startsWith('int-') ? document.getElementById('interiorToolsSuite') :
+                   toolId.startsWith('civ-') ? document.getElementById('civilToolsSuite') : document.getElementById('nbcToolsSuite');
+      parent.querySelectorAll('.tool-chip').forEach(c => c.classList.remove('active'));
+      parent.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById(`tool-${toolId}`);
+      if (target) target.classList.add('active');
+      if (btnEl) btnEl.classList.add('active');
+    }
+
+    // ================= 17 HUB CALCULATORS =================
+    function calcPaint() {
+      const l = parseFloat(document.getElementById('paintL').value) || 0, w = parseFloat(document.getElementById('paintW').value) || 0, h = parseFloat(document.getElementById('paintH').value) || 0, ded = parseFloat(document.getElementById('paintDed').value) || 0;
+      const net = Math.max(0, (2 * (l + w) * h) - ded);
+      document.getElementById('paintAreaOut').textContent = `${Math.round(net)} sq.ft`;
+      document.getElementById('paintBreakdown').textContent = `Putty: ~${Math.round(net * 0.05)} kg • Primer: ~${(net/100).toFixed(1)} L • Emulsion: ~${(net/55).toFixed(1)} L`;
+    }
+
+    function calcCeiling() {
+      const l = parseFloat(document.getElementById('ceilL').value) || 0, w = parseFloat(document.getElementById('ceilW').value) || 0, b = parseFloat(document.getElementById('ceilBoardSize').value) || 24;
+      const a = l * w;
+      document.getElementById('ceilBoardsOut').textContent = `${Math.ceil((a * 1.1) / b)} Sheets`;
+      document.getElementById('ceilBreakdown').textContent = `Area: ${a} sq.ft • Perimeter L-Channel: ~${Math.round(2 * (l + w))} Rft • LED: ~${Math.round(2 * (l + w))} ft`;
+    }
+
+    function calcLighting() {
+      const lux = parseFloat(document.getElementById('luxRoomType').value) || 150, area = parseFloat(document.getElementById('luxArea').value) || 0, watt = parseFloat(document.getElementById('luxWattage').value) || 9;
+      const lumens = Math.round(lux * (area * 0.0929));
+      const perBulb = watt === 7 ? 630 : watt === 9 ? 810 : 1080;
+      document.getElementById('luxDownlightsOut').textContent = `${Math.ceil(lumens / perBulb)} Downlights`;
+      document.getElementById('luxBreakdown').textContent = `Target: ~${lumens.toLocaleString()} Lm • Total Power: ~${Math.ceil(lumens / perBulb) * watt}W`;
+    }
+
+    function calcKitchen() {
+      const f = parseFloat(document.getElementById('kitLayout').value) || 1.8, l = parseFloat(document.getElementById('kitLength').value) || 0;
+      document.getElementById('kitRunningOut').textContent = `${Math.round(l * f)} Running Feet`;
+      document.getElementById('kitBreakdown').textContent = `Base: ${Math.round(l * f)} Rft • Overhead: ~${Math.round(l * f * 0.8)} Rft • Top: ~${Math.round(l * f * 2.2)} sq.ft`;
+    }
+
+    function calcCurtains() {
+      const w = parseFloat(document.getElementById('curtW').value) || 0, h = parseFloat(document.getElementById('curtH').value) || 0, f = parseFloat(document.getElementById('curtFullness').value) || 2.2;
+      const meters = (Math.ceil((w * f) / 48) * ((h + 12) * 0.0254)).toFixed(1);
+      document.getElementById('curtFabricOut').textContent = `~${meters} Meters`;
+      document.getElementById('curtBreakdown').textContent = `Finished Width: ${w}" • Track Length: ${(w/12).toFixed(1)} ft`;
+    }
+
+    function calcAC() {
+      const a = parseFloat(document.getElementById('acArea').value) || 0, h = parseFloat(document.getElementById('acH').value) || 10, exp = parseFloat(document.getElementById('acExposure').value) || 1.0;
+      const btu = a * h * 6 * exp;
+      document.getElementById('acTonnageOut').textContent = btu > 20000 ? "2.0 Ton (24k BTU)" : btu > 14000 ? "1.5 Ton (18k BTU)" : "1.0 Ton (12k BTU)";
+      document.getElementById('acBreakdown').textContent = `Cooling Load: ~${Math.round(btu).toLocaleString()} BTU/hr`;
+    }
+
+    function calcPlinthArea() {
+      const unit = document.getElementById('plinthUnit').value, raw = parseFloat(document.getElementById('plinthAreaVal').value) || 0, pw = parseFloat(document.getElementById('plinthPlotW').value) || 30;
+      const re = parseFloat(document.getElementById('plinthRoadExist').value) || 14, rm = parseFloat(document.getElementById('plinthRoadMuni').value) || 20, cov = parseFloat(document.getElementById('plinthCoverage').value) || 70;
+      let sqft = unit === 'terai' ? raw * 3645 : unit === 'hills' ? raw * 342.25 : raw;
+      const roadLoss = rm > re ? ((rm - re) / 2) * pw : 0;
+      const plinth = Math.round(Math.max(0, sqft - roadLoss - (5 * pw)) * (cov / 100));
+      document.getElementById('plinthResultOut').textContent = `${plinth.toLocaleString()} sq.ft`;
+      document.getElementById('plinthBreakdown').textContent = `Gross Area: ${Math.round(sqft)} sq.ft • Road Loss: ${Math.round(roadLoss)} sq.ft`;
+    }
+
+    function calcAdvancedBrick() {
+      const l = parseFloat(document.getElementById('brkAdvL').value) || 0, h = parseFloat(document.getElementById('brkAdvH').value) || 0, t = parseFloat(document.getElementById('brkAdvT').value) || 9;
+      const net = Math.max(0, (l * h) - 60);
+      document.getElementById('brkAdvResultOut').textContent = `~${Math.ceil(net * (t === 4.5 ? 4.6 : 9.2) * 1.05).toLocaleString()} Bricks`;
+      document.getElementById('brkAdvBreakdown').textContent = `Net Wall: ${net} sq.ft • Cement: ~${(net * 0.026).toFixed(1)} Bags • Sand: ~${Math.round(net * 0.16)} cu.ft`;
+    }
+
+    function calcHouseCost() {
+      const pl = parseFloat(document.getElementById('housePlinth').value) || 0, st = parseFloat(document.getElementById('houseStoreys').value) || 1, rate = parseFloat(document.getElementById('houseQuality').value) || 3200;
+      const cost = pl * st * rate;
+      document.getElementById('houseCostOut').textContent = `Rs. ${(cost / 100000).toFixed(1)} Lakhs`;
+      document.getElementById('houseCostBreakdown').textContent = `Built-up: ${(pl * st).toLocaleString()} sq.ft • Cement: ~${Math.round(pl * st * 0.4)} Bags`;
+    }
+
+    function calcRCC() {
+      const l = parseFloat(document.getElementById('rccL').value) || 0, w = parseFloat(document.getElementById('rccW').value) || 0, d = parseFloat(document.getElementById('rccD').value) || 0;
+      const dry = l * w * (d / 12) * 1.54;
+      document.getElementById('rccCementOut').textContent = `~${((dry * (1 / 5.5)) / 1.25).toFixed(1)} Bags Cement`;
+      document.getElementById('rccBreakdown').textContent = `Sand: ~${Math.round(dry * (1.5 / 5.5))} cu.ft • Gitti: ~${Math.round(dry * (3 / 5.5))} cu.ft`;
+    }
+
+    function calcStirrupTie() {
+      const b = parseFloat(document.getElementById('tieB').value) || 250, d = parseFloat(document.getElementById('tieD').value) || 355, cov = parseFloat(document.getElementById('tieCover').value) || 25, dia = parseFloat(document.getElementById('tieDia').value) || 8;
+      const len = (2 * ((b - 2 * cov) + (d - 2 * cov))) + (2 * Math.max(65, 10 * dia)) - (6 * dia);
+      document.getElementById('tieLenOut').textContent = `${len} mm (${(len/1000).toFixed(2)} m)`;
+      document.getElementById('tieBreakdown').textContent = `Core: ${b-2*cov}×${d-2*cov} mm • Weight: ~${((dia * dia / 162) * (len / 1000)).toFixed(2)} kg`;
+    }
+
+    function calcTraceMap() {
+      const scale = parseFloat(document.getElementById('traceScale').value) || 1200, cm = parseFloat(document.getElementById('traceCm').value) || 0;
+      const m = (cm * scale) / 100;
+      document.getElementById('traceGroundOut').textContent = `${m.toFixed(1)} M (${(m * 3.28).toFixed(1)} Ft)`;
+      document.getElementById('traceBreakdown').textContent = `1 cm on map = ${(scale/100).toFixed(1)} m on ground.`;
+    }
+
+    function calcPGA() {
+      const pga = parseFloat(document.getElementById('pgaDistrict').value) || 0.35;
+      document.getElementById('pgaResultOut').textContent = `PGA (Z) = ${pga}g`;
+      document.getElementById('pgaBreakdown').textContent = `NBC 205:2024 Annex • Importance Factor I = 1.0 • Rμ = 4.0`;
+    }
+
+    function calcDetailing() {
+      const s = document.getElementById('detailStorey').value;
+      document.getElementById('detailSummaryOut').textContent = s === "2" ? "Col: 350×350 mm | Footing: 1.5×1.5 m" : "Col: 400×400 mm | Footing: 1.9×1.9 m";
+      document.getElementById('detailBreakdown').textContent = s === "2" ? "Rebar: 4-16Ø + 4-12Ø Fe500 (NBC 205 Sec 8)" : "Rebar: 8-16Ø or 4-20Ø+4-16Ø (NBC 205 Sec 9)";
+    }
+
+    function calcSoilDropping() {
+      const d = parseFloat(document.getElementById('sbcDepth').value) || 15;
+      document.getElementById('sbcResultOut').textContent = d <= 12 ? "200 kN/m² (Hard)" : d <= 17 ? "150 kN/m² (Medium)" : "125 kN/m² (Soft)";
+      document.getElementById('sbcBreakdown').textContent = `Impression depth ${d}mm as per NBC 205 Cl 3.5.`;
+    }
+
+    function calcFAR() {
+      const plot = parseFloat(document.getElementById('farPlot').value) || 1, plinth = parseFloat(document.getElementById('farPlinth').value) || 0, built = parseFloat(document.getElementById('farTotalBuilt').value) || 0;
+      document.getElementById('farResultOut').textContent = `FAR: ${(built/plot).toFixed(2)} | BCR: ${((plinth/plot)*100).toFixed(1)}%`;
+      document.getElementById('farBreakdown').textContent = `BCR limit ≤ 70%. Standard municipal compliance.`;
+    }
+
+    function calcSeptic() {
+      const u = parseFloat(document.getElementById('septicUsers').value) || 6;
+      document.getElementById('septicDimOut').textContent = `${(u*0.9).toFixed(1)} ft × ${(u*0.45).toFixed(1)} ft × 5.0 ft`;
+      document.getElementById('septicBreakdown').textContent = `Volume: ~${Math.round(u * 300)} L • 2-Year Interval`;
+    }
+
+    // ================= SITE PLANNER & TENTATIVE LAYOUT =================
+    let currentPlanTelemetry = {};
+
     function applyBylawPreset() {
       const preset = document.getElementById('presetBylaws').value;
       if (preset === 'birgunj') {
-        document.getElementById('setbackFront').value = 5;
-        document.getElementById('setbackRear').value = 3;
-        document.getElementById('setbackSide1').value = 3;
-        document.getElementById('setbackSide2').value = 3;
-        document.getElementById('coveragePct').value = 70;
-        document.getElementById('farVal').value = 1.75;
+        document.getElementById('setbackFront').value = 5; document.getElementById('setbackRear').value = 3;
+        document.getElementById('setbackSide1').value = 3; document.getElementById('setbackSide2').value = 3;
+        document.getElementById('coveragePct').value = 70; document.getElementById('farVal').value = 1.75;
       } else if (preset === 'kathmandu') {
-        document.getElementById('setbackFront').value = 5;
-        document.getElementById('setbackRear').value = 5;
-        document.getElementById('setbackSide1').value = 5;
-        document.getElementById('setbackSide2').value = 5;
-        document.getElementById('coveragePct').value = 60;
-        document.getElementById('farVal').value = 2.0;
+        document.getElementById('setbackFront').value = 5; document.getElementById('setbackRear').value = 5;
+        document.getElementById('setbackSide1').value = 5; document.getElementById('setbackSide2').value = 5;
+        document.getElementById('coveragePct').value = 60; document.getElementById('farVal').value = 2.0;
       } else if (preset === 'commercial') {
-        document.getElementById('setbackFront').value = 10;
-        document.getElementById('setbackRear').value = 5;
-        document.getElementById('setbackSide1').value = 5;
-        document.getElementById('setbackSide2').value = 5;
-        document.getElementById('coveragePct').value = 60;
-        document.getElementById('farVal').value = 2.5;
+        document.getElementById('setbackFront').value = 10; document.getElementById('setbackRear').value = 5;
+        document.getElementById('setbackSide1').value = 5; document.getElementById('setbackSide2').value = 5;
+        document.getElementById('coveragePct').value = 60; document.getElementById('farVal').value = 2.5;
       }
       redrawSitePlan();
     }
@@ -1403,28 +1999,18 @@
 
     function sqftToTerai(sqft) {
       if (sqft <= 0) return '0-0-0 (B-K-D)';
-      const bigha = Math.floor(sqft / 72900);
-      const remB = sqft % 72900;
-      const kattha = Math.floor(remB / 3645);
-      const remK = remB % 3645;
-      const dhur = (remK / 182.25).toFixed(1);
-      return `${bigha}-${kattha}-${dhur} (B-K-D)`;
+      const b = Math.floor(sqft / 72900), remB = sqft % 72900;
+      const k = Math.floor(remB / 3645), remK = remB % 3645;
+      return `${b}-${k}-${(remK / 182.25).toFixed(1)} (B-K-D)`;
     }
-
-    // ================= 2D SITE PLANNER & TENTATIVE LAYOUT ENGINE =================
-    let currentPlanTelemetry = {};
 
     function redrawSitePlan() {
       const canvas = document.getElementById('sitePlanCanvas');
       if (!canvas) return;
       const ctx = canvas.getContext('2d');
+      const width = canvas.parentElement.clientWidth || 600, height = 490;
+      canvas.width = width; canvas.height = height;
 
-      const width = canvas.parentElement.clientWidth || 600;
-      const height = 490;
-      canvas.width = width;
-      canvas.height = height;
-
-      // Inputs
       const a = parseFloat(document.getElementById('sideA').value) || 0;
       const b = parseFloat(document.getElementById('sideB').value) || 0;
       const c = parseFloat(document.getElementById('sideC').value) || 0;
@@ -1440,378 +2026,188 @@
       const sbRear = parseFloat(document.getElementById('setbackRear').value) || 0;
       const sbSide1 = parseFloat(document.getElementById('setbackSide1').value) || 0;
       const sbSide2 = parseFloat(document.getElementById('setbackSide2').value) || 0;
-      const coveragePct = Math.max(1, Math.min(100, parseFloat(document.getElementById('coveragePct').value) || 70));
+      const covPct = Math.max(1, Math.min(100, parseFloat(document.getElementById('coveragePct').value) || 70));
       const farVal = Math.max(0.1, parseFloat(document.getElementById('farVal').value) || 1.75);
 
       ctx.clearRect(0, 0, width, height);
 
-      // Check boundary validity
       const maxSide = Math.max(a, b, c, d);
-      const sumOthers = (a + b + c + d) - maxSide;
-      if (sumOthers <= maxSide || a <= 0 || b <= 0 || c <= 0 || d <= 0) {
-        ctx.fillStyle = '#ff4d4f';
-        ctx.font = '14px JetBrains Mono, monospace';
-        ctx.textAlign = 'center';
+      if ((a + b + c + d - maxSide) <= maxSide || a <= 0 || b <= 0 || c <= 0 || d <= 0) {
+        ctx.fillStyle = '#ff4d4f'; ctx.font = '14px JetBrains Mono, monospace'; ctx.textAlign = 'center';
         ctx.fillText('⚠️ Invalid Plot: Sum of smaller sides must exceed longest side.', width / 2, height / 2);
         return;
       }
 
-      // ================= DIAGONAL IS 100% OPTIONAL =================
-      const isAutoDiagonal = isNaN(d1) || d1 <= 0;
-      if (isAutoDiagonal) {
-        const num = (a * c + b * d) * (a * d + b * c);
-        const den = (a * b + c * d);
-        d1 = Math.sqrt(Math.max(1, num / (den || 1)));
+      // Optional Diagonal Calculation
+      if (isNaN(d1) || d1 <= 0) {
+        d1 = Math.sqrt(Math.max(1, ((a * c + b * d) * (a * d + b * c)) / (a * b + c * d || 1)));
       } else {
-        const minD1 = Math.max(Math.abs(a - b), Math.abs(c - d)) + 0.1;
-        const maxD1 = Math.min(a + b, c + d) - 0.1;
-        if (d1 <= minD1 || d1 >= maxD1) {
-          d1 = Math.max(minD1, Math.min(maxD1, d1));
-        }
+        d1 = Math.max(Math.max(Math.abs(a - b), Math.abs(c - d)) + 0.1, Math.min(Math.min(a + b, c + d) - 0.1, d1));
       }
 
-      // Compute Corner Coordinates
-      const Ax = 0, Ay = 0;
-      const Bx = a, By = 0;
-
+      const Ax = 0, Ay = 0, Bx = a, By = 0;
       const cosCAB = Math.max(-1, Math.min(1, (a * a + d1 * d1 - b * b) / (2 * a * d1)));
       const angCAB = Math.acos(cosCAB);
-      const Cx = d1 * Math.cos(angCAB);
-      const Cy = d1 * Math.sin(angCAB);
+      const Cx = d1 * Math.cos(angCAB), Cy = d1 * Math.sin(angCAB);
 
       const cosCAD = Math.max(-1, Math.min(1, (d * d + d1 * d1 - c * c) / (2 * d * d1)));
-      const angCAD = Math.acos(cosCAD);
-      const angAD = angCAB + angCAD;
-      const Dx = d * Math.cos(angAD);
-      const Dy = d * Math.sin(angAD);
+      const angAD = angCAB + Math.acos(cosCAD);
+      const Dx = d * Math.cos(angAD), Dy = d * Math.sin(angAD);
 
       const poly = [{x: Ax, y: Ay}, {x: Bx, y: By}, {x: Cx, y: Cy}, {x: Dx, y: Dy}];
+      let plotArea = 0.5 * Math.abs((Ax * By - Ay * Bx) + (Bx * Cy - By * Cx) + (Cx * Dy - Cy * Dx) + (Dx * Ay - Dy * Ax));
 
-      // Plot Area
-      let plotArea = 0.5 * Math.abs(
-        (Ax * By - Ay * Bx) + (Bx * Cy - By * Cx) + (Cx * Dy - Cy * Dx) + (Dx * Ay - Dy * Ax)
-      );
-
-      // Setback mapping
       let sbA = sbSide1, sbB = sbSide2, sbC = sbRear, sbD = sbSide1;
       if (roadSide === 'A') { sbA = sbFront; sbC = sbRear; sbB = sbSide2; sbD = sbSide1; }
       else if (roadSide === 'B') { sbB = sbFront; sbD = sbRear; sbA = sbSide1; sbC = sbSide2; }
       else if (roadSide === 'C') { sbC = sbFront; sbA = sbRear; sbB = sbSide1; sbD = sbSide2; }
       else if (roadSide === 'D') { sbD = sbFront; sbB = sbRear; sbA = sbSide2; sbC = sbSide1; }
 
-      // Polygon Offset for Setbacks
       function getOffsetLine(p1, p2, dist) {
-        const dx = p2.x - p1.x;
-        const dy = p2.y - p1.y;
-        const len = Math.hypot(dx, dy) || 1;
-        const nx = -dy / len;
-        const ny = dx / len;
-        return {
-          p1: { x: p1.x + nx * dist, y: p1.y + ny * dist },
-          p2: { x: p2.x + nx * dist, y: p2.y + ny * dist }
-        };
+        const dx = p2.x - p1.x, dy = p2.y - p1.y, len = Math.hypot(dx, dy) || 1;
+        return { p1: { x: p1.x - (dy/len) * dist, y: p1.y + (dx/len) * dist }, p2: { x: p2.x - (dy/len) * dist, y: p2.y + (dx/len) * dist } };
       }
 
-      const lA = getOffsetLine(poly[0], poly[1], sbA);
-      const lB = getOffsetLine(poly[1], poly[2], sbB);
-      const lC = getOffsetLine(poly[2], poly[3], sbC);
-      const lD = getOffsetLine(poly[3], poly[0], sbD);
-
-      function lineIntersection(line1, line2) {
-        const x1 = line1.p1.x, y1 = line1.p1.y, x2 = line1.p2.x, y2 = line1.p2.y;
-        const x3 = line2.p1.x, y3 = line2.p1.y, x4 = line2.p2.x, y4 = line2.p2.y;
-        const denom = (x1 - x2) * (y3 - y4) - (y1 - y2) * (x3 - x4);
+      function lineIntersection(l1, l2) {
+        const denom = (l1.p1.x - l1.p2.x) * (l2.p1.y - l2.p2.y) - (l1.p1.y - l1.p2.y) * (l2.p1.x - l2.p2.x);
         if (Math.abs(denom) < 1e-6) return null;
-        const t = ((x1 - x3) * (y3 - y4) - (y1 - y3) * (x3 - x4)) / denom;
-        return { x: x1 + t * (x2 - x1), y: y1 + t * (y2 - y1) };
+        const t = ((l1.p1.x - l2.p1.x) * (l2.p1.y - l2.p2.y) - (l1.p1.y - l2.p1.y) * (l2.p1.x - l2.p2.x)) / denom;
+        return { x: l1.p1.x + t * (l1.p2.x - l1.p1.x), y: l1.p1.y + t * (l1.p2.y - l1.p1.y) };
       }
 
-      const iA = lineIntersection(lD, lA);
-      const iB = lineIntersection(lA, lB);
-      const iC = lineIntersection(lB, lC);
-      const iD = lineIntersection(lC, lD);
+      const lA = getOffsetLine(poly[0], poly[1], sbA), lB = getOffsetLine(poly[1], poly[2], sbB);
+      const lC = getOffsetLine(poly[2], poly[3], sbC), lD = getOffsetLine(poly[3], poly[0], sbD);
+      const iA = lineIntersection(lD, lA), iB = lineIntersection(lA, lB), iC = lineIntersection(lB, lC), iD = lineIntersection(lC, lD);
 
       let envelopeArea = 0;
       if (iA && iB && iC && iD) {
-        envelopeArea = 0.5 * Math.abs(
-          (iA.x * iB.y - iA.y * iB.x) + (iB.x * iC.y - iB.y * iC.x) + (iC.x * iD.y - iC.y * iD.x) + (iD.x * iA.y - iD.y * iA.x)
-        );
+        envelopeArea = 0.5 * Math.abs((iA.x * iB.y - iA.y * iB.x) + (iB.x * iC.y - iB.y * iC.x) + (iC.x * iD.y - iC.y * iD.x) + (iD.x * iA.y - iD.y * iA.x));
       }
 
-      // Calculations & Unit Conversions
       const areaSqft = unit === 'm' ? plotArea * 10.7639 : plotArea;
       const envelopeSqft = unit === 'm' ? envelopeArea * 10.7639 : envelopeArea;
-      const plinthAllowedSqft = areaSqft * (coveragePct / 100);
+      const plinthAllowedSqft = areaSqft * (covPct / 100);
       const actualFootprintSqft = Math.min(plinthAllowedSqft, envelopeSqft);
       const proposedTotalBuiltSqft = actualFootprintSqft * numFloors;
-      const maxFARAllowedBuiltSqft = areaSqft * farVal;
-      const isFarCompliant = proposedTotalBuiltSqft <= maxFARAllowedBuiltSqft;
+      const maxFARBuiltSqft = areaSqft * farVal;
 
-      // Telemetry Output
       document.getElementById('valPlotArea').textContent = `${Math.round(areaSqft).toLocaleString()} sq.ft`;
       document.getElementById('valPlotTerai').textContent = sqftToTerai(areaSqft);
       document.getElementById('valFootprintActual').textContent = `${Math.round(actualFootprintSqft).toLocaleString()} sq.ft`;
-      document.getElementById('valCoverageSub').textContent = `${coveragePct}% Max Coverage Limit`;
+      document.getElementById('valCoverageSub').textContent = `${covPct}% Max Coverage Limit`;
       document.getElementById('valProposedBuilt').textContent = `${Math.round(proposedTotalBuiltSqft).toLocaleString()} sq.ft`;
       document.getElementById('valFloorSub').textContent = `${numFloors} Storeys Selected`;
 
       const farStatusEl = document.getElementById('valFARStatus');
-      if (isFarCompliant) {
-        farStatusEl.textContent = '✅ Fits FAR';
-        farStatusEl.style.color = '#25D366';
-        document.getElementById('valFARSub').textContent = `Max ${Math.round(maxFARAllowedBuiltSqft).toLocaleString()} sq.ft Allowed (FAR ${farVal})`;
+      if (proposedTotalBuiltSqft <= maxFARBuiltSqft) {
+        farStatusEl.textContent = '✅ Fits FAR'; farStatusEl.style.color = '#25D366';
+        document.getElementById('valFARSub').textContent = `Max ${Math.round(maxFARBuiltSqft).toLocaleString()} sq.ft Allowable`;
       } else {
-        const excess = Math.round(proposedTotalBuiltSqft - maxFARAllowedBuiltSqft);
-        farStatusEl.textContent = '⚠️ Exceeds FAR';
-        farStatusEl.style.color = '#ffaa00';
-        document.getElementById('valFARSub').textContent = `Exceeds by ~${excess.toLocaleString()} sq.ft (Limit: ${Math.round(maxFARAllowedBuiltSqft)} sq.ft)`;
+        farStatusEl.textContent = '⚠️ Exceeds FAR'; farStatusEl.style.color = '#ffaa00';
+        document.getElementById('valFARSub').textContent = `Exceeds by ~${Math.round(proposedTotalBuiltSqft - maxFARBuiltSqft).toLocaleString()} sq.ft`;
       }
 
-      // NBC 205:2024 Check
       const nbcCard = document.getElementById('nbcComplianceCard');
       const nbcTitle = document.getElementById('nbcTitle');
       const nbcDesc = document.getElementById('nbcDesc');
-
       if (numFloors <= 2.5 && actualFootprintSqft <= 1000) {
-        nbcCard.className = 'compliance-banner pass';
-        nbcTitle.textContent = 'NBC 205:2024 Section 8 Compliant (2-Storey Ready-to-Use)';
-        nbcDesc.textContent = `Footprint (${Math.round(actualFootprintSqft)} sq.ft) ≤ 1000 sq.ft. Column: 350×350 mm (4-16Ø + 4-12Ø Fe500), Footing ~1.5m×1.5m, Plinth Beam 250×355 mm (Cl 4.2 & Sec 8).`;
+        nbcCard.className = 'compliance-banner pass'; nbcTitle.textContent = 'NBC 205:2024 Section 8 Compliant';
+        nbcDesc.textContent = `Footprint ≤ 1000 sq.ft. Column: 350×350 mm (4-16Ø + 4-12Ø Fe500), Footing ~1.5m (Cl 4.2 & Sec 8).`;
       } else if (numFloors <= 3.5 && actualFootprintSqft <= 1000) {
-        nbcCard.className = 'compliance-banner pass';
-        nbcTitle.textContent = 'NBC 205:2024 Section 9 Compliant (3-Storey Ready-to-Use)';
-        nbcDesc.textContent = `Footprint (${Math.round(actualFootprintSqft)} sq.ft) ≤ 1000 sq.ft. Column: 400×400 mm for corner/staircase, Footing ~1.9m×1.9m, 3-Storey Detailing applies (Sec 9).`;
+        nbcCard.className = 'compliance-banner pass'; nbcTitle.textContent = 'NBC 205:2024 Section 9 Compliant';
+        nbcDesc.textContent = `Footprint ≤ 1000 sq.ft. Column: 400×400 mm for corner/staircase, Footing ~1.9m (Sec 9).`;
       } else {
-        nbcCard.className = 'compliance-banner warn';
-        nbcTitle.textContent = 'Engineered Structural Analysis Required';
-        nbcDesc.textContent = `Footprint exceeds 1000 sq.ft or exceeds 3 storeys. Must be engineered individually under NBC 105:2020 / IS 456 (Outside NBC 205 RUD scope).`;
+        nbcCard.className = 'compliance-banner warn'; nbcTitle.textContent = 'Engineered Design Required';
+        nbcDesc.textContent = `Footprint > 1000 sq.ft or > 3 storeys. Structural analysis required under NBC 105:2020.`;
       }
 
-      // Tentative Room Schedule
+      // Room Schedule Table
       const scheduleBody = document.getElementById('roomScheduleBody');
       const fp = actualFootprintSqft;
-      let rooms = [];
-      if (layoutStyle === 'commercial') {
-        rooms = [
-          { name: 'Commercial Front Display / Office', zone: 'Ground - Front', w: (a * 0.7).toFixed(0), l: '20', area: Math.round(fp * 0.55) },
-          { name: 'Staircase & Lift Shaft', zone: 'Side Core', w: '8', l: '16', area: Math.round(fp * 0.15) },
-          { name: 'Storage / Restrooms / Pantry', zone: 'Rear Core', w: '12', l: '14', area: Math.round(fp * 0.20) },
-          { name: 'Rear Service Corridor', zone: 'Rear Access', w: '6', l: '15', area: Math.round(fp * 0.10) }
-        ];
-      } else if (layoutStyle === '2bhk' || fp < 850) {
-        rooms = [
-          { name: 'Living Room (Drawing Hall)', zone: 'Ground - Front', w: '14', l: '16', area: Math.round(fp * 0.28) },
-          { name: 'Kitchen & Dining Suite', zone: 'Ground - Side', w: '10', l: '12', area: Math.round(fp * 0.18) },
-          { name: 'Master Bedroom', zone: 'Ground - Rear', w: '12', l: '13', area: Math.round(fp * 0.22) },
-          { name: 'Bedroom 2 / Study', zone: 'Ground - Side', w: '11', l: '12', area: Math.round(fp * 0.16) },
-          { name: 'Dog-Legged Staircase', zone: 'NBC 205 Core', w: '7.5', l: '14', area: Math.round(fp * 0.10) },
-          { name: 'Common Bathroom & Toilet', zone: 'Plumbing Core', w: '5', l: '7', area: Math.round(fp * 0.06) }
-        ];
-      } else {
-        rooms = [
-          { name: 'Formal Living Room (Drawing)', zone: 'Front / Entrance', w: '15', l: '17', area: Math.round(fp * 0.26) },
-          { name: 'Kitchen & Dining Area', zone: 'Southeast / Rear', w: '11', l: '14', area: Math.round(fp * 0.17) },
-          { name: 'Master Suite (Attached Bath)', zone: 'Southwest / Rear', w: '13', l: '14', area: Math.round(fp * 0.20) },
-          { name: 'Bedroom 2 (Children / Guest)', zone: 'North / Side', w: '12', l: '12', area: Math.round(fp * 0.15) },
-          { name: 'Dog-Legged Staircase', zone: 'NBC 205 Cl 10.2 Core', w: '8', l: '15', area: Math.round(fp * 0.11) },
-          { name: 'Common Bathroom & Shaft', zone: 'Plumbing Core', w: '5', l: '8', area: Math.round(fp * 0.06) },
-          { name: 'Verandah / Entrance Foyer', zone: 'Road Access', w: '8', l: '6', area: Math.round(fp * 0.05) }
-        ];
+      let rooms = layoutStyle === 'commercial' ? [
+        { name: 'Commercial Display / Office', zone: 'Ground Front', w: (a*0.7).toFixed(0), l: '20', area: Math.round(fp * 0.55) },
+        { name: 'Staircase & Lift Shaft', zone: 'Side Core', w: '8', l: '16', area: Math.round(fp * 0.15) },
+        { name: 'Restrooms & Pantry', zone: 'Rear Core', w: '12', l: '14', area: Math.round(fp * 0.30) }
+      ] : [
+        { name: 'Living Room (Drawing)', zone: 'Front / Road', w: '15', l: '16', area: Math.round(fp * 0.28) },
+        { name: 'Kitchen & Dining Suite', zone: 'Southeast / Side', w: '11', l: '13', area: Math.round(fp * 0.18) },
+        { name: 'Master Suite (Attached Bath)', zone: 'Southwest / Rear', w: '13', l: '14', area: Math.round(fp * 0.22) },
+        { name: 'Bedroom 2 / Guest', zone: 'North / Side', w: '12', l: '12', area: Math.round(fp * 0.16) },
+        { name: 'Dog-Legged Staircase', zone: 'NBC 205 Core', w: '8', l: '15', area: Math.round(fp * 0.10) },
+        { name: 'Common Bathroom', zone: 'Plumbing Core', w: '5', l: '7', area: Math.round(fp * 0.06) }
+      ];
+
+      scheduleBody.innerHTML = rooms.map(r => `<tr><td><strong>${r.name}</strong></td><td><span class="room-tag">${r.zone}</span></td><td>~${r.w}' × ${r.l}' ft</td><td>${r.area} sq.ft</td></tr>`).join('');
+
+      currentPlanTelemetry = { areaSqft: Math.round(areaSqft), terai: sqftToTerai(areaSqft), footprintActual: Math.round(actualFootprintSqft), proposedBuilt: Math.round(proposedTotalBuiltSqft), maxFAR: Math.round(maxFARBuiltSqft), numFloors, covPct, farVal, rooms };
+
+      // Render on Canvas
+      const minX = Math.min(...poly.map(p => p.x)), maxX = Math.max(...poly.map(p => p.x));
+      const minY = Math.min(...poly.map(p => p.y)), maxY = Math.max(...poly.map(p => p.y));
+      const pad = 65, scale = Math.min((width - 2 * pad) / (maxX - minX || 1), (height - 2 * pad) / (maxY - minY || 1));
+
+      function toScr(p) { return { x: pad + (p.x - minX) * scale, y: height - (pad + (p.y - minY) * scale) }; }
+      const sA = toScr(poly[0]), sB = toScr(poly[1]), sC = toScr(poly[2]), sD = toScr(poly[3]);
+
+      // Plot Boundary
+      ctx.beginPath(); ctx.moveTo(sA.x, sA.y); ctx.lineTo(sB.x, sB.y); ctx.lineTo(sC.x, sC.y); ctx.lineTo(sD.x, sD.y); ctx.closePath();
+      ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 2.5; ctx.stroke();
+
+      // Road Label
+      function drawRoad(p1, p2, txt) {
+        const dx = p2.x - p1.x, dy = p2.y - p1.y, len = Math.hypot(dx, dy) || 1;
+        ctx.save(); ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y);
+        ctx.lineTo(p2.x + (dy/len) * 22, p2.y - (dx/len) * 22); ctx.lineTo(p1.x + (dy/len) * 22, p1.y - (dx/len) * 22); ctx.closePath();
+        ctx.fillStyle = 'rgba(27, 82, 145, 0.35)'; ctx.fill(); ctx.strokeStyle = '#2c72c4'; ctx.setLineDash([4, 4]); ctx.stroke(); ctx.restore();
+        ctx.fillStyle = '#4dabf7'; ctx.font = 'bold 11px JetBrains Mono, monospace'; ctx.textAlign = 'center';
+        ctx.fillText(txt, (p1.x + p2.x)/2 + (dy/len)*12, (p1.y + p2.y)/2 - (dx/len)*12);
       }
 
-      scheduleBody.innerHTML = rooms.map(r => `
-        <tr><td><strong>${r.name}</strong></td><td><span class="room-tag">${r.zone}</span></td><td>~${r.w}' × ${r.l}' ft</td><td>${r.area} sq.ft</td></tr>
-      `).join('');
-
-      currentPlanTelemetry = {
-        areaSqft: Math.round(areaSqft),
-        terai: sqftToTerai(areaSqft),
-        footprintActual: Math.round(actualFootprintSqft),
-        proposedBuilt: Math.round(proposedTotalBuiltSqft),
-        maxFARAllowed: Math.round(maxFARAllowedBuiltSqft),
-        numFloors,
-        coveragePct,
-        farVal,
-        roadSide,
-        rooms
-      };
-
-      // ================= CANVAS DRAWING =================
-      const minX = Math.min(...poly.map(p => p.x));
-      const maxX = Math.max(...poly.map(p => p.x));
-      const minY = Math.min(...poly.map(p => p.y));
-      const maxY = Math.max(...poly.map(p => p.y));
-
-      const pad = 65;
-      const scale = Math.min((width - 2 * pad) / (maxX - minX || 1), (height - 2 * pad) / (maxY - minY || 1));
-
-      function toScreen(p) {
-        return {
-          x: pad + (p.x - minX) * scale,
-          y: height - (pad + (p.y - minY) * scale)
-        };
-      }
-
-      const scrA = toScreen(poly[0]);
-      const scrB = toScreen(poly[1]);
-      const scrC = toScreen(poly[2]);
-      const scrD = toScreen(poly[3]);
-
-      // Grid
-      ctx.strokeStyle = 'rgba(255,255,255,0.04)';
-      ctx.lineWidth = 1;
-      for (let x = 0; x < width; x += 30) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke(); }
-      for (let y = 0; y < height; y += 30) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke(); }
-
-      // Boundary
-      ctx.beginPath();
-      ctx.moveTo(scrA.x, scrA.y);
-      ctx.lineTo(scrB.x, scrB.y);
-      ctx.lineTo(scrC.x, scrC.y);
-      ctx.lineTo(scrD.x, scrD.y);
-      ctx.closePath();
-      ctx.strokeStyle = '#ffffff';
-      ctx.lineWidth = 2.5;
-      ctx.stroke();
-
-      // Road Banner
-      function drawRoadSide(p1, p2, label) {
-        const dx = p2.x - p1.x;
-        const dy = p2.y - p1.y;
-        const len = Math.hypot(dx, dy) || 1;
-        const nx = -dy / len;
-        const ny = dx / len;
-        
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(p1.x, p1.y);
-        ctx.lineTo(p2.x, p2.y);
-        ctx.lineTo(p2.x - nx * 22, p2.y - ny * 22);
-        ctx.lineTo(p1.x - nx * 22, p1.y - ny * 22);
-        ctx.closePath();
-        ctx.fillStyle = 'rgba(27, 82, 145, 0.32)';
-        ctx.fill();
-        ctx.strokeStyle = '#2c72c4';
-        ctx.setLineDash([4, 4]);
-        ctx.stroke();
-        ctx.restore();
-
-        const mx = (p1.x + p2.x) / 2 - nx * 12;
-        const my = (p1.y + p2.y) / 2 - ny * 12;
-        ctx.fillStyle = '#4dabf7';
-        ctx.font = 'bold 11px JetBrains Mono, monospace';
-        ctx.textAlign = 'center';
-        ctx.fillText(label, mx, my);
-      }
-
-      if (roadSide === 'A') drawRoadSide(scrA, scrB, 'ROAD ACCESS (SIDE A)');
-      else if (roadSide === 'B') drawRoadSide(scrB, scrC, 'ROAD ACCESS (SIDE B)');
-      else if (roadSide === 'C') drawRoadSide(scrC, scrD, 'ROAD ACCESS (SIDE C)');
-      else if (roadSide === 'D') drawRoadSide(scrD, scrA, 'ROAD ACCESS (SIDE D)');
+      if (roadSide === 'A') drawRoad(sA, sB, 'ROAD ACCESS (SIDE A)');
+      else if (roadSide === 'B') drawRoad(sB, sC, 'ROAD ACCESS (SIDE B)');
+      else if (roadSide === 'C') drawRoad(sC, sD, 'ROAD ACCESS (SIDE C)');
+      else if (roadSide === 'D') drawRoad(sD, sA, 'ROAD ACCESS (SIDE D)');
 
       // Building Footprint
       if (iA && iB && iC && iD && envelopeArea > 0) {
-        const scaleFactor = Math.min(1.0, Math.sqrt(actualFootprintSqft / (envelopeSqft || 1)));
-        const cenX = (iA.x + iB.x + iC.x + iD.x) / 4;
-        const cenY = (iA.y + iB.y + iC.y + iD.y) / 4;
+        const scFactor = Math.min(1.0, Math.sqrt(actualFootprintSqft / (envelopeSqft || 1)));
+        const cenX = (iA.x + iB.x + iC.x + iD.x) / 4, cenY = (iA.y + iB.y + iC.y + iD.y) / 4;
+        function scPt(p) { return toScr({ x: cenX + (p.x - cenX) * scFactor, y: cenY + (p.y - cenY) * scFactor }); }
+        const fA = scPt(iA), fB = scPt(iB), fC = scPt(iC), fD = scPt(iD);
 
-        function scalePoint(p) {
-          return {
-            x: cenX + (p.x - cenX) * scaleFactor,
-            y: cenY + (p.y - cenY) * scaleFactor
-          };
-        }
+        ctx.beginPath(); ctx.moveTo(fA.x, fA.y); ctx.lineTo(fB.x, fB.y); ctx.lineTo(fC.x, fC.y); ctx.lineTo(fD.x, fD.y); ctx.closePath();
+        ctx.fillStyle = 'rgba(37, 211, 102, 0.15)'; ctx.fill(); ctx.strokeStyle = '#25D366'; ctx.lineWidth = 2.2; ctx.stroke();
 
-        const sIA = toScreen(scalePoint(iA));
-        const sIB = toScreen(scalePoint(iB));
-        const sIC = toScreen(scalePoint(iC));
-        const sID = toScreen(scalePoint(iD));
-
-        // Dashed Setbacks
-        const rawIA = toScreen(iA), rawIB = toScreen(iB), rawIC = toScreen(iC), rawID = toScreen(iD);
-        ctx.save();
-        ctx.setLineDash([4, 4]);
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
-        ctx.beginPath();
-        ctx.moveTo(rawIA.x, rawIA.y); ctx.lineTo(rawIB.x, rawIB.y); ctx.lineTo(rawIC.x, rawIC.y); ctx.lineTo(rawID.x, rawID.y);
-        ctx.closePath(); ctx.stroke();
-        ctx.restore();
-
-        // Solid Footprint
-        ctx.beginPath();
-        ctx.moveTo(sIA.x, sIA.y); ctx.lineTo(sIB.x, sIB.y); ctx.lineTo(sIC.x, sIC.y); ctx.lineTo(sID.x, sID.y);
-        ctx.closePath();
-        ctx.fillStyle = 'rgba(37, 211, 102, 0.12)';
-        ctx.fill();
-        ctx.strokeStyle = '#25D366';
-        ctx.lineWidth = 2.2;
-        ctx.stroke();
-
-        // Tentative Layout Overlay
         if (showTentative) {
-          ctx.save();
-          ctx.beginPath();
-          ctx.moveTo(sIA.x, sIA.y); ctx.lineTo(sIB.x, sIB.y); ctx.lineTo(sIC.x, sIC.y); ctx.lineTo(sID.x, sID.y);
-          ctx.closePath();
-          ctx.clip();
+          ctx.save(); ctx.beginPath(); ctx.moveTo(fA.x, fA.y); ctx.lineTo(fB.x, fB.y); ctx.lineTo(fC.x, fC.y); ctx.lineTo(fD.x, fD.y); ctx.closePath(); ctx.clip();
+          const fpMinX = Math.min(fA.x, fB.x, fC.x, fD.x), fpMaxX = Math.max(fA.x, fB.x, fC.x, fD.x);
+          const fpMinY = Math.min(fA.y, fB.y, fC.y, fD.y), fpMaxY = Math.max(fA.y, fB.y, fC.y, fD.y);
+          const midY = fpMinY + (fpMaxY - fpMinY) * 0.48;
 
-          const fpMinX = Math.min(sIA.x, sIB.x, sIC.x, sID.x);
-          const fpMaxX = Math.max(sIA.x, sIB.x, sIC.x, sID.x);
-          const fpMinY = Math.min(sIA.y, sIB.y, sIC.y, sID.y);
-          const fpMaxY = Math.max(sIA.y, sIB.y, sIC.y, sID.y);
-          const fpW = fpMaxX - fpMinX;
-          const fpH = fpMaxY - fpMinY;
-
-          ctx.strokeStyle = 'rgba(255, 255, 255, 0.55)';
-          ctx.lineWidth = 1.5;
-          ctx.setLineDash([2, 2]);
-
-          const midY = fpMinY + fpH * 0.48;
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.45)'; ctx.lineWidth = 1.5; ctx.setLineDash([2, 2]);
           ctx.beginPath(); ctx.moveTo(fpMinX, midY); ctx.lineTo(fpMaxX, midY); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(fpMinX + (fpMaxX - fpMinX) * 0.62, midY); ctx.lineTo(fpMinX + (fpMaxX - fpMinX) * 0.62, fpMaxY); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(fpMinX + (fpMaxX - fpMinX) * 0.5, fpMinY); ctx.lineTo(fpMinX + (fpMaxX - fpMinX) * 0.5, midY); ctx.stroke();
 
-          const frontDivX = fpMinX + fpW * 0.62;
-          ctx.beginPath(); ctx.moveTo(frontDivX, midY); ctx.lineTo(frontDivX, fpMaxY); ctx.stroke();
-
-          const rearDivX = fpMinX + fpW * 0.50;
-          ctx.beginPath(); ctx.moveTo(rearDivX, fpMinY); ctx.lineTo(rearDivX, midY); ctx.stroke();
-
-          const bathDivX = rearDivX + fpW * 0.25;
-          ctx.beginPath(); ctx.moveTo(bathDivX, fpMinY); ctx.lineTo(bathDivX, fpMinY + fpH * 0.22); ctx.stroke();
-
-          ctx.setLineDash([]);
-
-          function drawRoomTag(name, areaStr, cx, cy) {
-            ctx.fillStyle = '#ffffff'; ctx.font = 'bold 10px Syne, sans-serif'; ctx.textAlign = 'center';
-            ctx.fillText(name, cx, cy - 4);
-            ctx.fillStyle = '#25D366'; ctx.font = '9px JetBrains Mono, monospace';
-            ctx.fillText(areaStr, cx, cy + 8);
-          }
-
-          drawRoomTag('LIVING ROOM', `~${Math.round(fp * 0.26)} sq.ft`, fpMinX + fpW * 0.31, midY + fpH * 0.25);
-          drawRoomTag('STAIRCASE', 'NBC 205 Cl 10.2', frontDivX + (fpMaxX - frontDivX) * 0.5, midY + fpH * 0.25);
-          drawRoomTag('MASTER BED', `~${Math.round(fp * 0.20)} sq.ft`, fpMinX + fpW * 0.25, fpMinY + fpH * 0.25);
-          drawRoomTag('KITCHEN', `~${Math.round(fp * 0.17)} sq.ft`, rearDivX + fpW * 0.25, fpMinY + fpH * 0.32);
-          drawRoomTag('BATH', 'Bath', bathDivX + (fpMaxX - bathDivX) * 0.5, fpMinY + fpH * 0.12);
-
+          ctx.fillStyle = '#ffffff'; ctx.font = 'bold 10px Syne, sans-serif'; ctx.textAlign = 'center';
+          ctx.fillText('LIVING ROOM', fpMinX + (fpMaxX - fpMinX) * 0.3, midY + (fpMaxY - midY) * 0.5);
+          ctx.fillText('STAIRCASE', fpMinX + (fpMaxX - fpMinX) * 0.8, midY + (fpMaxY - midY) * 0.5);
+          ctx.fillText('MASTER BED', fpMinX + (fpMaxX - fpMinX) * 0.25, fpMinY + (midY - fpMinY) * 0.5);
+          ctx.fillText('KITCHEN', fpMinX + (fpMaxX - fpMinX) * 0.75, fpMinY + (midY - fpMinY) * 0.5);
           ctx.restore();
         } else {
-          const fcX = (sIA.x + sIB.x + sIC.x + sID.x) / 4;
-          const fcY = (sIA.y + sIB.y + sIC.y + sID.y) / 4;
           ctx.fillStyle = '#25D366'; ctx.font = 'bold 12px Syne, sans-serif'; ctx.textAlign = 'center';
-          ctx.fillText('BUILDING FOOTPRINT', fcX, fcY - 8);
+          ctx.fillText('BUILDING FOOTPRINT', (fA.x+fB.x+fC.x+fD.x)/4, (fA.y+fB.y+fC.y+fD.y)/4 - 4);
           ctx.font = '11px JetBrains Mono, monospace';
-          ctx.fillText(`${Math.round(actualFootprintSqft).toLocaleString()} sq.ft`, fcX, fcY + 8);
+          ctx.fillText(`${Math.round(actualFootprintSqft).toLocaleString()} sq.ft`, (fA.x+fB.x+fC.x+fD.x)/4, (fA.y+fB.y+fC.y+fD.y)/4 + 12);
         }
       }
 
-      function drawDim(p1, p2, text) {
-        ctx.fillStyle = '#e2e8f0'; ctx.font = '11px JetBrains Mono, monospace'; ctx.textAlign = 'center';
-        ctx.fillText(text, (p1.x + p2.x) / 2, (p1.y + p2.y) / 2 - 6);
-      }
-
-      drawDim(scrA, scrB, `A: ${a}${unit}`);
-      drawDim(scrB, scrC, `B: ${b}${unit}`);
-      drawDim(scrC, scrD, `C: ${c}${unit}`);
-      drawDim(scrD, scrA, `D: ${d}${unit}`);
+      ctx.fillStyle = '#e2e8f0'; ctx.font = '11px JetBrains Mono, monospace'; ctx.textAlign = 'center';
+      ctx.fillText(`A: ${a}${unit}`, (sA.x + sB.x)/2, (sA.y + sB.y)/2 - 6);
+      ctx.fillText(`B: ${b}${unit}`, (sB.x + sC.x)/2, (sB.y + sC.y)/2 - 6);
+      ctx.fillText(`C: ${c}${unit}`, (sC.x + sD.x)/2, (sC.y + sD.y)/2 - 6);
+      ctx.fillText(`D: ${d}${unit}`, (sD.x + sA.x)/2, (sD.y + sA.y)/2 - 6);
     }
 
     // ================= EXPORTS =================
@@ -1826,73 +2222,20 @@
     function exportSitePlanPDF() {
       const canvas = document.getElementById('sitePlanCanvas');
       const imgData = canvas.toDataURL('image/png');
-
-      const roomRows = (currentPlanTelemetry.rooms || []).map(r => `
-        <tr><td>${r.name}</td><td>${r.zone}</td><td>~${r.w}' × ${r.l}' ft</td><td>${r.area} sq.ft</td></tr>
-      `).join('');
-
-      const printWindow = window.open('', '_blank');
-      printWindow.document.write(`
-        <html>
-        <head>
-          <title>Tentative Site & Floor Planning Report - Chetan Interiors</title>
-          <style>
-            body { font-family: -apple-system, sans-serif; padding: 30px; color: #111; }
-            .header { border-bottom: 2px solid #0e273f; padding-bottom: 15px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-            .title { font-size: 20px; font-weight: bold; color: #0e273f; }
-            .sub { font-size: 13px; color: #666; }
-            .plan-img { width: 100%; max-height: 400px; object-fit: contain; border: 1px solid #ccc; margin: 15px 0; background: #0b1017; }
-            table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; }
-            th, td { border: 1px solid #ddd; padding: 9px; font-size: 12px; text-align: left; }
-            th { background: #f5f5f5; }
-            .badge { background: #e6fcf5; color: #0ca678; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
-          </style>
-        </head>
-        <body>
-          <div class="header">
-            <div>
-              <div class="title">SCALE AND SPACES PRIVATE LIMITED</div>
-              <div class="sub">Er. Chetan Kumar Sarraf • Civil Engineer & Interior Designer • Birgunj, Nepal</div>
-            </div>
-            <div style="text-align: right; font-size: 12px; color: #777;">
-              Date: ${new Date().toLocaleDateString('en-US')}<br>Bylaws: NBC 205:2024 / NBC 105:2020
-            </div>
-          </div>
-          <h3>2D Site Clearance & Tentative Floor Layout Idea</h3>
-          <img src="${imgData}" class="plan-img" />
-          <h3>Municipal Site Telemetry Summary</h3>
-          <table>
-            <tr><th>Metric</th><th>Calculated Value</th><th>Remarks</th></tr>
-            <tr><td>Total Plot Area</td><td>${currentPlanTelemetry.areaSqft || 0} sq.ft</td><td>${currentPlanTelemetry.terai || ''}</td></tr>
-            <tr><td>Actual Ground Footprint</td><td>${currentPlanTelemetry.footprintActual || 0} sq.ft</td><td>Within Setbacks &amp; Ground Coverage (${currentPlanTelemetry.coveragePct}%)</td></tr>
-            <tr><td>Target Storeys</td><td>${currentPlanTelemetry.numFloors} Storeys</td><td>Selected by Owner/Client</td></tr>
-            <tr><td>Proposed Total Built-Up</td><td>${currentPlanTelemetry.proposedBuilt || 0} sq.ft</td><td>FAR ${currentPlanTelemetry.farVal} Allowance: ${currentPlanTelemetry.maxFARAllowed} sq.ft</td></tr>
-            <tr><td>NBC 205:2024 Category C</td><td colspan="2"><span class="badge">Verified via Ready-to-Use Guidelines (Cl 4.2)</span></td></tr>
-          </table>
-          <h3>Tentative Architectural Room Feasibility</h3>
-          <table>
-            <tr><th>Room / Space</th><th>Zoning &amp; Level</th><th>Approx Dimensions</th><th>Estimated Area</th></tr>
-            ${roomRows}
-          </table>
-          <div style="margin-top: 30px; display: flex; justify-content: space-between; font-size: 12px; border-top: 1px solid #ccc; padding-top: 15px;">
-            <div>Prepared by: <strong>Er. Chetan Kr. Sarraf</strong></div>
-            <div>Official Stamp & Signature: _______________________</div>
-          </div>
-        </body>
-        </html>
-      `);
-      printWindow.document.close();
-      printWindow.focus();
-      setTimeout(() => { printWindow.print(); }, 500);
+      const roomRows = (currentPlanTelemetry.rooms || []).map(r => `<tr><td>${r.name}</td><td>${r.zone}</td><td>~${r.w}' × ${r.l}' ft</td><td>${r.area} sq.ft</td></tr>`).join('');
+      const w = window.open('', '_blank');
+      w.document.write(`<html><head><title>Site Planning Report</title><style>body{font-family:sans-serif;padding:30px;color:#111;}table{width:100%;border-collapse:collapse;margin:15px 0;}th,td{border:1px solid #ddd;padding:8px;font-size:12px;text-align:left;}</style></head><body><h2>SCALE AND SPACES PRIVATE LIMITED</h2><p>Er. Chetan Kumar Sarraf • Civil Engineer & Interior Designer</p><img src="${imgData}" style="width:100%;max-height:380px;object-fit:contain;background:#0b1017;" /><h3>Plot Telemetry</h3><table><tr><th>Metric</th><th>Value</th></tr><tr><td>Plot Area</td><td>${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})</td></tr><tr><td>Footprint</td><td>${currentPlanTelemetry.footprintActual} sq.ft</td></tr><tr><td>Storeys</td><td>${currentPlanTelemetry.numFloors} Storeys</td></tr></table><h3>Tentative Room Feasibility</h3><table><tr><th>Room</th><th>Zone</th><th>Size</th><th>Area</th></tr>${roomRows}</table></body></html>`);
+      w.document.close();
+      w.focus();
+      setTimeout(() => w.print(), 500);
     }
 
     function sharePlanWhatsApp() {
-      const msg = `*Automated Site & Floor Planning Report - Chetan Interiors*%0A%0A*Plot Area:* ${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})%0A*Footprint:* ${currentPlanTelemetry.footprintActual} sq.ft (${currentPlanTelemetry.coveragePct}%%25)%0A*Proposed Storeys:* ${currentPlanTelemetry.numFloors} Storeys%0A*Proposed Built-up:* ${currentPlanTelemetry.proposedBuilt} sq.ft%0A*FAR Limit:* ${currentPlanTelemetry.maxFARAllowed} sq.ft%0A*NBC 205:2024 Detailing:* Verified%0A%0AHi Chetan, I tested this tentative site and room layout on your website.`;
+      const msg = `*Automated Site Planning Report - Chetan Interiors*%0A*Plot Area:* ${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})%0A*Footprint:* ${currentPlanTelemetry.footprintActual} sq.ft%0A*Storeys:* ${currentPlanTelemetry.numFloors}%0A*Proposed Built-up:* ${currentPlanTelemetry.proposedBuilt} sq.ft%0AHi Chetan, I tested this layout on your website.`;
       window.open(`https://wa.me/9779766188838?text=${msg}`, '_blank');
     }
 
-    // ================= RESILIENT GOOGLE SHEETS LIVE SYNC ENGINE =================
-    // Supports direct fetch + automatic JSONP fallback (works even on local file://)
+    // ================= RESILIENT GOOGLE SHEETS LIVE SYNC =================
     function fetchSheetJSONP(sheetId, tabName) {
       return new Promise((resolve) => {
         const callbackName = 'gvizCallback_' + Math.floor(Math.random() * 1000000);
@@ -1900,12 +2243,9 @@
           delete window[callbackName];
           if (script && script.parentNode) script.parentNode.removeChild(script);
           if (json && json.table && json.table.rows) {
-            resolve(json.table.rows.map(r => (r.c || []).map(cell => (cell && cell.v !== null && cell.v !== undefined ? cell.v : ''))));
-          } else {
-            resolve([]);
-          }
+            resolve(json.table.rows.map(r => (r.c || []).map(cell => (cell && cell.v !== null ? cell.v : ''))));
+          } else { resolve([]); }
         };
-
         const script = document.createElement('script');
         script.src = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=responseHandler:${callbackName}&sheet=${encodeURIComponent(tabName)}&t=${Date.now()}`;
         script.onerror = function() {
@@ -1921,155 +2261,93 @@
       try {
         const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(tabName)}&t=${Date.now()}`;
         const res = await fetch(url);
-        if (!res.ok) throw new Error('Fetch failed');
+        if (!res.ok) throw new Error();
         const txt = await res.text();
         const json = JSON.parse(txt.substring(txt.indexOf('{'), txt.lastIndexOf('}') + 1));
         if (!json.table || !json.table.rows) return [];
-        return json.table.rows.map(r => (r.c || []).map(cell => (cell && cell.v !== null && cell.v !== undefined ? cell.v : '')));
-      } catch (err) {
-        // Fallback to JSONP (fixes CORS on local file:// and restrictive network environments)
+        return json.table.rows.map(r => (r.c || []).map(c => (c && c.v !== null ? c.v : '')));
+      } catch (e) {
         return await fetchSheetJSONP(sheetId, tabName);
       }
     }
 
     async function loadGoogleSheetLiveSync(sheetId) {
-      console.log("🔄 Initiating Google Sheet Live Sync for ID:", sheetId);
-
-      // 1. Rates
+      console.log("🔄 Starting Google Sheets Sync...");
+      // Rates
       try {
-        const rates = await fetchGoogleTab(sheetId, 'Rates');
-        if (rates.length > 0) {
-          const valid = rates.filter(r => r[0] && String(r[0]).trim() !== '');
-          if (valid.length > 0) {
-            const tbody = document.getElementById('ratesTableBody');
-            tbody.innerHTML = valid.map(r => `
-              <tr><td><strong>${r[0]}</strong></td><td>${r[1] || 'Civil'}</td><td>${r[2] || ''}</td><td><span class="rate-pill">${r[3] || ''}</span></td><td>${r[4] || currentMonthYear}</td></tr>
-            `).join('');
-            console.log("✅ Synced Rates Tab:", valid.length, "items");
-          }
+        const r = await fetchGoogleTab(sheetId, 'Rates');
+        const v = r.filter(row => row[0] && String(row[0]).trim() !== '');
+        if (v.length > 0) {
+          document.getElementById('ratesTableBody').innerHTML = v.map(row => `<tr><td><strong>${row[0]}</strong></td><td>${row[1]||'Civil'}</td><td>${row[2]||''}</td><td><span class="rate-pill">${row[3]||''}</span></td><td>${row[4]||currentMonthYear}</td></tr>`).join('');
+          console.log("✅ Rates Synced");
         }
-      } catch (e) { console.warn("Rates tab using local fallback"); }
+      } catch (e) {}
 
-      // 2. Articles
+      // Articles
       try {
-        const articles = await fetchGoogleTab(sheetId, 'Articles');
-        if (articles.length > 0) {
-          const valid = articles.filter(r => r[0] && String(r[0]).trim() !== '');
-          if (valid.length > 0) {
-            const container = document.getElementById('articlesContainer');
-            container.innerHTML = valid.map(r => `
-              <article class="article-card">
-                <div class="article-img-wrap"><img src="${formatImageUrl(r[3]) || 'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg'}" alt="${r[0]}" width="400" height="240" loading="lazy" /></div>
-                <div class="article-content">
-                  <div>
-                    <div class="article-meta"><span>${r[2] || 'Planning'}</span><span>${r[1] || currentMonthYear}</span></div>
-                    <div class="item-title">${r[0]}</div>
-                    <p>${r[4] || ''}</p>
-                  </div>
-                  <a href="https://wa.me/9779766188838?text=Hi%20Chetan,%20I%20read%20your%20article%20'${encodeURIComponent(r[0])}'" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Consult on this Topic <i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-              </article>
-            `).join('');
-            console.log("✅ Synced Articles Tab:", valid.length, "items");
-          }
+        const a = await fetchGoogleTab(sheetId, 'Articles');
+        const v = a.filter(row => row[0] && String(row[0]).trim() !== '');
+        if (v.length > 0) {
+          document.getElementById('articlesContainer').innerHTML = v.map(row => `<article class="article-card"><div class="article-img-wrap"><img src="${formatImageUrl(row[3])||'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg'}" alt="${row[0]}" width="400" height="240" loading="lazy" /></div><div class="article-content"><div><div class="article-meta"><span>${row[2]||'Planning'}</span><span>${row[1]||currentMonthYear}</span></div><div class="item-title">${row[0]}</div><p>${row[4]||''}</p></div><a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Discuss <i class="fa-brands fa-whatsapp"></i></a></div></article>`).join('');
+          console.log("✅ Articles Synced");
         }
-      } catch (e) { console.warn("Articles tab using local fallback"); }
+      } catch (e) {}
 
-      // 3. Posts (Floating Album)
+      // Posts (Reel)
       try {
-        const posts = await fetchGoogleTab(sheetId, 'Posts');
-        if (posts.length > 0) {
-          const valid = posts.filter(r => (r[0] || r[1]) && String(r[4] || 'Active').toLowerCase() !== 'inactive');
-          if (valid.length > 0) {
-            const track = document.getElementById('postsMarqueeTrack');
-            const cards = valid.map(([title, imgUrl, caption, linkUrl]) => `
-              <a class="floating-post-card" href="${linkUrl || '#contact'}" target="${linkUrl ? '_blank' : '_self'}">
-                <div class="floating-post-img-wrap"><img src="${formatImageUrl(imgUrl)}" alt="${title || 'Project'}" loading="lazy" /></div>
-                <div class="floating-post-body">
-                  <div class="floating-post-title">${title || 'Project'}</div>
-                  <p class="floating-post-caption">${caption || 'Chetan Interior'}</p>
-                </div>
-              </a>
-            `).join('');
-            track.innerHTML = cards + cards;
-            console.log("✅ Synced Posts (Floating Reel) Tab:", valid.length, "items");
-          }
+        const p = await fetchGoogleTab(sheetId, 'Posts');
+        const v = p.filter(row => (row[0] || row[1]) && String(row[4]||'Active').toLowerCase() !== 'inactive');
+        if (v.length > 0) {
+          const cards = v.map(([title, img, cap, link]) => `<a class="floating-post-card" href="${link||'#contact'}"><div class="floating-post-img-wrap"><img src="${formatImageUrl(img)}" alt="${title||'Project'}" loading="lazy" /></div><div class="floating-post-body"><div class="floating-post-title">${title||'Project'}</div><p class="floating-post-caption">${cap||'Chetan Interior'}</p></div></a>`).join('');
+          document.getElementById('postsMarqueeTrack').innerHTML = cards + cards;
+          console.log("✅ Posts Reel Synced");
         }
-      } catch (e) { console.warn("Posts tab using local fallback"); }
+      } catch (e) {}
 
-      // 4. Team
+      // Team
       try {
-        const team = await fetchGoogleTab(sheetId, 'Team');
-        if (team.length > 0) {
-          const valid = team.filter(r => r[0]);
-          if (valid.length > 0) {
-            const container = document.getElementById('teamContainer');
-            container.innerHTML = valid.map(([name, role, photo, bio]) => `
-              <div class="team-card">
-                <img src="${formatImageUrl(photo) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
-                <div class="team-name">${name}</div>
-                <div class="team-role">${role || 'Associate'}</div>
-                <p class="team-bio">${bio || ''}</p>
-              </div>
-            `).join('');
-            console.log("✅ Synced Team Tab:", valid.length, "items");
-          }
+        const t = await fetchGoogleTab(sheetId, 'Team');
+        const v = t.filter(row => row[0]);
+        if (v.length > 0) {
+          document.getElementById('teamContainer').innerHTML = v.map(([name, role, photo, bio]) => `<div class="team-card"><img src="${formatImageUrl(photo)||'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" /><div class="team-name">${name}</div><div class="team-role">${role||'Associate'}</div><p class="team-bio">${bio||''}</p></div>`).join('');
+          console.log("✅ Team Synced");
         }
-      } catch (e) { console.warn("Team tab using local fallback"); }
+      } catch (e) {}
 
-      // 5. Downloads
+      // Downloads
       try {
-        const dl = await fetchGoogleTab(sheetId, 'Downloads');
-        if (dl.length > 0) {
-          const valid = dl.filter(r => r[0] && r[2]);
-          if (valid.length > 0) {
-            const container = document.getElementById('downloadsContainer');
-            container.innerHTML = valid.map(([title, category, url, size]) => `
-              <div class="download-card">
-                <div class="download-meta">
-                  <h4>${title}</h4>
-                  <span>${category || 'Resource'} ${size ? '• ' + size : ''}</span>
-                </div>
-                <a class="btn btn-primary" href="${url}" target="_blank" download>Download <i class="fa-solid fa-download"></i></a>
-              </div>
-            `).join('');
-            console.log("✅ Synced Downloads Tab:", valid.length, "items");
-          }
+        const d = await fetchGoogleTab(sheetId, 'Downloads');
+        const v = d.filter(row => row[0] && row[2]);
+        if (v.length > 0) {
+          document.getElementById('downloadsContainer').innerHTML = v.map(([title, cat, url, size]) => `<div class="download-card"><div class="download-meta"><h4>${title}</h4><span>${cat||'Resource'} ${size?'• '+size:''}</span></div><a class="btn btn-primary" href="${url}" target="_blank" download>Download <i class="fa-solid fa-download"></i></a></div>`).join('');
+          console.log("✅ Downloads Synced");
         }
-      } catch (e) { console.warn("Downloads tab using local fallback"); }
+      } catch (e) {}
     }
 
-    // BOQ Estimator
+    // BOQ & Modal
     function calculateFullBOQ() {
       const scope = document.getElementById('boqScope').value;
       const area = parseInt(document.getElementById('boqArea').value, 10) || 350;
       document.getElementById('boqAreaDisplay').textContent = `${area} sq.ft`;
-      let minRate = 65, maxRate = 110;
-      if (scope === 'tier1') { minRate = 25; maxRate = 45; }
-      else if (scope === 'tier2') { minRate = 65; maxRate = 110; }
-      else if (scope === 'tier3') { minRate = 1600; maxRate = 2800; }
-      document.getElementById('boqPriceOut').textContent = `Rs. ${(area * minRate).toLocaleString()} – ${(area * maxRate).toLocaleString()}`;
+      const min = scope === 'tier1' ? 25 : scope === 'tier2' ? 65 : 1600;
+      const max = scope === 'tier1' ? 45 : scope === 'tier2' ? 110 : 2800;
+      document.getElementById('boqPriceOut').textContent = `Rs. ${(area * min).toLocaleString()} – ${(area * max).toLocaleString()}`;
     }
 
     function exportFullBOQToWhatsApp() {
-      const area = document.getElementById('boqArea').value;
-      const price = document.getElementById('boqPriceOut').textContent;
-      window.open(`https://wa.me/9779766188838?text=*BOQ Inquiry - Birgunj*%0A*Area:* ${area} sq.ft%0A*Investment:* ${encodeURIComponent(price)}`, '_blank');
+      const a = document.getElementById('boqArea').value, p = document.getElementById('boqPriceOut').textContent;
+      window.open(`https://wa.me/9779766188838?text=*BOQ Inquiry*%0A*Area:* ${a} sq.ft%0A*Investment:* ${encodeURIComponent(p)}`, '_blank');
     }
 
-    // Modal
-    function openModal(title, category, desc, imgSrc) {
-      document.getElementById('modalTitle').textContent = title;
-      document.getElementById('modalCategory').textContent = category;
-      document.getElementById('modalDesc').textContent = desc;
-      document.getElementById('modalImg').src = imgSrc;
-      document.getElementById('projectModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
+    function openModal(t, c, d, img) {
+      document.getElementById('modalTitle').textContent = t; document.getElementById('modalCategory').textContent = c;
+      document.getElementById('modalDesc').textContent = d; document.getElementById('modalImg').src = img;
+      document.getElementById('projectModal').classList.add('open'); document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
-      document.getElementById('projectModal').classList.remove('open');
-      document.body.style.overflow = 'auto';
+      document.getElementById('projectModal').classList.remove('open'); document.body.style.overflow = 'auto';
     }
   </script>
 </body>
