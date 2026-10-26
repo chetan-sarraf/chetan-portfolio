@@ -244,16 +244,16 @@
 
     /* Navigation Capsule */
     .navbar-capsule {
-      position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 94%; max-width: 1220px;
+      position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 1260px;
       background: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
       border: 1px solid var(--border-navy); border-radius: var(--radius-pill); z-index: 9999;
-      padding: 0.55rem 1.2rem; box-shadow: var(--shadow-subtle); transition: var(--transition);
+      padding: 0.55rem 1.1rem; box-shadow: var(--shadow-subtle); transition: var(--transition);
     }
     .nav-container { display: flex; justify-content: space-between; align-items: center; }
-    .nav-links { display: flex; align-items: center; gap: 0.2rem; }
+    .nav-links { display: flex; align-items: center; gap: 0.15rem; }
     .nav-links a {
-      font-size: 0.78rem; font-weight: 600; color: var(--text-muted); padding: 0.45rem 0.65rem;
-      border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition);
+      font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.55rem;
+      border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition); white-space: nowrap;
     }
     .nav-links a:hover { color: var(--text-main); background: var(--brand-grey-soft); }
     .nav-links a.active { color: #ffffff; background: var(--brand-navy); font-weight: 600; }
@@ -336,7 +336,153 @@
     }
     .skill-tag span { color: var(--accent-azure); font-weight: 700; font-family: var(--font-mono); font-size: 0.72rem; }
 
-    /* Before/After with Clip-Path (Eliminates image misalignment) */
+    /* ================= 1. TEAM SECTION ================= */
+    .team-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem; margin-top: 3.5rem;
+    }
+    .team-card {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md); padding: 2.2rem 1.8rem; text-align: center;
+      transition: var(--transition); box-shadow: var(--shadow-subtle); display: flex;
+      flex-direction: column; align-items: center;
+    }
+    .team-card:hover { border-color: var(--border-navy); transform: translateY(-5px); box-shadow: var(--shadow-elevated); }
+    .team-avatar {
+      width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+      margin-bottom: 1.2rem; border: 3px solid var(--accent-azure); box-shadow: var(--shadow-subtle);
+    }
+    .team-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--text-main); margin-bottom: 0.3rem; font-weight: 700; }
+    .team-role { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-azure); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.8rem; font-weight: 600; }
+    .team-bio { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ================= 2. CONTINUOUS FLOATING / SLIDING POSTS MARQUEE ================= */
+    .posts-marquee-section {
+      background: var(--bg-surface-elevated);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: clamp(3.5rem, 6vw, 5rem) 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .posts-marquee-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      user-select: none;
+      padding: 15px 0;
+    }
+    .posts-marquee-track {
+      display: flex;
+      gap: 1.8rem;
+      width: max-content;
+      animation: postsMarqueeScroll 38s linear infinite;
+      will-change: transform;
+    }
+    .posts-marquee-wrapper:hover .posts-marquee-track {
+      animation-play-state: paused;
+    }
+    @keyframes postsMarqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .floating-post-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      width: 310px;
+      flex-shrink: 0;
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition);
+      display: block;
+      color: inherit;
+    }
+    .floating-post-card:hover {
+      border-color: var(--border-navy);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-elevated);
+    }
+    .floating-post-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 210px;
+      overflow: hidden;
+      background: #11151c;
+    }
+    .floating-post-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .floating-post-card:hover .floating-post-img-wrap img {
+      transform: scale(1.08);
+    }
+    .floating-post-body {
+      padding: 1.2rem 1.4rem;
+    }
+    .floating-post-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+    }
+    .floating-post-caption {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ================= 3. DOWNLOADS SECTION ================= */
+    .downloads-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+    .download-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.2rem;
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition);
+    }
+    .download-card:hover {
+      border-color: var(--border-navy);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-elevated);
+    }
+    .download-meta h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--text-main);
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+    .download-meta span {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--brand-grey);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .btn-download-action {
+      flex-shrink: 0;
+      padding: 0.65rem 1.2rem;
+      font-size: 0.82rem;
+      min-height: 40px;
+    }
+
+    /* Before/After with Clip-Path */
     .trans-texture { bottom: -60px; left: -60px; width: 600px; height: 600px; max-width: 60vw; }
     .before-after-container {
       max-width: 980px; margin: 3.5rem auto 0; position: relative; border-radius: var(--radius-lg);
@@ -365,7 +511,7 @@
     .ba-badge-left { left: 16px; }
     .ba-badge-right { right: 16px; }
 
-    /* ================= FULL ROOM & PROJECT BOQ TOOLKIT ================= */
+    /* BOQ Toolkit */
     .boq-toolkit-card {
       background: var(--bg-surface); border: 1px solid var(--border-navy);
       border-radius: var(--radius-lg); padding: clamp(2rem, 5vw, 4rem);
@@ -404,7 +550,7 @@
     }
     @media (max-width: 600px) { .boq-itemized-list { grid-template-columns: 1fr; } }
 
-    /* ================= UNIFIED CALCULATION & ENGINEERING HUB ================= */
+    /* Engineering Hub */
     .hub-container {
       max-width: 1080px; margin: 3rem auto 0; background: var(--bg-surface);
       border: 1px solid var(--border-navy); border-radius: var(--radius-lg);
@@ -461,7 +607,7 @@
     .calc-output-val { font-family: var(--font-display); font-size: clamp(1.6rem, 4.5vw, 2.3rem); color: var(--text-main); font-weight: 800; line-height: 1.15; margin-bottom: 0.5rem; }
     .calc-breakdown-list { font-size: 0.9rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 0; }
 
-    /* Live Rates Table */
+    /* Rates Table */
     .rates-table-wrap {
       margin-top: 3.5rem; background: var(--bg-surface); border: 1px solid var(--border-navy);
       border-radius: var(--radius-lg); overflow-x: auto; box-shadow: var(--shadow-subtle); -webkit-overflow-scrolling: touch;
@@ -476,7 +622,7 @@
     .rates-table tr:hover td { background: var(--brand-navy-soft); color: var(--text-main); }
     .rate-pill { font-family: var(--font-mono); font-weight: 700; color: var(--accent-azure); }
 
-    /* Dynamic Showcase & Social Hub */
+    /* Showcase */
     .showcase-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem; margin-top: 3.5rem;
@@ -503,7 +649,7 @@
     .item-title { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.6rem; font-weight: 700; }
     .showcase-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.2rem; }
 
-    /* Articles / Blog */
+    /* Articles */
     .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
     .article-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
@@ -754,11 +900,14 @@
         <div class="nav-links" id="navLinks">
           <a href="#home" class="nav-item active">Overview</a>
           <a href="#about" class="nav-item">About</a>
+          <a href="#team" class="nav-item">Team</a>
           <a href="#boq-toolkit" class="nav-item">BOQ Toolkit</a>
           <a href="#hub" class="nav-item">Studio Hub</a>
           <a href="#showcase" class="nav-item">Live Works</a>
+          <a href="#posts-gallery" class="nav-item">Live Reel</a>
           <a href="#rates" class="nav-item">Rates</a>
           <a href="#articles" class="nav-item">Journal</a>
+          <a href="#downloads" class="nav-item">Downloads</a>
           <a href="#portfolio" class="nav-item">Portfolio</a>
           <a href="#faq" class="nav-item">FAQs</a>
           <a href="#contact" class="nav-item btn-nav-capsule">Consultation</a>
@@ -892,6 +1041,29 @@
     </div>
   </section>
 
+  <!-- ================= TEAM SECTION (LIVE SHEET) ================= -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge">
+          <span class="dot"></span> Expert Studio Crew
+        </div>
+        <h2 class="section-title">Meet Our Studio &amp; <em>Engineering Team</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Civil engineers, 3D visualizers, and project supervisors dedicated to turning blueprints into living luxury.</p>
+      </div>
+
+      <div class="team-grid" id="teamContainer">
+        <!-- Default Initial Card -->
+        <div class="team-card">
+          <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Chetan Kumar Sarraf" class="team-avatar" />
+          <div class="team-name">Er. Chetan Kr. Sarraf</div>
+          <div class="team-role">Civil Engineer &amp; Lead Designer</div>
+          <p class="team-bio">Specializing in structural execution blueprints, BOQ valuation, and photorealistic 3D interior design in Birgunj.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= ROOM & PROJECT BOQ ESTIMATOR TOOLKIT ================= -->
   <section class="section section-with-texture" id="boq-toolkit">
     <img src="https://i.postimg.cc/HJzv3L6V/05t.png" alt="Blueprint geometric texture" class="watermark-texture estimator-texture" width="600" height="600" loading="lazy" />
@@ -1016,7 +1188,7 @@
           </button>
         </div>
 
-        <!-- ================= 1. INTERIOR DESIGN TOOLS ================= -->
+        <!-- 1. INTERIOR DESIGN TOOLS -->
         <div id="interiorToolsSuite">
           <div class="tool-selector-grid">
             <button class="tool-chip active" onclick="switchSubTool(this, 'int-paint')">🎨 Paint &amp; Putty</button>
@@ -1027,7 +1199,6 @@
             <button class="tool-chip" onclick="switchSubTool(this, 'int-ac')">❄️ AC Cooling Tonnage</button>
           </div>
 
-          <!-- Tool: Paint -->
           <div class="tool-panel active" id="tool-int-paint">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Room Length (Feet):</label><input type="number" id="paintL" value="14" oninput="calcPaint()" /></div>
@@ -1044,7 +1215,6 @@
             </div>
           </div>
 
-          <!-- Tool: Ceiling -->
           <div class="tool-panel" id="tool-int-ceiling">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Room Length (Feet):</label><input type="number" id="ceilL" value="16" oninput="calcCeiling()" /></div>
@@ -1067,7 +1237,6 @@
             </div>
           </div>
 
-          <!-- Tool: Lighting Lux -->
           <div class="tool-panel" id="tool-int-lighting">
             <div class="calc-box-grid">
               <div class="calc-input-group">
@@ -1099,7 +1268,6 @@
             </div>
           </div>
 
-          <!-- Tool: Kitchen -->
           <div class="tool-panel" id="tool-int-kitchen">
             <div class="calc-box-grid">
               <div class="calc-input-group">
@@ -1122,7 +1290,6 @@
             </div>
           </div>
 
-          <!-- Tool: Curtains -->
           <div class="tool-panel" id="tool-int-curtain">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Window / Door Width (Inches):</label><input type="number" id="curtW" value="72" oninput="calcCurtains()" /></div>
@@ -1145,7 +1312,6 @@
             </div>
           </div>
 
-          <!-- Tool: AC Tonnage -->
           <div class="tool-panel" id="tool-int-ac">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Room Area (sq.ft):</label><input type="number" id="acArea" value="180" oninput="calcAC()" /></div>
@@ -1168,7 +1334,7 @@
           </div>
         </div>
 
-        <!-- ================= 2. CIVIL & ESTIMATION TOOLS ================= -->
+        <!-- 2. CIVIL & ESTIMATION TOOLS -->
         <div id="civilToolsSuite" style="display: none;">
           <div class="tool-selector-grid">
             <button class="tool-chip active" onclick="switchSubTool(this, 'civ-plinth')">📐 Allowable Plinth &amp; BHK</button>
@@ -1179,7 +1345,6 @@
             <button class="tool-chip" onclick="switchSubTool(this, 'civ-land')">🗺️ Nepal Land &amp; Trace</button>
           </div>
 
-          <!-- Sub-Tool: Plinth Area & Road Widening Calculator -->
           <div class="tool-panel active" id="tool-civ-plinth">
             <div class="calc-box-grid">
               <div class="calc-input-group">
@@ -1205,7 +1370,6 @@
             </div>
           </div>
 
-          <!-- Sub-Tool: Advanced Brickwork with Openings Deduction -->
           <div class="tool-panel" id="tool-civ-brick">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Wall Length (Feet):</label><input type="number" id="brkAdvL" value="30" oninput="calcAdvancedBrick()" /></div>
@@ -1236,7 +1400,6 @@
             </div>
           </div>
 
-          <!-- Sub-Tool: Full Nepal House Construction Cost Estimator -->
           <div class="tool-panel" id="tool-civ-cost">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Ground Plinth Area (sq.ft):</label><input type="number" id="housePlinth" value="1000" oninput="calcHouseCost()" /></div>
@@ -1267,7 +1430,6 @@
             </div>
           </div>
 
-          <!-- Sub-Tool: Concrete RCC Mix Design -->
           <div class="tool-panel" id="tool-civ-rcc">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Length (Feet):</label><input type="number" id="rccL" value="20" oninput="calcRCC()" /></div>
@@ -1291,7 +1453,6 @@
             </div>
           </div>
 
-          <!-- Sub-Tool: Steel Rebar & Stirrup Cutting Length -->
           <div class="tool-panel" id="tool-civ-steel">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Member Width B (mm):</label><input type="number" id="tieB" value="250" oninput="calcStirrupTie()" /></div>
@@ -1308,7 +1469,6 @@
             </div>
           </div>
 
-          <!-- Sub-Tool: Nepal Land & Trace Map Converter -->
           <div class="tool-panel" id="tool-civ-land">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Cadastral Trace Scale:</label>
@@ -1330,7 +1490,7 @@
           </div>
         </div>
 
-        <!-- ================= 3. NBC 205 (2081) & MUNICIPAL SUITE ================= -->
+        <!-- 3. NBC 205 & MUNICIPAL SUITE -->
         <div id="nbcToolsSuite" style="display: none;">
           <div class="tool-selector-grid">
             <button class="tool-chip active" onclick="switchSubTool(this, 'nbc-pga')">🇳🇵 753 Local Units PGA (NBC 2024)</button>
@@ -1340,7 +1500,6 @@
             <button class="tool-chip" onclick="switchSubTool(this, 'nbc-septic')">🚰 Septic Tank &amp; Soak Pit</button>
           </div>
 
-          <!-- NBC Tool: PGA Lookup -->
           <div class="tool-panel active" id="tool-nbc-pga">
             <div class="calc-box-grid">
               <div class="calc-input-group">
@@ -1369,7 +1528,6 @@
             </div>
           </div>
 
-          <!-- NBC Tool: Member Detailing -->
           <div class="tool-panel" id="tool-nbc-detailing">
             <div class="calc-box-grid">
               <div class="calc-input-group">
@@ -1397,7 +1555,6 @@
             </div>
           </div>
 
-          <!-- NBC Tool: Soil Dropping Brick Method (Cl 3.5) -->
           <div class="tool-panel" id="tool-nbc-soil">
             <div class="calc-box-grid">
               <div class="calc-input-group">
@@ -1414,7 +1571,6 @@
             </div>
           </div>
 
-          <!-- Municipal FAR & BCR -->
           <div class="tool-panel" id="tool-nbc-far">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Total Plot Area (sq.ft):</label><input type="number" id="farPlot" value="2000" oninput="calcFAR()" /></div>
@@ -1430,7 +1586,6 @@
             </div>
           </div>
 
-          <!-- Septic Tank & Soak Pit Sizer -->
           <div class="tool-panel" id="tool-nbc-septic">
             <div class="calc-box-grid">
               <div class="calc-input-group"><label>Number of Household Users:</label><input type="number" id="septicUsers" value="8" oninput="calcSeptic()" /></div>
@@ -1461,7 +1616,6 @@
       </div>
 
       <div class="showcase-grid" id="showcaseContainer">
-        <!-- Card 1: Instagram Reel -->
         <article class="showcase-card">
           <div class="showcase-img-wrap">
             <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Bedroom 3D Walkthrough Reel" width="400" height="260" loading="lazy" />
@@ -1478,7 +1632,6 @@
           </div>
         </article>
 
-        <!-- Card 2: Facebook 360 -->
         <article class="showcase-card">
           <div class="showcase-img-wrap">
             <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Living Room 360 Tour" width="400" height="260" loading="lazy" />
@@ -1495,7 +1648,6 @@
           </div>
         </article>
 
-        <!-- Card 3: Commercial Project -->
         <article class="showcase-card">
           <div class="showcase-img-wrap">
             <img src="https://i.postimg.cc/jn7G8bwV/Resturant-Office-Interior.png" alt="Hospitality Restaurant Interior" width="400" height="260" loading="lazy" />
@@ -1511,6 +1663,59 @@
             </a>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTINUOUS FLOATING / SLIDING POSTS MARQUEE ================= -->
+  <section class="posts-marquee-section" id="posts-gallery">
+    <div class="container text-center" style="margin-bottom: 2rem;">
+      <div class="tag-badge">
+        <span class="dot"></span> Live Studio Stream
+      </div>
+      <h2 class="section-title">Continuous <em>Design Stream</em></h2>
+      <p class="section-subtitle" style="margin: 0 auto;">Gliding showcase of our latest renders, on-site photos, and interior concepts. Hover to pause the stream.</p>
+    </div>
+
+    <div class="posts-marquee-wrapper">
+      <div class="posts-marquee-track" id="postsMarqueeTrack">
+        <!-- Default Initial Slides (Replaced automatically by Sheet rows if present) -->
+        <a class="floating-post-card" href="#contact">
+          <div class="floating-post-img-wrap">
+            <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Living Room Design" loading="lazy" />
+          </div>
+          <div class="floating-post-body">
+            <div class="floating-post-title">Living Room Elegance</div>
+            <p class="floating-post-caption">Fluted acoustic paneling and cove lighting in Birgunj.</p>
+          </div>
+        </a>
+        <a class="floating-post-card" href="#contact">
+          <div class="floating-post-img-wrap">
+            <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Master Suite Design" loading="lazy" />
+          </div>
+          <div class="floating-post-body">
+            <div class="floating-post-title">Master Suite Suite</div>
+            <p class="floating-post-caption">Floating consoles and custom bed back upholstery.</p>
+          </div>
+        </a>
+        <a class="floating-post-card" href="#contact">
+          <div class="floating-post-img-wrap">
+            <img src="https://i.postimg.cc/BbKYyK5W/Modern-Toilet-Bathroom-Project3.png" alt="Sanitary Design" loading="lazy" />
+          </div>
+          <div class="floating-post-body">
+            <div class="floating-post-title">Spa Bath &amp; Sanitary</div>
+            <p class="floating-post-caption">Concealed plumbing and custom floating vanity.</p>
+          </div>
+        </a>
+        <a class="floating-post-card" href="#contact">
+          <div class="floating-post-img-wrap">
+            <img src="https://i.postimg.cc/jn7G8bwV/Resturant-Office-Interior.png" alt="Commercial Design" loading="lazy" />
+          </div>
+          <div class="floating-post-body">
+            <div class="floating-post-title">Dining &amp; Hospitality</div>
+            <p class="floating-post-caption">Acoustic baffles and commercial pendant illumination.</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -1612,7 +1817,6 @@
       </div>
 
       <div class="articles-grid" id="articlesContainer">
-        <!-- Article 1: Kitchen Planning -->
         <article class="article-card">
           <div class="article-img-wrap">
             <img src="https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg" alt="Modular Kitchen vs Carpenter Kitchen in Birgunj" width="400" height="240" loading="lazy" />
@@ -1631,6 +1835,32 @@
             </a>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOADS SECTION (LIVE SHEET) ================= -->
+  <section class="section" id="downloads">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge">
+          <span class="dot"></span> Resources &amp; Blueprints
+        </div>
+        <h2 class="section-title">Brochures &amp; <em>Resource Downloads</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Official catalogs, finish palettes, and civil estimation templates available for immediate download.</p>
+      </div>
+
+      <div class="downloads-grid" id="downloadsContainer">
+        <!-- Default Initial Item -->
+        <div class="download-card">
+          <div class="download-meta">
+            <h4>Interior Space Planning Checklist</h4>
+            <span>PDF Guide • 2.4 MB</span>
+          </div>
+          <a class="btn btn-primary btn-download-action" href="https://wa.me/9779766188838?text=Hi%20Chetan,%20please%20send%20the%20Interior%20Space%20Planning%20Guide." target="_blank">
+            Download <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1823,7 +2053,6 @@
       <div class="slider-viewport" id="sliderViewport">
         <div class="slider-track" id="sliderTrack">
 
-          <!-- 1: Living Room -->
           <article class="slider-card" onclick="openModal('Modern Luxury Living Room Design', 'Residential Interior', 'Bespoke luxury living room design conceptualized with fluted wooden panelling, warm cove LED coving, imported glossy tile flooring, modern low-profile seating, and balanced ambient lighting.', 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg', 'Scale and Spaces Private Limited')">
             <div class="slide-img-box">
               <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Modern Luxury Living Room Design" width="400" height="280" loading="lazy" />
@@ -1837,7 +2066,6 @@
             </div>
           </article>
 
-          <!-- 2: Master Bedroom -->
           <article class="slider-card" onclick="openModal('Modern Master Bedroom 3D Visualization', 'Master Suite & 3D Render', 'Photorealistic 3D interior render showcasing warm textured headboard accents, floating bedside consoles, custom ceiling treatment, and tranquil atmospheric lighting.', 'https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png', 'Scale and Spaces Private Limited')">
             <div class="slide-img-box">
               <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Modern Bedroom Design" width="400" height="280" loading="lazy" />
@@ -1851,7 +2079,6 @@
             </div>
           </article>
 
-          <!-- 3: 2D Blueprint Layout -->
           <article class="slider-card" onclick="openModal('Modern Bedroom 2D Architectural Layout', 'Technical Drafting & Planning', 'Precision technical AutoCAD layout plan displaying dimensional clearances, bed ergonomics, wardrobe joinery placement, and functional circulation pathways.', 'https://i.postimg.cc/jjb8122k/Bedroom-Layout-Project2.png', 'Scale and Spaces Private Limited')">
             <div class="slide-img-box">
               <img src="https://i.postimg.cc/jjb8122k/Bedroom-Layout-Project2.png" alt="Modern Bedroom Layout Plan" width="400" height="280" loading="lazy" />
@@ -1865,7 +2092,6 @@
             </div>
           </article>
 
-          <!-- 4: Bathroom -->
           <article class="slider-card" onclick="openModal('Modern Luxury Bathroom & Toilet Design', 'Sanitary & Wet Area Design', 'Contemporary wet/dry zoning engineered with concealed sanitary plumbing, floating vanity counter, backlit mirror, and premium textured wall tile cladding.', 'https://i.postimg.cc/BbKYyK5W/Modern-Toilet-Bathroom-Project3.png', 'Scale and Spaces Private Limited')">
             <div class="slide-img-box">
               <img src="https://i.postimg.cc/BbKYyK5W/Modern-Toilet-Bathroom-Project3.png" alt="Modern Bathroom Design" width="400" height="280" loading="lazy" />
@@ -1879,7 +2105,6 @@
             </div>
           </article>
 
-          <!-- 5: Restaurant Interior -->
           <article class="slider-card" onclick="openModal('Restaurant & Hospitality Commercial Interior', 'Commercial & Dining', 'Acoustically planned dining environment with customized booths, ambient pendant zoning, high-traffic surface materials, and open circulation.', 'https://i.postimg.cc/jn7G8bwV/Resturant-Office-Interior.png', 'Scale and Spaces Private Limited')">
             <div class="slide-img-box">
               <img src="https://i.postimg.cc/jn7G8bwV/Resturant-Office-Interior.png" alt="Restaurant Interior Design" width="400" height="280" loading="lazy" />
@@ -1893,7 +2118,6 @@
             </div>
           </article>
 
-          <!-- 6: School Office Interior -->
           <article class="slider-card" onclick="openModal('School & Institutional Administration Office', 'Institutional & Corporate', 'Functional administrative space planned with organized filing cabinetry, executive staff stations, acoustic partition panels, and natural illumination.', 'https://i.postimg.cc/dZyzWYkP/School-Office-Interior.png', 'Scale and Spaces Private Limited')">
             <div class="slide-img-box">
               <img src="https://i.postimg.cc/dZyzWYkP/School-Office-Interior.png" alt="School Office Interior" width="400" height="280" loading="lazy" />
@@ -2097,6 +2321,17 @@
     let isSliderDragging = false;
     let sliderStartX = 0;
     let sliderDragDistance = 0;
+
+    // Helper: converts Google Drive links to direct images automatically
+    function formatImageUrl(url) {
+      if (!url || String(url).trim() === '') return '';
+      const str = String(url).trim();
+      const driveMatch = str.match(/\/d\/([a-zA-Z0-9_-]+)/) || str.match(/id=([a-zA-Z0-9_-]+)/);
+      if (driveMatch && driveMatch[1]) {
+        return `https://lh3.googleusercontent.com/d/${driveMatch[1]}`;
+      }
+      return str;
+    }
 
     document.addEventListener('DOMContentLoaded', () => {
       // Light / Dark Theme Switcher with LocalStorage Memory
@@ -2368,7 +2603,7 @@
       calcFAR();
       calcSeptic();
 
-      // Load Google Sheets Live Data
+      // Load Google Sheets Live Data (Rates, Articles, Showcase, Posts, Team, Downloads)
       loadGoogleSheetLiveSync(GOOGLE_SHEET_ID);
     });
 
@@ -2434,7 +2669,7 @@
       if (btnEl && btnEl.classList) btnEl.classList.add('active');
     }
 
-    // ================= 1. INTERIOR DESIGN CALCULATION LOGIC =================
+    // Interior Design Calculations
     function calcPaint() {
       const l = parseFloat(document.getElementById('paintL').value) || 0;
       const w = parseFloat(document.getElementById('paintW').value) || 0;
@@ -2517,7 +2752,7 @@
       document.getElementById('acBreakdown').textContent = `Calculated Cooling Load: ~${Math.round(btu).toLocaleString()} BTU/hr • Fast cooling during peak Birgunj summer (40°C+).`;
     }
 
-    // ================= 2. CIVIL & ESTIMATION LOGIC =================
+    // Civil Calculations
     function calcPlinthArea() {
       const unit = document.getElementById('plinthUnit').value;
       const rawVal = parseFloat(document.getElementById('plinthAreaVal').value) || 0;
@@ -2642,7 +2877,7 @@
       document.getElementById('traceBreakdown').textContent = `Scale 1:${scale} ➔ 1 cm on Lalpurja map equals ${(scale/100).toFixed(1)} meters on ground.`;
     }
 
-    // ================= 3. NBC 205:2024 & MUNICIPAL SUITE =================
+    // NBC 205:2024 Calculations
     function calcPGA() {
       const pga = parseFloat(document.getElementById('pgaDistrict').value) || 0.35;
       document.getElementById('pgaResultOut').textContent = `PGA (Z) = ${pga}g`;
@@ -2695,109 +2930,171 @@
       document.getElementById('septicBreakdown').textContent = `Sized for ${users} users with 2-year sludge cleaning interval • Soak Pit Diameter: 4.5 ft (Depth: 9.0 ft).`;
     }
 
-    // ================= ROBUST GOOGLE SHEETS LIVE SYNC FETCH ENGINE =================
+    // ================= COMPLETE GOOGLE SHEETS LIVE SYNC ENGINE =================
     async function loadGoogleSheetLiveSync(sheetId) {
+      // Helper to fetch any tab cleanly without browser cache
+      async function fetchTab(tabName) {
+        try {
+          const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(tabName)}&t=${Date.now()}`;
+          const res = await fetch(url);
+          const txt = await res.text();
+          const jsonString = txt.substring(txt.indexOf("{"), txt.lastIndexOf("}") + 1);
+          const json = JSON.parse(jsonString);
+          if (!json.table || !json.table.rows) return [];
+          return json.table.rows.map(r => 
+            (r.c || []).map(cell => (cell && cell.v !== null && cell.v !== undefined ? cell.v : ''))
+          );
+        } catch (err) {
+          return [];
+        }
+      }
+
       try {
-        // Fetch Tab: Rates
-        const ratesUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=Rates`;
-        const resRates = await fetch(ratesUrl);
-        const textRates = await resRates.text();
-        const jsonRates = JSON.parse(textRates.substring(textRates.indexOf("{"), textRates.lastIndexOf("}") + 1));
-        
-        if (jsonRates?.table?.rows?.length > 0) {
-          const tbody = document.getElementById('ratesTableBody');
-          const validRows = jsonRates.table.rows.filter(r => r.c && r.c[0] && r.c[0].v && String(r.c[0].v).trim() !== '');
-          if (validRows.length > 0) {
+        // 1. Fetch Tab: Rates
+        const ratesRows = await fetchTab('Rates');
+        if (ratesRows.length > 0) {
+          const validRates = ratesRows.filter(r => r[0] && String(r[0]).trim() !== '');
+          if (validRates.length > 0) {
+            const tbody = document.getElementById('ratesTableBody');
             tbody.innerHTML = '';
-            validRows.forEach(r => {
-              const item = r.c[0]?.v || '';
-              const cat = r.c[1]?.v || 'Civil';
-              const unit = r.c[2]?.v || '';
-              const price = r.c[3]?.v || '';
-              const date = r.c[4]?.v || currentMonthYear;
-              const tr = document.createElement('tr');
-              tr.innerHTML = `<td><strong>${item}</strong></td><td>${cat}</td><td>${unit}</td><td><span class=\"rate-pill\">${price}</span></td><td>${date}</td>`;
-              tbody.appendChild(tr);
+            validRates.forEach(r => {
+              const item = r[0] || '';
+              const cat = r[1] || 'Civil';
+              const unit = r[2] || '';
+              const price = r[3] || '';
+              const date = r[4] || currentMonthYear;
+              tbody.innerHTML += `<tr><td><strong>${item}</strong></td><td>${cat}</td><td>${unit}</td><td><span class="rate-pill">${price}</span></td><td>${date}</td></tr>`;
             });
           }
         }
 
-        // Fetch Tab: Articles
-        const articlesUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=Articles`;
-        const resArticles = await fetch(articlesUrl);
-        const textArticles = await resArticles.text();
-        const jsonArticles = JSON.parse(textArticles.substring(textArticles.indexOf("{"), textArticles.lastIndexOf("}") + 1));
-        
-        if (jsonArticles?.table?.rows?.length > 0) {
-          const container = document.getElementById('articlesContainer');
-          const validRows = jsonArticles.table.rows.filter(r => r.c && r.c[0] && r.c[0].v && String(r.c[0].v).trim() !== '');
-          if (validRows.length > 0) {
+        // 2. Fetch Tab: Articles
+        const articleRows = await fetchTab('Articles');
+        if (articleRows.length > 0) {
+          const validArticles = articleRows.filter(r => r[0] && String(r[0]).trim() !== '');
+          if (validArticles.length > 0) {
+            const container = document.getElementById('articlesContainer');
             container.innerHTML = '';
-            validRows.forEach(r => {
-              const title = r.c[0]?.v || '';
-              const date = r.c[1]?.v || currentMonthYear;
-              const cat = r.c[2]?.v || 'Planning';
-              const img = r.c[3]?.v || 'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg';
-              const summary = r.c[4]?.v || '';
-              const card = document.createElement('article');
-              card.className = 'article-card';
-              card.innerHTML = `
-                <div class=\"article-img-wrap\"><img src=\"${img}\" alt=\"${title}\" width=\"400\" height=\"240\" loading=\"lazy\" /></div>
-                <div class=\"article-content\">
-                  <div>
-                    <div class=\"article-meta\"><span>${cat}</span><span>${date}</span></div>
-                    <div class=\"item-title\">${title}</div>
-                    <p>${summary}</p>
+            validArticles.forEach(r => {
+              const title = r[0] || '';
+              const date = r[1] || currentMonthYear;
+              const cat = r[2] || 'Planning';
+              const img = formatImageUrl(r[3]) || 'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg';
+              const summary = r[4] || '';
+              container.innerHTML += `
+                <article class="article-card">
+                  <div class="article-img-wrap"><img src="${img}" alt="${title}" width="400" height="240" loading="lazy" /></div>
+                  <div class="article-content">
+                    <div>
+                      <div class="article-meta"><span>${cat}</span><span>${date}</span></div>
+                      <div class="item-title">${title}</div>
+                      <p>${summary}</p>
+                    </div>
+                    <a href="https://wa.me/9779766188838?text=Hi%20Chetan,%20I%20read%20your%20article%20'${encodeURIComponent(title)}'%20and%20want%20to%20consult." target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                      Consult on this Topic <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                   </div>
-                  <a href=\"https://wa.me/9779766188838?text=Hi%20Chetan,%20I%20read%20your%20article%20'${encodeURIComponent(title)}'%20and%20want%20to%20consult.\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"btn btn-outline\" style=\"width: 100%; justify-content: center;\">
-                    Consult on this Topic <i class=\"fa-brands fa-whatsapp\"></i>
-                  </a>
-                </div>`;
-              container.appendChild(card);
+                </article>`;
             });
           }
         }
 
-        // Fetch Tab: Showcase
-        const showcaseUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=Showcase`;
-        const resShowcase = await fetch(showcaseUrl);
-        const textShowcase = await resShowcase.text();
-        const jsonShowcase = JSON.parse(textShowcase.substring(textShowcase.indexOf("{"), textShowcase.lastIndexOf("}") + 1));
-        
-        if (jsonShowcase?.table?.rows?.length > 0) {
-          const container = document.getElementById('showcaseContainer');
-          const validRows = jsonShowcase.table.rows.filter(r => r.c && r.c[0] && r.c[0].v && String(r.c[0].v).trim() !== '');
-          if (validRows.length > 0) {
+        // 3. Fetch Tab: Showcase
+        const showcaseRows = await fetchTab('Showcase');
+        if (showcaseRows.length > 0) {
+          const validShowcase = showcaseRows.filter(r => r[0] && String(r[0]).trim() !== '');
+          if (validShowcase.length > 0) {
+            const container = document.getElementById('showcaseContainer');
             container.innerHTML = '';
-            validRows.forEach(r => {
-              const title = r.c[0]?.v || '';
-              const platform = (r.c[1]?.v || 'Project').toLowerCase();
-              const img = r.c[3]?.v || 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg';
-              const link = r.c[4]?.v || '#contact';
-              const desc = r.c[5]?.v || '';
+            validShowcase.forEach(r => {
+              const title = r[0] || '';
+              const platform = (r[1] || 'Project').toLowerCase();
+              const img = formatImageUrl(r[3]) || 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg';
+              const link = r[4] || '#contact';
+              const desc = r[5] || '';
               
               let badgeClass = 'badge-project', icon = 'fa-solid fa-building', btnText = 'View Details';
               if (platform.includes('instagram')) { badgeClass = 'badge-instagram'; icon = 'fa-brands fa-instagram'; btnText = 'Watch on Instagram'; }
               else if (platform.includes('tiktok')) { badgeClass = 'badge-tiktok'; icon = 'fa-brands fa-tiktok'; btnText = 'Watch on TikTok'; }
               else if (platform.includes('facebook')) { badgeClass = 'badge-facebook'; icon = 'fa-solid fa-vr-cardboard'; btnText = 'Launch 360° Tour'; }
 
-              const card = document.createElement('article');
-              card.className = 'showcase-card';
-              card.innerHTML = `
-                <div class=\"showcase-img-wrap\">
-                  <img src=\"${img}\" alt=\"${title}\" width=\"400\" height=\"260\" loading=\"lazy\" />
-                  <span class=\"platform-badge ${badgeClass}\"><i class=\"${icon}\"></i> ${platform}</span>
-                </div>
-                <div class=\"showcase-body\">
-                  <div><div class=\"item-title\">${title}</div><p>${desc}</p></div>
-                  <a href=\"${link}\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"btn btn-outline\" style=\"width: 100%; justify-content: center;\">
-                    ${btnText} <i class=\"fa-solid fa-arrow-up-right-from-square\"></i>
-                  </a>
-                </div>`;
-              container.appendChild(card);
+              container.innerHTML += `
+                <article class="showcase-card">
+                  <div class="showcase-img-wrap">
+                    <img src="${img}" alt="${title}" width="400" height="260" loading="lazy" />
+                    <span class="platform-badge ${badgeClass}"><i class="${icon}"></i> ${platform}</span>
+                  </div>
+                  <div class="showcase-body">
+                    <div><div class="item-title">${title}</div><p>${desc}</p></div>
+                    <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">
+                      ${btnText} <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                  </div>
+                </article>`;
             });
           }
         }
+
+        // 4. Fetch Tab: Posts (Dynamic Floating / Auto-Sliding Marquee)
+        const postsRows = await fetchTab('Posts');
+        if (postsRows.length > 0) {
+          const validPosts = postsRows.filter(r => (r[0] || r[1]) && String(r[4] || 'Active').trim().toLowerCase() !== 'inactive');
+          if (validPosts.length > 0) {
+            const track = document.getElementById('postsMarqueeTrack');
+            const cardsHtml = validPosts.map(([title, imgUrl, caption, linkUrl]) => `
+              <a class="floating-post-card" href="${linkUrl || '#contact'}" target="${linkUrl ? '_blank' : '_self'}">
+                <div class="floating-post-img-wrap">
+                  <img src="${formatImageUrl(imgUrl) || 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg'}" alt="${title || 'Interior Project'}" loading="lazy" />
+                </div>
+                <div class="floating-post-body">
+                  <div class="floating-post-title">${title || 'Project Visualization'}</div>
+                  <p class="floating-post-caption">${caption || 'Chetan Interior & Architecture'}</p>
+                </div>
+              </a>
+            `).join('');
+            
+            // Duplicate content to maintain seamless infinite loop
+            track.innerHTML = cardsHtml + cardsHtml;
+          }
+        }
+
+        // 5. Fetch Tab: Team
+        const teamRows = await fetchTab('Team');
+        if (teamRows.length > 0) {
+          const validTeam = teamRows.filter(r => r[0] && String(r[0]).trim() !== '');
+          if (validTeam.length > 0) {
+            const container = document.getElementById('teamContainer');
+            container.innerHTML = validTeam.map(([name, role, photoUrl, bio]) => `
+              <div class="team-card">
+                <img src="${formatImageUrl(photoUrl) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
+                <div class="team-name">${name}</div>
+                <div class="team-role">${role || 'Interior Associate'}</div>
+                <p class="team-bio">${bio || ''}</p>
+              </div>
+            `).join('');
+          }
+        }
+
+        // 6. Fetch Tab: Downloads
+        const downloadRows = await fetchTab('Downloads');
+        if (downloadRows.length > 0) {
+          const validDownloads = downloadRows.filter(r => r[0] && r[2]);
+          if (validDownloads.length > 0) {
+            const container = document.getElementById('downloadsContainer');
+            container.innerHTML = validDownloads.map(([title, category, fileUrl, size]) => `
+              <div class="download-card">
+                <div class="download-meta">
+                  <h4>${title}</h4>
+                  <span>${category || 'Resource'} ${size ? '• ' + size : ''}</span>
+                </div>
+                <a class="btn btn-primary btn-download-action" href="${fileUrl}" target="_blank" download>
+                  Download <i class="fa-solid fa-download"></i>
+                </a>
+              </div>
+            `).join('');
+          }
+        }
+
       } catch (err) {
         console.log("Using built-in local data fallback.");
       }
@@ -2823,3 +3120,5 @@
 </body>
 </html>
 ```
+
+---
