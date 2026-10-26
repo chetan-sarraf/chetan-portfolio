@@ -7,6 +7,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
+  <!-- ================= STRICT SEO META TAGS ================= -->
   <title>Chetan Kr. Sarraf | Interior Designer & Civil Engineer in Birgunj, Nepal</title>
   <meta name="description" content="Chetan Kr. Sarraf is the best interior designer &amp; civil engineer in Birgunj, Nepal. Offering 3D renders, space planning, AutoCAD blueprints &amp; BOQ estimation." />
   <meta name="keywords" content="best interior designer in birgunj, interior designer parsa nepal, civil engineer interior designer, chetan kumar sarraf, scale and spaces private limited, nbc 205 2024 calculator nepal, 360 panorama interior nepal" />
@@ -134,6 +135,13 @@
       background-size: 26px 26px, 130px 130px, 130px 130px;
     }
 
+    /* Top Reading Scroll Progress Bar */
+    #scrollProgressBar {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent-azure), var(--brand-gold));
+      width: 0%; z-index: 10000; transition: width 0.1s ease-out;
+    }
+
     a { text-decoration: none; color: inherit; transition: var(--transition); }
     ul { list-style: none; }
     .container { width: 92%; max-width: 1240px; margin: 0 auto; position: relative; z-index: 2; }
@@ -164,12 +172,12 @@
       font-size: 1rem; color: var(--text-muted); max-width: 700px; font-weight: 400; line-height: 1.75; margin: 0 auto;
     }
 
-    /* Streamlined Navbar */
+    /* Streamlined Navbar with Animated Active Highlighting */
     .navbar-capsule {
       position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 1240px;
       background: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
       border: 1px solid var(--border-navy); border-radius: var(--radius-pill); z-index: 9999;
-      padding: 0.5rem 1.1rem; box-shadow: var(--shadow-subtle);
+      padding: 0.5rem 1.1rem; box-shadow: var(--shadow-subtle); transition: var(--transition);
     }
     .nav-container { display: flex; justify-content: space-between; align-items: center; }
     .brand-logo { display: flex; align-items: center; gap: 0.6rem; font-size: 1.1rem; color: var(--text-main); }
@@ -177,16 +185,29 @@
     .brand-logo span { color: var(--brand-gold); font-weight: 600; }
     .nav-links { display: flex; align-items: center; gap: 0.25rem; }
     .nav-links a {
-      font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.65rem;
+      font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.68rem;
       border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition); white-space: nowrap;
     }
     .nav-links a:hover { color: var(--text-main); background: var(--brand-navy-soft); }
-    .nav-links a.active { color: #ffffff; background: var(--brand-navy); font-weight: 600; }
+
+    /* Polished Active Nav Item with Glow and Elevation */
+    .nav-links a.active {
+      color: #ffffff !important;
+      background: var(--brand-navy) !important;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 14px rgba(14, 39, 63, 0.28);
+      transform: translateY(-1px);
+    }
+    [data-theme="dark"] .nav-links a.active {
+      color: #0c0f14 !important;
+      background: var(--brand-gold) !important;
+      box-shadow: 0 4px 16px rgba(229, 185, 66, 0.35);
+    }
 
     .theme-toggle-btn {
       width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border-navy);
       background: var(--bg-surface); color: var(--text-main); display: flex; align-items: center;
-      justify-content: center; cursor: pointer; font-size: 0.9rem; margin-left: 0.4rem;
+      justify-content: center; cursor: pointer; font-size: 0.9rem; margin-left: 0.4rem; transition: var(--transition);
     }
     .theme-toggle-btn:hover { background: var(--brand-navy); color: #fff; }
     .btn-nav-capsule { background: var(--brand-gold) !important; color: #000 !important; font-weight: 700 !important; }
@@ -211,6 +232,7 @@
     .hero-content { max-width: 920px; z-index: 2; }
     .hero-title { font-size: clamp(2.5rem, 6vw, 4.4rem); line-height: 1.1; margin-bottom: 1.4rem; font-weight: 800; }
     .hero-description { font-size: clamp(1rem, 2vw, 1.12rem); line-height: 1.8; color: var(--text-muted); margin-bottom: 2.2rem; }
+    .hero-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
     .hero-trust-bar {
       margin-top: 3.5rem; display: flex; justify-content: center; align-items: center; gap: 1.8rem;
       color: var(--text-muted); font-size: 0.84rem; border-top: 1px solid var(--border-subtle); padding-top: 1.8rem; flex-wrap: wrap;
@@ -616,21 +638,12 @@
     .footer { border-top: 1px solid var(--border-subtle); padding: 3rem 0; background: var(--bg-surface); color: var(--text-muted); font-size: 0.88rem; }
     .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.2rem; }
     .footer-social-links { display: flex; gap: 1.2rem; align-items: center; }
-
-    @media (max-width: 950px) {
-      .grid-about-unboxed { grid-template-columns: 1fr; padding: 2rem; gap: 2.5rem; }
-      .nav-toggle { display: block; }
-      .nav-links {
-        position: absolute; top: 115%; left: 0; width: 100%; background: var(--bg-surface);
-        flex-direction: column; padding: 1.6rem; gap: 0.5rem; border: 1px solid var(--border-navy);
-        border-radius: var(--radius-md); box-shadow: var(--shadow-elevated); display: none;
-      }
-      .nav-links.active { display: flex; }
-      .credentials-row { grid-template-columns: 1fr; }
-    }
   </style>
 </head>
 <body>
+
+  <!-- Top Scroll Reading Progress Indicator -->
+  <div id="scrollProgressBar"></div>
 
   <!-- Navigation Capsule -->
   <nav class="navbar-capsule" id="navbarCapsule">
@@ -664,23 +677,23 @@
     <a href="https://np.linkedin.com/in/chetansarraf" target="_blank" rel="noopener noreferrer" class="float-btn float-linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Dynamic from Sheet 'Hero' Tab with Permanent SEO Fallback) -->
   <header class="hero-section" id="home">
     <div class="hero-content">
-      <div class="tag-badge"><span class="dot"></span> Civil Engineering &amp; Interior Architecture</div>
-      <h1 class="hero-title">Where Engineering Rigor Harmonizes with <em>Interior Luxury</em></h1>
-      <p class="hero-description">
-        I am <strong>Er. Chetan Kumar Sarraf</strong>, a qualified Civil Engineer &amp; Interior Design Professional under <strong>Scale and Spaces Private Limited</strong>. Integrating structural accuracy with 3D photorealism, spatial BOQ valuation, and technical drafting compliant with <strong>NBC 205:2024</strong>.
+      <div class="tag-badge" id="heroBadge"><span class="dot"></span> Civil Engineering &amp; Interior Architecture</div>
+      <h1 class="hero-title" id="heroTitle">Best Interior Designer in <em>Birgunj, Nepal</em></h1>
+      <p class="hero-description" id="heroDesc">
+        If you are looking for the <strong>best interior designer in Birgunj, Nepal</strong>, I am <strong>Chetan Kumar Sarraf</strong>, a qualified Civil Engineer &amp; Interior Design Professional. Integrating structural civil engineering accuracy with 3D photorealism, spatial BOQ valuation, and technical drafting under <strong>Scale and Spaces Private Limited</strong>, I provide premium interior design services tailored for residential and commercial spaces across Birgunj, Parsa, and Nepal.
       </p>
-      <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
-        <a href="#site-planner" class="btn btn-primary">Open 2D CAD Planner <i class="fa-solid fa-compass-drafting"></i></a>
-        <a href="#boq-toolkit" class="btn btn-outline">Room BOQ Toolkit</a>
+      <div class="hero-actions">
+        <a href="#boq-toolkit" class="btn btn-primary" id="heroBtn1">Room BOQ Toolkit <i class="fa-solid fa-calculator"></i></a>
+        <a href="#hub" class="btn btn-outline" id="heroBtn2">Studio Engineering Hub</a>
       </div>
       <div class="hero-trust-bar">
         <span><i class="fa-solid fa-location-dot"></i> Birgunj, Parsa, Nepal</span>
         <span><i class="fa-solid fa-compass-drafting"></i> 2D AutoCAD &amp; MEP</span>
         <span><i class="fa-solid fa-calculator"></i> Live BOQ Estimation</span>
-        <span><i class="fa-solid fa-vr-cardboard"></i> 360° Virtual Tours</span>
+        <span><i class="fa-solid fa-vr-cardboard"></i> 360° VR Tours</span>
       </div>
     </div>
   </header>
@@ -745,7 +758,7 @@
       <div class="section-header text-center">
         <div class="tag-badge"><span class="dot"></span> Smart Drafting Engine</div>
         <h2 class="section-title">Interactive Site Planner &amp; <em>Tentative Floor Layout</em></h2>
-        <p class="section-subtitle">Input 4 boundary sides. Diagonal D1 is optional. Toggling between 2BHK, 3BHK, or Commercial redraws the 2D CAD floor illustration in real time.</p>
+        <p class="section-subtitle">Input 4 boundary sides. Diagonal D1 is optional. Switching between 2BHK, 3BHK, or Commercial updates the 2D CAD floor illustration in real time.</p>
       </div>
 
       <div class="planner-card">
@@ -784,7 +797,7 @@
               <div class="input-row-4">
                 <div class="plan-input-wrap"><label>Proposed Storeys:</label>
                   <select id="numFloors" onchange="redrawSitePlan()">
-                    <option value="1">1 Storey (Ground Floor)</option>
+                    <option value="1">1 Storey (Ground Floor only)</option>
                     <option value="2">2 Storeys (G + 1) [NBC 205 Sec 8]</option>
                     <option value="2.5" selected>2.5 Storeys (G+1 + 25% Penthouse)</option>
                     <option value="3">3 Storeys (G + 2) [NBC 205 Sec 9]</option>
@@ -1224,7 +1237,7 @@
             <div class="calc-output-card">
               <div class="calc-output-title">Soil Classification</div>
               <div class="calc-output-val" id="sbcResultOut">150 kN/m² (Medium Soil)</div>
-              <div class="calc-breakdown-list" id="sbcBreakdown">Impression between 12mm and 17mm. Safe for standard footings.</div>
+              <div class="calc-breakdown-list" id="sbcBreakdown">Impression depth ${d}mm as per NBC 205 Cl 3.5.</div>
             </div>
           </div>
 
@@ -1513,6 +1526,36 @@
         });
       }
 
+      // ================= ENHANCED SCROLL-SPY & PROGRESS BAR =================
+      const progressBar = document.getElementById('scrollProgressBar');
+      const trackedSections = document.querySelectorAll('header, section');
+      const navItems = document.querySelectorAll('.nav-links .nav-item:not(.btn-nav-capsule)');
+
+      window.addEventListener('scroll', () => {
+        // 1. Reading Progress Bar
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPct = (scrollTop / (docHeight || 1)) * 100;
+        if (progressBar) progressBar.style.width = `${scrollPct}%`;
+
+        // 2. Active Section Spy
+        let currentSectionId = '';
+        trackedSections.forEach(section => {
+          const top = section.offsetTop - 140;
+          const height = section.clientHeight;
+          if (scrollTop >= top && scrollTop < top + height) {
+            currentSectionId = section.getAttribute('id');
+          }
+        });
+
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === `#${currentSectionId}`) {
+            item.classList.add('active');
+          }
+        });
+      }, { passive: true });
+
       // FAQ Accordion
       document.querySelectorAll('.faq-item').forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -1755,28 +1798,13 @@
     function calcFAR() {
       const plot = parseFloat(document.getElementById('farPlot').value)||1, built = parseFloat(document.getElementById('farTotalBuilt').value)||0;
       document.getElementById('farResultOut').textContent = `FAR: ${(built/plot).toFixed(2)}`;
-      document.getElementById('farBreakdown').textContent = `Building Coverage: ≤ 70%. Standard municipal compliance.`;
+      document.getElementById('farBreakdown').textContent = `Building Coverage: ≤ 70%. Standard municipal approval ready.`;
     }
 
     function calcSeptic() {
       const u = parseFloat(document.getElementById('septicUsers').value)||6;
       document.getElementById('septicDimOut').textContent = `${(u*0.9).toFixed(1)} ft × ${(u*0.45).toFixed(1)} ft × 5.0 ft`;
       document.getElementById('septicBreakdown').textContent = `Liquid Volume: ~${Math.round(u * 300)} Liters`;
-    }
-
-    // ================= BOQ ESTIMATOR =================
-    function calculateFullBOQ() {
-      const scope = document.getElementById('boqScope').value;
-      const area = parseInt(document.getElementById('boqArea').value, 10) || 350;
-      document.getElementById('boqAreaDisplay').textContent = `${area} sq.ft`;
-      const min = scope === 'tier1' ? 25 : scope === 'tier2' ? 65 : 1600;
-      const max = scope === 'tier1' ? 45 : scope === 'tier2' ? 110 : 2800;
-      document.getElementById('boqPriceOut').textContent = `Rs. ${(area * min).toLocaleString()} – ${(area * max).toLocaleString()}`;
-    }
-
-    function exportFullBOQToWhatsApp() {
-      const a = document.getElementById('boqArea').value, p = document.getElementById('boqPriceOut').textContent;
-      window.open(`https://wa.me/9779766188838?text=*BOQ Inquiry*%0A*Area:* ${a} sq.ft%0A*Investment:* ${encodeURIComponent(p)}`, '_blank');
     }
 
     // ================= SITE PLANNER & TENTATIVE 2D LAYOUT =================
@@ -2088,7 +2116,7 @@
     }
 
     function sharePlanWhatsApp() {
-      window.open(`https://wa.me/9779766188838?text=*Automated Site Planning Report - Chetan Interiors*%0A*Plot Area:* ${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})%0A*Footprint:* ${currentPlanTelemetry.footprintActual} sq.ft%0A*Storeys:* ${currentPlanTelemetry.numFloors}%0A*Proposed Built-up:* ${currentPlanTelemetry.proposedBuilt} sq.ft%0AHi Chetan, I tested this layout on your website.`, '_blank');
+      window.open(`https://wa.me/9779766188838?text=*Automated Site Planning Report - Chetan Interiors*%0A*Plot Area:* ${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})%0A*Footprint:* ${currentPlanTelemetry.footprintActual} sq.ft%0A*Storeys:* ${currentPlanTelemetry.numFloors}%0AHi Chetan, I tested this layout on your website.`, '_blank');
     }
 
     // ================= RESILIENT GOOGLE SHEETS LIVE SYNC =================
@@ -2124,7 +2152,32 @@
     }
 
     async function loadGoogleSheetLiveSync(sheetId) {
-      // 1. About Tab (Key-Value Setup)
+      // 1. Hero & SEO Meta
+      try {
+        const heroRows = await fetchGoogleTab(sheetId, 'Hero');
+        if (heroRows && heroRows.length > 0) {
+          const map = {};
+          heroRows.forEach(row => { if (row[0]) map[String(row[0]).trim()] = String(row[1] || '').trim(); });
+          if (map['Badge']) document.getElementById('heroBadge').innerHTML = `<span class="dot"></span> ${map['Badge']}`;
+          if (map['H1_Title']) document.getElementById('heroTitle').innerHTML = map['H1_Title'].replace(/\*(.*?)\*/g, '<em>$1</em>');
+          if (map['Paragraph']) document.getElementById('heroDesc').innerHTML = map['Paragraph'].replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          if (map['Btn1_Text']) {
+            const b1 = document.getElementById('heroBtn1');
+            if (b1) { b1.innerHTML = `${map['Btn1_Text']} <i class="fa-solid fa-calculator"></i>`; if (map['Btn1_Link']) b1.href = map['Btn1_Link']; }
+          }
+          if (map['Btn2_Text']) {
+            const b2 = document.getElementById('heroBtn2');
+            if (b2) { b2.textContent = map['Btn2_Text']; if (map['Btn2_Link']) b2.href = map['Btn2_Link']; }
+          }
+          if (map['SEO_Meta_Title']) document.title = map['SEO_Meta_Title'];
+          if (map['SEO_Meta_Desc']) {
+            const m = document.querySelector('meta[name="description"]');
+            if (m) m.setAttribute('content', map['SEO_Meta_Desc']);
+          }
+        }
+      } catch (e) {}
+
+      // 2. About Tab
       try {
         const ab = await fetchGoogleTab(sheetId, 'About');
         if (ab && ab.length > 0) {
@@ -2154,7 +2207,7 @@
         }
       } catch (e) {}
 
-      // 2. Rates
+      // 3. Rates
       try {
         const r = await fetchGoogleTab(sheetId, 'Rates');
         const v = r.filter(row => row[0] && String(row[0]).trim() !== '');
@@ -2163,7 +2216,7 @@
         }
       } catch (e) {}
 
-      // 3. Articles
+      // 4. Articles
       try {
         const a = await fetchGoogleTab(sheetId, 'Articles');
         const v = a.filter(row => row[0] && String(row[0]).trim() !== '');
@@ -2172,7 +2225,7 @@
         }
       } catch (e) {}
 
-      // 4. Showcase (Site Updates & 360)
+      // 5. Showcase
       try {
         const s = await fetchGoogleTab(sheetId, 'Showcase');
         const v = s.filter(row => row[0] && String(row[0]).trim() !== '');
@@ -2187,7 +2240,7 @@
         }
       } catch (e) {}
 
-      // 5. Portfolio (Selected Works Carousel)
+      // 6. Portfolio
       try {
         const p = await fetchGoogleTab(sheetId, 'Portfolio');
         const v = p.filter(row => row[0] && String(row[0]).trim() !== '');
@@ -2203,7 +2256,7 @@
         }
       } catch (e) {}
 
-      // 6. Posts (Continuous Reel)
+      // 7. Posts
       try {
         const po = await fetchGoogleTab(sheetId, 'Posts');
         const v = po.filter(row => (row[0] || row[1]) && String(row[4]||'Active').toLowerCase() !== 'inactive');
@@ -2213,7 +2266,7 @@
         }
       } catch (e) {}
 
-      // 7. Team
+      // 8. Team
       try {
         const t = await fetchGoogleTab(sheetId, 'Team');
         const v = t.filter(row => row[0]);
@@ -2222,7 +2275,7 @@
         }
       } catch (e) {}
 
-      // 8. Downloads
+      // 9. Downloads
       try {
         const d = await fetchGoogleTab(sheetId, 'Downloads');
         const v = d.filter(row => row[0] && row[2]);
@@ -2232,7 +2285,7 @@
       } catch (e) {}
     }
 
-    // Modal
+    // Modal Lightbox
     function openModal(t, c, d, img) {
       document.getElementById('modalTitle').textContent = t; document.getElementById('modalCategory').textContent = c;
       document.getElementById('modalDesc').textContent = d; document.getElementById('modalImg').src = img;
