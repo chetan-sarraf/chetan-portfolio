@@ -2,33 +2,82 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
+  <!-- iOS Viewport & Safe Area Optimization -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
+  <!-- ================= STRICT SEO META TAGS ================= -->
   <title>Chetan Kr. Sarraf | Interior Designer & Civil Engineer in Birgunj, Nepal</title>
-  <meta name="description" content="Chetan Kr. Sarraf is the best interior designer &amp; civil engineer in Birgunj, Nepal. Offering automated site planning, NBC 205 calculators, 3D renders, and BOQ estimation." />
-  <meta name="keywords" content="best interior designer in birgunj, site planning calculator nepal, nbc 205 2024 calculator nepal, civil engineer interior designer, scale and spaces private limited" />
+  <meta name="description" content="Chetan Kr. Sarraf is the best interior designer &amp; civil engineer in Birgunj, Nepal. Offering 3D renders, site planning, tentative floor plans, NBC 205:2024 compliance, and BOQ estimation." />
+  <meta name="keywords" content="best interior designer in birgunj, site planning calculator nepal, tentative floor plan generator, nbc 205 2024 calculator nepal, civil engineer interior designer, scale and spaces private limited" />
   <meta name="author" content="Chetan Kumar Sarraf" />
   <meta name="robots" content="index, follow" />
 
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="IBW1Eh-JYKAhipDCHpF6wfc2WBQoLed1nZNsuQ0_GtM" />
+
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://chetan-sarraf.github.io/chetan-interior/" />
+
+  <!-- Favicon & Apple Touch Icon -->
   <link rel="icon" type="image/png" href="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" />
   <link rel="apple-touch-icon" href="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" />
 
-  <!-- Google Fonts -->
+  <!-- Open Graph & Twitter Cards -->
+  <meta property="og:title" content="Chetan Kr. Sarraf | Interior Designer in Birgunj, Nepal" />
+  <meta property="og:description" content="Civil engineering accuracy, luxury interior design, interactive cost calculator, 3D realistic rendering, and 360° virtual tours in Birgunj, Nepal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chetan-sarraf.github.io/chetan-interior/" />
+  <meta property="og:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chetan Kr. Sarraf | Interior Designer in Birgunj, Nepal" />
+  <meta name="twitter:description" content="Civil engineering accuracy, luxury interior design, and 3D visualization in Birgunj, Nepal." />
+  <meta name="twitter:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
+
+  <!-- Google Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Chetan Kumar Sarraf - Civil Engineer & Interior Design Professional",
+    "image": "https://i.postimg.cc/05wwzfcw/Profile-Pic.png",
+    "description": "Best interior designer and civil engineering professional in Birgunj, Parsa, Nepal. Specializing in space planning, 3D visualization, 360° panoramas, and AutoCAD execution blueprints.",
+    "telephone": "+9779766188838",
+    "email": "master.er.cks@outlook.com",
+    "sameAs": [
+      "https://www.facebook.com/chetan.sarraf.3/",
+      "https://www.instagram.com/master.cks009/",
+      "https://np.linkedin.com/in/chetansarraf"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Birgunj",
+      "addressRegion": "Parsa",
+      "postalCode": "44300",
+      "addressCountry": "NP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.0149,
+      "longitude": 84.8773
+    },
+    "url": "https://chetan-sarraf.github.io/chetan-interior/",
+    "priceRange": "$$",
+    "areaServed": ["Birgunj", "Parsa", "Kathmandu", "Nepal"]
+  }
+  </script>
+
+  <!-- Google Fonts: Syne + Plus Jakarta Sans + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   
-  <!-- Font Awesome -->
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <!-- html2pdf.js for client-side PDF Generation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
+  <!-- ================= STYLES ================= -->
   <style>
     :root, [data-theme="light"] {
       --bg-canvas: #f7f4ed;
@@ -83,8 +132,8 @@
       --radius-md: 22px;
       --radius-lg: 32px;
       --radius-pill: 9999px;
-      --font-display: 'Syne', sans-serif;
-      --font-sans: 'Plus Jakarta Sans', sans-serif;
+      --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
       --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -98,6 +147,8 @@
       color: var(--text-main);
       line-height: 1.7;
       transition: background-color 0.35s ease, color 0.35s ease;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       background-image: 
         radial-gradient(var(--border-subtle) 1.2px, transparent 1.2px),
         linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
@@ -108,7 +159,7 @@
     a { text-decoration: none; color: inherit; transition: var(--transition); }
     ul { list-style: none; }
     .container { width: 92%; max-width: 1260px; margin: 0 auto; position: relative; z-index: 2; }
-    .section { padding: clamp(4.5rem, 8vw, 7rem) 0; position: relative; }
+
     .section-with-texture { position: relative; overflow: hidden; }
     .watermark-texture {
       position: absolute; pointer-events: none; user-select: none; z-index: 1;
@@ -137,24 +188,27 @@
     [data-theme="dark"] .section-title em { color: #ffffff; }
 
     .section-subtitle {
-      font-size: 1.05rem; color: var(--text-muted); max-width: 720px; font-weight: 400; line-height: 1.8;
+      font-size: 1.05rem; color: var(--text-muted); max-width: 760px; font-weight: 400; line-height: 1.8;
     }
+
+    .section { padding: clamp(4.5rem, 8vw, 7rem) 0; position: relative; }
     .text-center { text-align: center; }
     .text-center .tag-badge { margin-left: auto; margin-right: auto; }
 
-    /* Navbar */
+    /* Logo */
     .brand-logo { display: flex; align-items: center; gap: 0.65rem; font-size: 1.15rem; color: var(--text-main); letter-spacing: -0.02em; }
-    .brand-logo-img { width: 34px; height: 34px; object-fit: contain; }
+    .brand-logo-img { width: 34px; height: 34px; object-fit: contain; display: block; }
     .brand-logo span { color: var(--brand-grey); font-weight: 600; }
 
+    /* Navigation Capsule */
     .navbar-capsule {
       position: fixed; top: 16px; left: 50%; transform: translateX(-50%); width: 96%; max-width: 1280px;
       background: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
       border: 1px solid var(--border-navy); border-radius: var(--radius-pill); z-index: 9999;
-      padding: 0.55rem 1.1rem; box-shadow: var(--shadow-subtle);
+      padding: 0.55rem 1.1rem; box-shadow: var(--shadow-subtle); transition: var(--transition);
     }
     .nav-container { display: flex; justify-content: space-between; align-items: center; }
-    .nav-links { display: flex; align-items: center; gap: 0.15rem; }
+    .nav-links { display: flex; align-items: center; gap: 0.2rem; }
     .nav-links a {
       font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.55rem;
       border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition); white-space: nowrap;
@@ -165,25 +219,82 @@
     .theme-toggle-btn {
       width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border-navy);
       background: var(--bg-surface); color: var(--text-main); display: flex; align-items: center;
-      justify-content: center; cursor: pointer; font-size: 0.95rem; margin-left: 0.35rem;
+      justify-content: center; cursor: pointer; font-size: 0.95rem; transition: var(--transition); margin-left: 0.35rem;
     }
     .theme-toggle-btn:hover { transform: scale(1.08); background: var(--brand-navy); color: #ffffff; }
 
     .btn-nav-capsule { background: var(--brand-navy-soft) !important; border: 1px solid var(--border-navy) !important; color: var(--text-main) !important; }
     .btn-nav-capsule:hover { background: var(--brand-navy) !important; color: #fff !important; }
-    .nav-toggle { display: none; background: none; border: none; font-size: 1.3rem; color: var(--text-main); cursor: pointer; }
+    .nav-toggle { display: none; background: none; border: none; font-size: 1.3rem; color: var(--text-main); cursor: pointer; padding: 0.4rem; }
 
     /* Buttons */
     .btn {
-      display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1.8rem; font-size: 0.86rem;
-      font-weight: 700; letter-spacing: -0.01em; border-radius: var(--radius-pill); cursor: pointer; transition: var(--transition); min-height: 46px;
+      display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.9rem 2rem; font-size: 0.86rem;
+      font-weight: 700; letter-spacing: -0.01em; border-radius: var(--radius-pill); cursor: pointer; transition: var(--transition); min-height: 48px;
     }
-    .btn-primary { background: var(--brand-navy); color: #ffffff; border: 1px solid transparent; box-shadow: 0 8px 24px rgba(14, 39, 63, 0.25); }
-    .btn-primary:hover { background: var(--brand-navy-light); transform: translateY(-2px); }
+    .btn-primary, .btn-navy {
+      background: var(--brand-navy); color: #ffffff; box-shadow: 0 8px 24px rgba(14, 39, 63, 0.25); border: 1px solid transparent;
+    }
+    .btn-primary:hover, .btn-navy:hover {
+      background: var(--brand-navy-light); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(14, 39, 63, 0.35);
+    }
     .btn-outline { border: 1px solid var(--border-navy); color: var(--text-main); background: var(--bg-surface); }
     .btn-outline:hover { border-color: var(--brand-navy); background: var(--brand-navy-soft); transform: translateY(-2px); }
 
-    /* ================= 2D SITE PLANNER TOOL STYLES ================= */
+    /* Hero */
+    .hero-section {
+      min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; padding: clamp(7.5rem, 15vw, 10.5rem) 1.5rem 5rem; position: relative;
+    }
+    .hero-texture { bottom: -30px; right: -60px; width: 700px; height: 700px; max-width: 80vw; }
+    .hero-content { max-width: 980px; z-index: 2; position: relative; }
+    .hero-title { font-size: clamp(2.7rem, 7vw, 4.8rem); line-height: 1.05; margin-bottom: 1.5rem; color: var(--text-main); font-weight: 800; }
+    .hero-description { font-size: clamp(1rem, 2.5vw, 1.18rem); line-height: 1.85; color: var(--text-muted); margin-bottom: 2.6rem; max-width: 820px; margin-left: auto; margin-right: auto; }
+    .hero-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .hero-trust-bar {
+      margin-top: 4rem; display: flex; justify-content: center; align-items: center; gap: 1.8rem;
+      color: var(--text-muted); font-size: 0.86rem; border-top: 1px solid var(--border-subtle); padding-top: 1.8rem; flex-wrap: wrap;
+    }
+    .hero-trust-bar span { display: flex; align-items: center; gap: 0.5rem; }
+    .hero-trust-bar span i { color: var(--accent-azure); }
+
+    /* About Section */
+    .about-texture { top: 20px; right: -40px; width: 560px; height: 560px; max-width: 60vw; }
+    .grid-about-unboxed { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(2.5rem, 5vw, 4.5rem); align-items: center; }
+    .portrait-standalone-wrap { position: relative; display: flex; justify-content: center; align-items: center; }
+    .portrait-ambient-glow {
+      position: absolute; width: 360px; height: 360px; background: radial-gradient(circle, var(--brand-navy-soft) 0%, rgba(0,0,0,0) 70%);
+      border-radius: 50%; z-index: 1; pointer-events: none;
+    }
+    .portrait-standalone-img {
+      position: relative; z-index: 2; width: 100%; max-width: 420px; height: auto; object-fit: cover;
+      display: block; filter: drop-shadow(0 20px 30px rgba(14, 39, 63, 0.2)); transition: var(--transition);
+    }
+    .portrait-sub-label {
+      position: absolute; bottom: -15px; background: var(--bg-surface); border: 1px solid var(--border-navy);
+      padding: 0.55rem 1.3rem; border-radius: var(--radius-pill); font-family: var(--font-mono); font-size: 0.74rem;
+      letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-main); z-index: 3; display: flex; align-items: center; gap: 0.6rem; box-shadow: var(--shadow-subtle);
+    }
+    .portrait-sub-label .live-dot { width: 7px; height: 7px; background: #25D366; border-radius: 50%; }
+
+    .about-text p { color: var(--text-muted); margin-bottom: 1.25rem; font-size: 1.02rem; }
+    .credentials-row {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0;
+      border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 1.4rem 0;
+    }
+    .cred-num {
+      font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.3rem); color: var(--text-main); line-height: 1; font-weight: 800;
+    }
+    .cred-stat p { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--brand-grey); margin-top: 0.35rem; }
+
+    .skills-cluster { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+    .skill-tag {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 0.4rem 0.9rem;
+      font-size: 0.78rem; border-radius: var(--radius-pill); color: var(--text-main); display: flex; align-items: center; gap: 0.45rem;
+    }
+    .skill-tag span { color: var(--accent-azure); font-weight: 700; font-family: var(--font-mono); font-size: 0.72rem; }
+
+    /* ================= 2D SITE PLANNER & TENTATIVE LAYOUT ================= */
     .planner-card {
       background: var(--bg-surface); border: 1px solid var(--border-navy);
       border-radius: var(--radius-lg); padding: clamp(1.8rem, 4vw, 3rem);
@@ -192,16 +303,15 @@
     .planner-layout-grid {
       display: grid; grid-template-columns: 1.05fr 1.35fr; gap: 2.5rem;
     }
-    @media (max-width: 960px) {
-      .planner-layout-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 960px) { .planner-layout-grid { grid-template-columns: 1fr; } }
+    
     .planner-form-section {
       background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md); padding: 1.8rem;
     }
     .planner-section-subhead {
       font-family: var(--font-display); font-size: 1.15rem; color: var(--text-main);
-      margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1.2rem; display: flex; align-items: center; justify-content: space-between;
     }
     .input-row-4 {
       display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.2rem;
@@ -219,30 +329,26 @@
       border-color: var(--brand-navy); box-shadow: 0 0 10px var(--brand-navy-soft);
     }
 
-    /* Canvas Screen */
     .canvas-container {
-      background: #0d1219; border: 2px solid var(--border-navy);
+      background: #0b1017; border: 2px solid var(--border-navy);
       border-radius: var(--radius-md); position: relative; overflow: hidden;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
-      min-height: 480px; box-shadow: inset 0 0 35px rgba(0,0,0,0.8);
+      min-height: 490px; box-shadow: inset 0 0 35px rgba(0,0,0,0.85);
     }
-    #sitePlanCanvas {
-      width: 100%; height: 100%; display: block;
-    }
+    #sitePlanCanvas { width: 100%; height: 100%; display: block; }
     .canvas-hud {
-      position: absolute; top: 14px; left: 14px; background: rgba(14, 39, 63, 0.85);
+      position: absolute; top: 14px; left: 14px; background: rgba(14, 39, 63, 0.9);
       backdrop-filter: blur(10px); color: #fff; padding: 6px 14px; border-radius: var(--radius-pill);
       font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.05em; z-index: 5;
     }
     .canvas-north {
       position: absolute; top: 14px; right: 14px; width: 44px; height: 44px;
-      border-radius: 50%; background: rgba(14, 39, 63, 0.85); backdrop-filter: blur(10px);
+      border-radius: 50%; background: rgba(14, 39, 63, 0.9); backdrop-filter: blur(10px);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       color: #fff; font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; z-index: 5;
       border: 1px solid var(--border-subtle);
     }
 
-    /* Telemetry Report Cards */
     .telemetry-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1rem; margin-top: 1.8rem;
@@ -259,23 +365,41 @@
       font-family: var(--font-display); font-size: 1.55rem; color: var(--text-main);
       font-weight: 800; line-height: 1.15;
     }
-    .telemetry-sub {
-      font-size: 0.78rem; color: var(--text-muted); margin-top: 0.3rem;
-    }
+    .telemetry-sub { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.3rem; }
 
-    /* NBC 205 Compliance Pill */
+    .room-schedule-wrap {
+      margin-top: 1.5rem; background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-navy); border-radius: var(--radius-sm);
+      overflow-x: auto;
+    }
+    .room-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.86rem; }
+    .room-table th { background: var(--brand-navy-soft); padding: 10px 14px; font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; color: var(--text-main); border-bottom: 1px solid var(--border-navy); }
+    .room-table td { padding: 9px 14px; border-bottom: 1px solid var(--border-subtle); color: var(--text-muted); }
+    .room-tag { font-family: var(--font-mono); font-weight: 600; color: var(--accent-azure); }
+
     .compliance-banner {
       background: var(--bg-surface-elevated); border: 1px solid var(--border-navy);
       border-radius: var(--radius-sm); padding: 1.2rem 1.5rem; margin-top: 1.5rem;
       display: flex; align-items: center; gap: 1rem;
     }
     .compliance-banner.pass { border-left: 5px solid #25D366; }
-    .compliance-banner.info { border-left: 5px solid #1b5291; }
+    .compliance-banner.warn { border-left: 5px solid #ffaa00; }
 
-    /* Action bar */
     .planner-actions {
       display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.8rem; justify-content: flex-end;
     }
+
+    /* Team */
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+    .team-card {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+      padding: 2.2rem 1.8rem; text-align: center; transition: var(--transition); box-shadow: var(--shadow-subtle);
+    }
+    .team-card:hover { border-color: var(--border-navy); transform: translateY(-5px); }
+    .team-avatar { width: 115px; height: 115px; border-radius: 50%; object-fit: cover; margin-bottom: 1.2rem; border: 3px solid var(--accent-azure); }
+    .team-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--text-main); margin-bottom: 0.3rem; font-weight: 700; }
+    .team-role { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-azure); text-transform: uppercase; margin-bottom: 0.8rem; font-weight: 600; }
+    .team-bio { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
     /* Floating Posts Marquee */
     .posts-marquee-section {
@@ -304,18 +428,6 @@
     .floating-post-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; }
     .floating-post-caption { font-size: 0.84rem; color: var(--text-muted); }
 
-    /* Team */
-    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
-    .team-card {
-      background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
-      padding: 2.2rem 1.8rem; text-align: center; transition: var(--transition); box-shadow: var(--shadow-subtle);
-    }
-    .team-card:hover { border-color: var(--border-navy); transform: translateY(-5px); }
-    .team-avatar { width: 115px; height: 115px; border-radius: 50%; object-fit: cover; margin-bottom: 1.2rem; border: 3px solid var(--accent-azure); }
-    .team-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--text-main); margin-bottom: 0.3rem; font-weight: 700; }
-    .team-role { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-azure); text-transform: uppercase; margin-bottom: 0.8rem; font-weight: 600; }
-    .team-bio { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
-
     /* Downloads */
     .downloads-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 3.5rem; }
     .download-card {
@@ -325,6 +437,276 @@
     .download-card:hover { border-color: var(--border-navy); transform: translateY(-4px); }
     .download-meta h4 { font-family: var(--font-display); font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.35rem; font-weight: 700; }
     .download-meta span { font-family: var(--font-mono); font-size: 0.76rem; color: var(--brand-grey); text-transform: uppercase; }
+
+    /* Before/After with Clip-Path */
+    .trans-texture { bottom: -60px; left: -60px; width: 600px; height: 600px; max-width: 60vw; }
+    .before-after-container {
+      max-width: 980px; margin: 3.5rem auto 0; position: relative; border-radius: var(--radius-lg);
+      overflow: hidden; border: 1px solid var(--border-navy); box-shadow: var(--shadow-elevated);
+      background: #000; user-select: none; touch-action: pan-y;
+    }
+    .ba-image-wrapper { position: relative; width: 100%; height: clamp(280px, 50vw, 520px); overflow: hidden; }
+    .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ba-img-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 2;
+      border-right: 2px solid #ffffff; clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+    .ba-img-overlay img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ba-slider-range { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; z-index: 10; touch-action: pan-y; }
+    .ba-handle {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 44px; height: 44px; background: #ffffff; color: var(--brand-navy); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 1rem; pointer-events: none; z-index: 5;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .ba-badge {
+      position: absolute; top: 16px; padding: 0.35rem 0.85rem; border-radius: var(--radius-pill);
+      background: rgba(14, 39, 63, 0.88); backdrop-filter: blur(8px); font-family: var(--font-mono);
+      font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; z-index: 6; color: #ffffff;
+    }
+    .ba-badge-left { left: 16px; }
+    .ba-badge-right { right: 16px; }
+
+    /* BOQ Toolkit */
+    .boq-toolkit-card {
+      background: var(--bg-surface); border: 1px solid var(--border-navy);
+      border-radius: var(--radius-lg); padding: clamp(2rem, 5vw, 4rem);
+      max-width: 980px; margin: 3.5rem auto 0; box-shadow: var(--shadow-elevated);
+      position: relative; z-index: 2;
+    }
+    .boq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+    @media (max-width: 768px) { .boq-grid { grid-template-columns: 1fr; } }
+    .boq-group label {
+      display: block; font-family: var(--font-mono); font-size: 0.74rem; text-transform: uppercase;
+      color: var(--text-main); letter-spacing: 0.06em; margin-bottom: 0.5rem;
+    }
+    .boq-select {
+      width: 100%; padding: 0.9rem 1.1rem; background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-main);
+      font-size: 16px !important; outline: none;
+    }
+    .boq-range-wrap {
+      grid-column: 1 / -1; background: var(--bg-surface-elevated);
+      padding: 1.5rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);
+    }
+    .boq-range-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
+    .boq-range-slider { width: 100%; accent-color: var(--brand-navy); height: 8px; }
+    
+    .boq-breakdown-card {
+      background: var(--brand-navy-soft); border: 1px solid var(--border-navy);
+      border-radius: var(--radius-md); padding: 2rem; margin-top: 1.8rem;
+    }
+    .boq-total-price {
+      font-family: var(--font-display); font-size: clamp(2.2rem, 6vw, 3.4rem);
+      color: var(--text-main); font-weight: 800; line-height: 1.1; margin-bottom: 1rem;
+    }
+    .boq-itemized-list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; font-size: 0.9rem;
+      color: var(--text-muted); border-top: 1px solid var(--border-navy); padding-top: 1.2rem; margin-bottom: 1.4rem;
+    }
+    @media (max-width: 600px) { .boq-itemized-list { grid-template-columns: 1fr; } }
+
+    /* Unified Hub */
+    .hub-container {
+      max-width: 1080px; margin: 3rem auto 0; background: var(--bg-surface);
+      border: 1px solid var(--border-navy); border-radius: var(--radius-lg);
+      padding: clamp(1.8rem, 4vw, 3.5rem); box-shadow: var(--shadow-elevated); position: relative; z-index: 2;
+    }
+    .hub-main-toggle {
+      display: flex; justify-content: center; gap: 0.6rem; margin-bottom: 2.2rem; flex-wrap: wrap;
+    }
+    .hub-toggle-btn {
+      padding: 0.75rem 1.4rem; border-radius: var(--radius-pill); border: 1px solid var(--border-navy);
+      background: var(--bg-surface-elevated); color: var(--text-main); font-family: var(--font-display);
+      font-weight: 700; font-size: 0.84rem; cursor: pointer; transition: var(--transition);
+    }
+    .hub-toggle-btn.active {
+      background: var(--brand-navy); color: #ffffff; border-color: var(--brand-navy);
+      box-shadow: 0 4px 18px rgba(14, 39, 63, 0.25);
+    }
+
+    .tool-selector-grid {
+      display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.8rem; margin-bottom: 1.8rem;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tool-chip {
+      padding: 0.5rem 1rem; border-radius: var(--radius-pill); border: 1px solid var(--border-subtle);
+      background: var(--bg-surface-elevated); color: var(--text-muted); font-size: 0.8rem; font-weight: 600;
+      white-space: nowrap; cursor: pointer; transition: var(--transition);
+    }
+    .tool-chip.active { background: var(--accent-azure); color: #ffffff; border-color: var(--accent-azure); }
+
+    .tool-panel { display: none; }
+    .tool-panel.active { display: block; animation: panelFade 0.35s ease; }
+    @keyframes panelFade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    .calc-box-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    @media (max-width: 768px) { .calc-box-grid { grid-template-columns: 1fr; } }
+
+    .calc-input-group label {
+      display: block; font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase;
+      color: var(--text-main); letter-spacing: 0.06em; margin-bottom: 0.4rem;
+    }
+    .calc-input-group input, .calc-input-group select {
+      width: 100%; padding: 0.8rem 1rem; background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-main);
+      font-size: 16px !important; outline: none;
+    }
+
+    .calc-output-card {
+      background: var(--brand-navy-soft); border: 1px solid var(--border-navy);
+      border-radius: var(--radius-md); padding: 1.6rem; margin-top: 1.5rem;
+    }
+    .calc-output-title { font-family: var(--font-mono); font-size: 0.74rem; text-transform: uppercase; color: var(--brand-grey); letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .calc-output-val { font-family: var(--font-display); font-size: clamp(1.6rem, 4.5vw, 2.3rem); color: var(--text-main); font-weight: 800; line-height: 1.15; margin-bottom: 0.5rem; }
+    .calc-breakdown-list { font-size: 0.9rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 0; }
+
+    /* Rates Table */
+    .rates-table-wrap {
+      margin-top: 3.5rem; background: var(--bg-surface); border: 1px solid var(--border-navy);
+      border-radius: var(--radius-lg); overflow-x: auto; box-shadow: var(--shadow-subtle); -webkit-overflow-scrolling: touch;
+    }
+    .rates-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem; min-width: 620px; }
+    .rates-table th {
+      background: var(--brand-navy-soft); padding: 1.2rem 1.5rem; font-family: var(--font-mono);
+      font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-main);
+      border-bottom: 1px solid var(--border-navy);
+    }
+    .rates-table td { padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--border-subtle); color: var(--text-muted); }
+    .rates-table tr:hover td { background: var(--brand-navy-soft); color: var(--text-main); }
+    .rate-pill { font-family: var(--font-mono); font-weight: 700; color: var(--accent-azure); }
+
+    /* Showcase */
+    .showcase-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+    .showcase-card {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-subtle);
+      transition: var(--transition); display: flex; flex-direction: column;
+    }
+    .showcase-card:hover { border-color: var(--border-navy); transform: translateY(-5px); box-shadow: var(--shadow-elevated); }
+    .showcase-img-wrap { width: 100%; height: 260px; overflow: hidden; position: relative; background: #121620; }
+    .showcase-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+    .showcase-card:hover .showcase-img-wrap img { transform: scale(1.06); }
+    .platform-badge {
+      position: absolute; top: 14px; left: 14px; padding: 0.35rem 0.85rem; border-radius: var(--radius-pill);
+      font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      color: #ffffff; display: inline-flex; align-items: center; gap: 0.4rem; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .badge-instagram { background: linear-gradient(135deg, #E1306C, #833AB4); }
+    .badge-tiktok { background: #000000; border: 1px solid #00f2fe; }
+    .badge-facebook { background: #1877F2; }
+    .badge-project { background: var(--brand-navy); }
+    .showcase-body { padding: 1.8rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+    .item-title { font-family: var(--font-display); font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.6rem; font-weight: 700; }
+    .showcase-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.2rem; }
+
+    /* Articles */
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
+    .article-card {
+      background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+      overflow: hidden; transition: var(--transition); box-shadow: var(--shadow-subtle); display: flex; flex-direction: column;
+    }
+    .article-card:hover { border-color: var(--border-navy); transform: translateY(-5px); box-shadow: var(--shadow-elevated); }
+    .article-img-wrap { width: 100%; height: 240px; overflow: hidden; background: #10141b; }
+    .article-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease; }
+    .article-card:hover .article-img-wrap img { transform: scale(1.06); }
+    .article-content { padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
+    .article-meta {
+      display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.74rem;
+      color: var(--brand-grey); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.8rem;
+    }
+    .article-content .item-title { font-size: 1.45rem; color: var(--text-main); margin-bottom: 0.8rem; line-height: 1.25; }
+    .article-content p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.4rem; }
+
+    /* Portfolio Carousel */
+    .slider-section { background: var(--bg-surface-elevated); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
+    .slider-controls-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.2rem; flex-wrap: wrap; gap: 1.5rem; }
+    .slider-buttons { display: flex; gap: 0.8rem; }
+    .slide-arrow-btn {
+      width: 48px; height: 48px; border: 1px solid var(--border-navy); background: var(--bg-surface);
+      color: var(--text-main); display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1.1rem; transition: var(--transition); border-radius: 50%;
+    }
+    .slide-arrow-btn:hover { background: var(--brand-navy); color: #ffffff; }
+    .slider-viewport { overflow: hidden; width: 100%; position: relative; cursor: grab; user-select: none; padding: 10px 0; touch-action: pan-y; }
+    .slider-track { display: flex; gap: 1.8rem; transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1); will-change: transform; }
+    .slider-card {
+      min-width: calc(33.333% - 1.2rem); background: var(--bg-surface);
+      border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+      overflow: hidden; transition: var(--transition); position: relative; box-shadow: var(--shadow-subtle);
+    }
+    @media (max-width: 1024px) { .slider-card { min-width: calc(50% - 0.9rem); } }
+    @media (max-width: 650px) { .slider-card { min-width: 100%; } }
+    .slider-card:hover { border-color: var(--border-navy); transform: translateY(-5px); box-shadow: var(--shadow-elevated); }
+    .slide-img-box { position: relative; height: 280px; overflow: hidden; background: #161a22; }
+    .slide-img-box img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s ease; }
+    .slider-card:hover .slide-img-box img { transform: scale(1.05); }
+    .slide-overlay {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(14, 39, 63, 0.65); display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: var(--transition);
+    }
+    .slide-overlay span {
+      font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: #ffffff;
+      padding: 0.5rem 1.3rem; border-radius: var(--radius-pill); background: var(--brand-navy); font-weight: 700;
+    }
+    .slider-card:hover .slide-overlay { opacity: 1; }
+    .slide-desc { padding: 1.8rem; }
+    .slide-tag { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-azure); font-weight: 600; }
+    .slide-desc .item-title { font-size: 1.35rem; color: var(--text-main); margin: 0.35rem 0 0.55rem; font-weight: 700; }
+    .slide-desc p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.9rem; line-height: 1.6; }
+    .attribution-tag {
+      font-size: 0.72rem; color: var(--brand-navy); background: var(--brand-navy-soft);
+      border: 1px solid var(--border-navy); padding: 0.35rem 0.85rem; border-radius: var(--radius-pill);
+      display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600;
+    }
+    [data-theme="dark"] .attribution-tag { color: #f5f2ea; }
+    .slider-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--border-navy); cursor: pointer; transition: var(--transition); }
+    .dot.active { background: var(--brand-navy); width: 26px; border-radius: var(--radius-pill); }
+
+    /* FAQ */
+    .faq-container { max-width: 860px; margin: 3.5rem auto 0; display: flex; flex-direction: column; gap: 1.1rem; }
+    .faq-item { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); box-shadow: var(--shadow-subtle); }
+    .faq-item:hover { border-color: var(--border-navy); }
+    .faq-question {
+      padding: 1.4rem 1.8rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      font-size: 1.2rem; color: var(--text-main); font-family: var(--font-display); font-weight: 700;
+    }
+    .faq-question i { color: var(--accent-azure); transition: transform 0.3s ease; }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; color: var(--text-muted); font-size: 0.94rem; line-height: 1.8; padding: 0 1.8rem; }
+    .faq-item.open .faq-answer { padding-bottom: 1.5rem; }
+
+    /* Contact Section */
+    .contact-card {
+      background: var(--bg-surface); border: 1px solid var(--border-navy); border-radius: var(--radius-lg);
+      display: grid; grid-template-columns: 1.2fr 1.1fr; padding: clamp(2.5rem, 5vw, 4.5rem); gap: 3.5rem; box-shadow: var(--shadow-subtle);
+    }
+    .contact-info h2 { font-size: clamp(2rem, 5vw, 2.7rem); color: var(--text-main); margin-bottom: 1rem; }
+    .contact-info p { color: var(--text-muted); margin-bottom: 2rem; }
+    .contact-methods { display: flex; flex-direction: column; gap: 1.2rem; }
+    .method-item { display: flex; align-items: center; gap: 1.1rem; }
+    .method-item i {
+      font-size: 1.2rem; color: #ffffff; background: var(--brand-navy);
+      width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; border-radius: 50%;
+    }
+    .method-item span { display: block; font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-grey); }
+    .method-item a, .method-item p { font-size: 1rem; color: var(--text-main); margin-bottom: 0; font-weight: 500; }
+    .contact-form { background: var(--bg-surface-elevated); padding: clamp(1.8rem, 4vw, 2.8rem); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+    .contact-form .form-title { font-family: var(--font-display); font-size: 1.55rem; color: var(--text-main); margin-bottom: 1.2rem; font-weight: 700; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 0.9rem 1.1rem; background: var(--bg-surface); border: 1px solid var(--border-subtle);
+      color: var(--text-main); font-family: inherit; border-radius: var(--radius-sm); transition: var(--transition);
+      font-size: 16px !important;
+    }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--brand-navy); box-shadow: 0 0 10px var(--brand-navy-soft); }
+    .btn-block { width: 100%; justify-content: center; margin-top: 0.5rem; }
 
     /* Floating Contact Dock */
     .floating-contact-bar {
@@ -341,21 +723,28 @@
     .float-instagram { background: linear-gradient(135deg, #E1306C, #833AB4); }
     .float-linkedin { background: linear-gradient(135deg, #0A66C2, #004182); }
 
+    /* Modal */
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; }
+    .modal.open { display: block; }
+    .modal-backdrop { position: absolute; width: 100%; height: 100%; background: rgba(14, 20, 28, 0.88); backdrop-filter: blur(12px); }
+    .modal-dialog {
+      position: relative; max-width: 960px; width: 92%; margin: 4% auto; background: var(--bg-surface);
+      border: 1px solid var(--border-navy); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-elevated);
+    }
+    .modal-close {
+      position: absolute; top: 16px; right: 18px; font-size: 1.6rem; background: var(--bg-surface);
+      border: 1px solid var(--border-navy); width: 40px; height: 40px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; color: var(--text-main); cursor: pointer; z-index: 10;
+    }
+    .modal-dialog img { width: 100%; max-height: 520px; object-fit: contain; background: #07090c; display: block; }
+    .modal-details { padding: 2rem; }
+    .modal-details .modal-title { font-family: var(--font-display); font-size: 1.65rem; color: var(--text-main); margin: 0.35rem 0 0.7rem; font-weight: 700; }
+    .modal-details p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
+
     /* Footer */
     .footer { border-top: 1px solid var(--border-subtle); padding: 3rem 0; background: var(--bg-surface); color: var(--text-muted); font-size: 0.9rem; }
     .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
     .footer-social-links { display: flex; gap: 1.2rem; align-items: center; }
-
-    @media (max-width: 950px) {
-      .nav-toggle { display: block; }
-      .nav-links {
-        position: absolute; top: 115%; left: 0; width: 100%; background: var(--bg-surface);
-        flex-direction: column; padding: 1.8rem; gap: 0.6rem; border: 1px solid var(--border-navy);
-        border-radius: var(--radius-md); box-shadow: var(--shadow-elevated); display: none;
-      }
-      .nav-links.active { display: flex; }
-      .floating-contact-bar { right: 14px; }
-    }
   </style>
 </head>
 <body>
@@ -373,9 +762,12 @@
         </button>
         <div class="nav-links" id="navLinks">
           <a href="#home" class="nav-item active">Overview</a>
-          <a href="#site-planner" class="nav-item">Site Planner</a>
+          <a href="#site-planner" class="nav-item">Site &amp; Layout Planner</a>
           <a href="#team" class="nav-item">Team</a>
           <a href="#posts-gallery" class="nav-item">Live Feed</a>
+          <a href="#boq-toolkit" class="nav-item">BOQ Toolkit</a>
+          <a href="#hub" class="nav-item">Studio Hub</a>
+          <a href="#rates" class="nav-item">Rates</a>
           <a href="#downloads" class="nav-item">Downloads</a>
           <a href="#portfolio" class="nav-item">Portfolio</a>
           <a href="#contact" class="nav-item btn-nav-capsule">Consultation</a>
@@ -405,30 +797,36 @@
 
   <!-- Hero Section -->
   <header class="hero-section section-with-texture" id="home">
-    <div class="container text-center" style="padding-top: 5rem;">
+    <div class="hero-content">
       <div class="tag-badge">
         <span class="dot"></span> Civil Engineering &amp; Interior Architecture
       </div>
-      <h1 class="section-title">Automated Site Planning &amp; <em>NBC 205:2024 Engine</em></h1>
-      <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-        Generate compliant 2D building footprints with setbacks, ground coverage, and FAR calculations in real-time. Designed by <strong>Chetan Kumar Sarraf</strong>, Civil Engineer &amp; Interior Designer in Birgunj, Nepal.
+      <h1 class="hero-title">Best Interior Designer in <em>Birgunj, Nepal</em></h1>
+      <p class="hero-description">
+        I am <strong>Chetan Kumar Sarraf</strong>, a qualified Civil Engineer &amp; Interior Design Professional under <strong>Scale and Spaces Private Limited</strong>. Integrating structural engineering accuracy with 3D photorealism, spatial BOQ valuation, and automated site planning compliant with <strong>NBC 205:2024</strong>.
       </p>
-      <div style="display:flex; justify-content:center; gap:1rem;">
-        <a href="#site-planner" class="btn btn-primary">Open Site Planner <i class="fa-solid fa-compass-drafting"></i></a>
-        <a href="#contact" class="btn btn-outline">Free Consultation</a>
+      <div class="hero-actions">
+        <a href="#site-planner" class="btn btn-primary">Open Site &amp; Layout Planner <i class="fa-solid fa-compass-drafting"></i></a>
+        <a href="#boq-toolkit" class="btn btn-outline">Room BOQ Toolkit</a>
+      </div>
+      <div class="hero-trust-bar">
+        <span><i class="fa-solid fa-location-dot"></i> Birgunj, Parsa, Nepal</span>
+        <span><i class="fa-solid fa-compass-drafting"></i> 2D AutoCAD &amp; MEP</span>
+        <span><i class="fa-solid fa-calculator"></i> Live BOQ Estimation</span>
+        <span><i class="fa-solid fa-vr-cardboard"></i> 360° VR Tours</span>
       </div>
     </div>
   </header>
 
-  <!-- ================= 2D SITE PLANNER & FOOTPRINT GENERATOR ================= -->
+  <!-- ================= 2D SITE PLANNER & TENTATIVE LAYOUT ENGINE ================= -->
   <section class="section section-with-texture" id="site-planner">
     <div class="container">
       <div class="section-header text-center">
         <div class="tag-badge">
-          <span class="dot"></span> Smart Drafting Engine
+          <span class="dot"></span> Smart Drafting &amp; Feasibility Engine
         </div>
-        <h2 class="section-title">Interactive 2D Site Planner &amp; <em>Footprint Generator</em></h2>
-        <p class="section-subtitle" style="margin: 0 auto;">Input 4 boundaries and diagonal D1. The tool calculates exact quadrilateral coordinates, offsets setbacks, calculates Ground Coverage &amp; FAR, and checks compliance with NBC 205:2024.</p>
+        <h2 class="section-title">Interactive Site Planner &amp; <em>Tentative Floor Layout</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Enter 4 boundary lengths. Diagonal D1 is optional. Select your target number of storeys and toggle on the <strong>Tentative Architectural Plan</strong> to visualize room zoning inside your compliant building footprint.</p>
       </div>
 
       <div class="planner-card">
@@ -437,9 +835,10 @@
           <!-- LEFT CONTROLS -->
           <div class="planner-controls-col">
             
+            <!-- Section 1: Plot Boundaries -->
             <div class="planner-form-section">
               <div class="planner-section-subhead">
-                <span>1. Plot Boundaries</span>
+                <span>1. Boundary Dimensions</span>
                 <div class="plan-input-wrap" style="width: auto;">
                   <select id="planUnit" onchange="redrawSitePlan()" style="padding: 0.35rem 0.6rem; font-size: 0.8rem;">
                     <option value="ft" selected>Feet (ft)</option>
@@ -469,8 +868,8 @@
 
               <div class="input-row-4">
                 <div class="plan-input-wrap">
-                  <label for="diagD1">Diagonal D1 (A to C):</label>
-                  <input type="number" id="diagD1" value="72" step="0.5" oninput="redrawSitePlan()" />
+                  <label for="diagD1">Diagonal D1 (A to C) [Optional]:</label>
+                  <input type="number" id="diagD1" placeholder="Auto-calculated if blank" step="0.5" oninput="redrawSitePlan()" />
                 </div>
                 <div class="plan-input-wrap">
                   <label for="roadSide">Road Facing Side:</label>
@@ -484,44 +883,81 @@
               </div>
             </div>
 
+            <!-- Section 2: Storeys & Tentative Concept -->
             <div class="planner-form-section" style="margin-top: 1.5rem;">
               <div class="planner-section-subhead">
-                <span>2. Municipal Bylaws &amp; Setbacks</span>
+                <span>2. Storeys &amp; Tentative Layout Idea</span>
+              </div>
+
+              <div class="input-row-4">
+                <div class="plan-input-wrap">
+                  <label for="numFloors">Proposed Storeys / Height:</label>
+                  <select id="numFloors" onchange="redrawSitePlan()">
+                    <option value="1">1 Storey (Ground Floor only)</option>
+                    <option value="2">2 Storeys (G + 1) [NBC 205 Sec 8]</option>
+                    <option value="2.5" selected>2.5 Storeys (G+1 + 25% Penthouse) [Popular]</option>
+                    <option value="3">3 Storeys (G + 2) [NBC 205 Sec 9]</option>
+                    <option value="3.5">3.5 Storeys (G+2 + 25% Penthouse)</option>
+                    <option value="4">4+ Storeys (Special Approval)</option>
+                  </select>
+                </div>
+                <div class="plan-input-wrap">
+                  <label for="layoutStyle">Tentative Planning Scheme:</label>
+                  <select id="layoutStyle" onchange="redrawSitePlan()">
+                    <option value="auto" selected>Auto 3BHK Family Residence</option>
+                    <option value="2bhk">2BHK Spacious Suite</option>
+                    <option value="commercial">Commercial Open Hall</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:0.6rem; padding: 0.5rem 0;">
+                <input type="checkbox" id="toggleTentativePlan" checked onchange="redrawSitePlan()" style="width: 18px; height: 18px; accent-color: var(--brand-navy);" />
+                <label for="toggleTentativePlan" style="font-size: 0.88rem; font-weight: 600; color: var(--text-main); cursor: pointer;">
+                  💡 Show Tentative Floor Layout Idea inside Footprint
+                </label>
+              </div>
+            </div>
+
+            <!-- Section 3: Municipal Bylaws & Setbacks -->
+            <div class="planner-form-section" style="margin-top: 1.5rem;">
+              <div class="planner-section-subhead">
+                <span>3. Municipal Bylaws, Coverage &amp; FAR</span>
                 <select id="presetBylaws" onchange="applyBylawPreset()" style="padding: 0.35rem 0.6rem; font-size: 0.8rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-main);">
                   <option value="birgunj" selected>Birgunj Residential (70% Coverage, 5ft Front)</option>
                   <option value="kathmandu">Kathmandu / DUDBC (60% Coverage, 5ft All)</option>
                   <option value="commercial">Commercial High-Street (60% Coverage, 10ft Front)</option>
-                  <option value="custom">Custom / Manual Input</option>
+                  <option value="custom">Custom (User Defined)</option>
                 </select>
               </div>
 
               <div class="input-row-4">
                 <div class="plan-input-wrap">
-                  <label for="setbackFront">Front Setback:</label>
-                  <input type="number" id="setbackFront" value="5" step="0.5" oninput="redrawSitePlan()" />
+                  <label for="setbackFront">Front Setback (Road):</label>
+                  <input type="number" id="setbackFront" value="5" step="0.5" oninput="onCustomParamChange()" />
                 </div>
                 <div class="plan-input-wrap">
                   <label for="setbackRear">Rear Setback:</label>
-                  <input type="number" id="setbackRear" value="3" step="0.5" oninput="redrawSitePlan()" />
+                  <input type="number" id="setbackRear" value="3" step="0.5" oninput="onCustomParamChange()" />
                 </div>
                 <div class="plan-input-wrap">
                   <label for="setbackSide1">Left Setback:</label>
-                  <input type="number" id="setbackSide1" value="3" step="0.5" oninput="redrawSitePlan()" />
+                  <input type="number" id="setbackSide1" value="3" step="0.5" oninput="onCustomParamChange()" />
                 </div>
                 <div class="plan-input-wrap">
                   <label for="setbackSide2">Right Setback:</label>
-                  <input type="number" id="setbackSide2" value="3" step="0.5" oninput="redrawSitePlan()" />
+                  <input type="number" id="setbackSide2" value="3" step="0.5" oninput="onCustomParamChange()" />
                 </div>
               </div>
 
               <div class="input-row-4">
                 <div class="plan-input-wrap">
                   <label for="coveragePct">Ground Coverage (%):</label>
-                  <input type="number" id="coveragePct" value="70" step="1" max="100" min="10" oninput="redrawSitePlan()" />
+                  <input type="number" id="coveragePct" value="70" step="1" max="100" min="10" oninput="onCustomParamChange()" />
                 </div>
                 <div class="plan-input-wrap">
                   <label for="farVal">FAR (Floor Area Ratio):</label>
-                  <input type="number" id="farVal" value="1.75" step="0.05" oninput="redrawSitePlan()" />
+                  <input type="number" id="farVal" value="1.75" step="0.05" min="0.5" max="6" oninput="onCustomParamChange()" />
                 </div>
               </div>
             </div>
@@ -532,9 +968,9 @@
           <div class="planner-canvas-col">
             
             <div class="canvas-container" id="canvasBox">
-              <div class="canvas-hud"><i class="fa-solid fa-cube"></i> Live Architectural 2D Plan</div>
+              <div class="canvas-hud"><i class="fa-solid fa-cube"></i> Architectural 2D Footprint</div>
               <div class="canvas-north"><span>N</span><i class="fa-solid fa-arrow-up" style="font-size: 0.65rem;"></i></div>
-              <canvas id="sitePlanCanvas" width="600" height="480"></canvas>
+              <canvas id="sitePlanCanvas" width="600" height="490"></canvas>
             </div>
 
             <!-- TELEMETRY CARDS -->
@@ -542,23 +978,38 @@
               <div class="telemetry-card">
                 <div class="telemetry-label">Gross Plot Area</div>
                 <div class="telemetry-value" id="valPlotArea">2,450 sq.ft</div>
-                <div class="telemetry-sub" id="valPlotTerai">0-0-13.4 Bigha-Kattha-Dhur</div>
+                <div class="telemetry-sub" id="valPlotTerai">0-0-13.4 (B-K-D)</div>
               </div>
               <div class="telemetry-card">
-                <div class="telemetry-label">Max Allowed Plinth</div>
-                <div class="telemetry-value" id="valPlinthAllowed">1,715 sq.ft</div>
-                <div class="telemetry-sub" id="valCoverageSub">70% Ground Coverage</div>
-              </div>
-              <div class="telemetry-card">
-                <div class="telemetry-label">Building Envelope</div>
+                <div class="telemetry-label">Ground Footprint</div>
                 <div class="telemetry-value" id="valFootprintActual">1,418 sq.ft</div>
-                <div class="telemetry-sub" id="valEnvelopePct">57.9% Plot Utilization</div>
+                <div class="telemetry-sub" id="valCoverageSub">70% Max Coverage Limit</div>
               </div>
               <div class="telemetry-card">
-                <div class="telemetry-label">Total Built-Up (FAR)</div>
-                <div class="telemetry-value" id="valFARBuilt">4,287 sq.ft</div>
-                <div class="telemetry-sub" id="valFARSub">FAR 1.75 Permissible</div>
+                <div class="telemetry-label">Proposed Total Area</div>
+                <div class="telemetry-value" id="valProposedBuilt">3,545 sq.ft</div>
+                <div class="telemetry-sub" id="valFloorSub">2.5 Storeys Planned</div>
               </div>
+              <div class="telemetry-card">
+                <div class="telemetry-label">FAR Compliance</div>
+                <div class="telemetry-value" id="valFARStatus" style="color: #25D366; font-size: 1.35rem;">✅ Fits FAR</div>
+                <div class="telemetry-sub" id="valFARSub">Max 4,288 sq.ft Allowable</div>
+              </div>
+            </div>
+
+            <!-- TENTATIVE ROOM SCHEDULE TABLE -->
+            <div class="room-schedule-wrap" id="roomScheduleBox">
+              <table class="room-table">
+                <thead>
+                  <tr>
+                    <th>Room / Space</th>
+                    <th>Zoning &amp; Level</th>
+                    <th>Approx Size (W × L)</th>
+                    <th>Est. Area</th>
+                  </tr>
+                </thead>
+                <tbody id="roomScheduleBody"></tbody>
+              </table>
             </div>
 
             <!-- NBC 205:2024 COMPLIANCE BANNER -->
@@ -590,71 +1041,81 @@
     </div>
   </section>
 
-  <!-- ================= TEAM SECTION ================= -->
-  <section class="section" id="team">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="tag-badge">
-          <span class="dot"></span> Expert Studio Crew
+  <!-- About Section -->
+  <section class="section about-section section-with-texture" id="about">
+    <div class="container grid-about-unboxed">
+      <div class="portrait-standalone-wrap">
+        <div class="portrait-ambient-glow"></div>
+        <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Chetan Kumar Sarraf" class="portrait-standalone-img" width="420" height="520" />
+        <div class="portrait-sub-label">
+          <span class="live-dot"></span>
+          <span>Chetan Kr. Sarraf • Lead Designer</span>
         </div>
-        <h2 class="section-title">Meet Our Studio &amp; <em>Engineering Team</em></h2>
-        <p class="section-subtitle" style="margin: 0 auto;">Civil engineers, 3D visualizers, and project supervisors turning blueprints into living luxury.</p>
       </div>
-
-      <div class="team-grid" id="teamContainer">
-        <div class="team-card">
-          <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Er. Chetan Kumar Sarraf" class="team-avatar" />
-          <div class="team-name">Er. Chetan Kr. Sarraf</div>
-          <div class="team-role">Civil Engineer &amp; Lead Designer</div>
-          <p class="team-bio">Specializing in structural execution blueprints, BOQ valuation, and photorealistic 3D interior design in Birgunj.</p>
+      <div class="about-text">
+        <div class="tag-badge"><span class="dot"></span> Professional Profile</div>
+        <h2 class="section-title">Where Engineering Rigor Harmonizes with <em>Interior Luxury</em></h2>
+        <p>Holding an academic background in <strong>Civil Engineering</strong> from Tri-juddha Secondary School, Birgunj, I specialize in constructible technical blueprints, accurate Bill of Quantities (BOQ) cost controls, and immersive architectural visualizations.</p>
+        <div class="credentials-row">
+          <div class="cred-stat"><div class="cred-num">2+</div><p>Years On-Site &amp; Studio</p></div>
+          <div class="cred-stat"><div class="cred-num">100%</div><p>Constructible Blueprints</p></div>
+          <div class="cred-stat"><div class="cred-num">3.30</div><p>Civil Engineering GPA</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= CONTINUOUS FLOATING / SLIDING POSTS MARQUEE ================= -->
+  <!-- ================= TEAM SECTION ================= -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Studio Crew</div>
+        <h2 class="section-title">Meet Our Studio &amp; <em>Engineering Team</em></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Dedicated engineers and visualizers turning blueprints into reality in Birgunj &amp; Nepal.</p>
+      </div>
+      <div class="team-grid" id="teamContainer">
+        <div class="team-card">
+          <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Er. Chetan Kumar Sarraf" class="team-avatar" />
+          <div class="team-name">Er. Chetan Kr. Sarraf</div>
+          <div class="team-role">Civil Engineer &amp; Lead Designer</div>
+          <p class="team-bio">Specializing in structural blueprints, BOQ valuation, and photorealistic 3D interior design in Birgunj.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTINUOUS FLOATING REEL ================= -->
   <section class="posts-marquee-section" id="posts-gallery">
     <div class="container text-center" style="margin-bottom: 2rem;">
-      <div class="tag-badge">
-        <span class="dot"></span> Live Studio Stream
-      </div>
+      <div class="tag-badge"><span class="dot"></span> Live Studio Stream</div>
       <h2 class="section-title">Continuous <em>Design Stream</em></h2>
       <p class="section-subtitle" style="margin: 0 auto;">Gliding showcase of our latest renders and on-site photos. Hover over any card to pause.</p>
     </div>
-
     <div class="posts-marquee-wrapper">
       <div class="posts-marquee-track" id="postsMarqueeTrack">
         <a class="floating-post-card" href="#contact">
-          <div class="floating-post-img-wrap">
-            <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Living Room" loading="lazy" />
-          </div>
+          <div class="floating-post-img-wrap"><img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Living Room" loading="lazy" /></div>
           <div class="floating-post-body">
             <div class="floating-post-title">Living Room Elegance</div>
             <p class="floating-post-caption">Fluted acoustic paneling and cove lighting in Birgunj.</p>
           </div>
         </a>
         <a class="floating-post-card" href="#contact">
-          <div class="floating-post-img-wrap">
-            <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Bedroom" loading="lazy" />
-          </div>
+          <div class="floating-post-img-wrap"><img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Bedroom" loading="lazy" /></div>
           <div class="floating-post-body">
             <div class="floating-post-title">Master Bedroom Suite</div>
             <p class="floating-post-caption">Floating consoles and custom bed headboard.</p>
           </div>
         </a>
         <a class="floating-post-card" href="#contact">
-          <div class="floating-post-img-wrap">
-            <img src="https://i.postimg.cc/BbKYyK5W/Modern-Toilet-Bathroom-Project3.png" alt="Bathroom" loading="lazy" />
-          </div>
+          <div class="floating-post-img-wrap"><img src="https://i.postimg.cc/BbKYyK5W/Modern-Toilet-Bathroom-Project3.png" alt="Bathroom" loading="lazy" /></div>
           <div class="floating-post-body">
             <div class="floating-post-title">Luxury Bathroom</div>
             <p class="floating-post-caption">Wet/dry zoning with concealed sanitary plumbing.</p>
           </div>
         </a>
         <a class="floating-post-card" href="#contact">
-          <div class="floating-post-img-wrap">
-            <img src="https://i.postimg.cc/jn7G8bwV/Resturant-Office-Interior.png" alt="Restaurant" loading="lazy" />
-          </div>
+          <div class="floating-post-img-wrap"><img src="https://i.postimg.cc/jn7G8bwV/Resturant-Office-Interior.png" alt="Restaurant" loading="lazy" /></div>
           <div class="floating-post-body">
             <div class="floating-post-title">Commercial Dining</div>
             <p class="floating-post-caption">Acoustic baffles and commercial pendant illumination.</p>
@@ -668,36 +1129,176 @@
   <section class="section" id="downloads">
     <div class="container">
       <div class="section-header text-center">
-        <div class="tag-badge">
-          <span class="dot"></span> Resources &amp; Blueprints
-        </div>
+        <div class="tag-badge"><span class="dot"></span> Resources &amp; Blueprints</div>
         <h2 class="section-title">Brochures &amp; <em>Resource Downloads</em></h2>
         <p class="section-subtitle" style="margin: 0 auto;">Official catalogs, finish palettes, and civil estimation templates available for immediate download.</p>
       </div>
-
       <div class="downloads-grid" id="downloadsContainer">
         <div class="download-card">
           <div class="download-meta">
             <h4>Interior Space Planning Checklist</h4>
             <span>PDF Guide • 2.4 MB</span>
           </div>
-          <a class="btn btn-primary" href="https://wa.me/9779766188838?text=Hi%20Chetan,%20please%20send%20the%20Space%20Planning%20Checklist." target="_blank">
-            Download <i class="fa-solid fa-download"></i>
-          </a>
+          <a class="btn btn-primary" href="https://wa.me/9779766188838?text=Hi%20Chetan,%20please%20send%20the%20Space%20Planning%20Checklist." target="_blank">Download <i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOQ Estimator Toolkit -->
+  <section class="section section-with-texture" id="boq-toolkit">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Full Project Estimator</div>
+        <h2 class="section-title">Room &amp; Project <em>BOQ Toolkit</em></h2>
+      </div>
+      <div class="boq-toolkit-card">
+        <div class="boq-grid">
+          <div class="boq-group">
+            <label for="boqRoom">Select Room / Space Type:</label>
+            <select class="boq-select" id="boqRoom" onchange="calculateFullBOQ()">
+              <option value="living">Living Room Suite</option>
+              <option value="bedroom" selected>Master Bedroom Suite</option>
+              <option value="kitchen">Modular Chef Kitchen &amp; Dining</option>
+              <option value="bathroom">Luxury Spa Bathroom / Toilet</option>
+              <option value="home">Full Residence (2BHK / 3BHK Flat)</option>
+              <option value="office">Commercial Office / Workspace</option>
+            </select>
+          </div>
+          <div class="boq-group">
+            <label for="boqScope">Project Scope &amp; Deliverables Tier:</label>
+            <select class="boq-select" id="boqScope" onchange="calculateFullBOQ()">
+              <option value="tier1">Tier 1: 2D Space Planning &amp; Full MEP (Rs. 25–45/sq.ft)</option>
+              <option value="tier2" selected>Tier 2: 3D Realistic Renders &amp; 2D Working Sets (Rs. 65–110/sq.ft)</option>
+              <option value="tier3">Tier 3: Turnkey Execution (Rs. 1,600–2,800/sq.ft)</option>
+            </select>
+          </div>
+          <div class="boq-range-wrap">
+            <div class="boq-range-header">
+              <label for="boqArea" style="margin-bottom: 0;">Floor Area (Square Feet):</label>
+              <span id="boqAreaDisplay" style="font-family: var(--font-mono); color: var(--accent-azure); font-weight: 700; font-size: 1.15rem;">350 sq.ft</span>
+            </div>
+            <input type="range" min="80" max="4000" step="10" value="350" class="boq-range-slider" id="boqArea" oninput="calculateFullBOQ()" />
+          </div>
+        </div>
+        <div class="boq-breakdown-card">
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; color: var(--brand-grey); margin-bottom: 0.4rem;">Calculated Investment Range (NPR)</div>
+          <div class="boq-total-price" id="boqPriceOut">Rs. 24,500 – 38,500</div>
+          <div class="boq-itemized-list">
+            <div><i class="fa-solid fa-check" style="color: var(--accent-azure); margin-right: 0.4rem;"></i> <strong>Planning:</strong> <span id="boqPlanFee">Included</span></div>
+            <div><i class="fa-solid fa-check" style="color: var(--accent-azure); margin-right: 0.4rem;"></i> <strong>3D &amp; 360° VR:</strong> <span id="boq3DFee">Included</span></div>
+            <div><i class="fa-solid fa-check" style="color: var(--accent-azure); margin-right: 0.4rem;"></i> <strong>Electrical &amp; MEP:</strong> <span id="boqMEPFee">Included</span></div>
+            <div><i class="fa-solid fa-check" style="color: var(--accent-azure); margin-right: 0.4rem;"></i> <strong>BOQ Cost Control:</strong> <span id="boqBOQFee">Included</span></div>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="exportFullBOQToWhatsApp()">Send Itemized BOQ to WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rates Table -->
+  <section class="section" id="rates">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Market Intelligence</div>
+        <h2 class="section-title">Birgunj Civil &amp; <em>Interior Rates Index</em></h2>
+      </div>
+      <div class="rates-table-wrap">
+        <table class="rates-table">
+          <thead>
+            <tr>
+              <th>Material / Trade Item</th>
+              <th>Category</th>
+              <th>Billing Unit</th>
+              <th>Standard Rate (NPR)</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody id="ratesTableBody">
+            <tr><td><strong>OPC Cement (Shivam / Hetauda)</strong></td><td>Civil</td><td>50 kg Bag</td><td><span class="rate-pill">Rs. 720 – 770</span></td><td class="auto-date">Oct 2026</td></tr>
+            <tr><td><strong>TMT Steel Rebar (Fe 500 Grade)</strong></td><td>Civil</td><td>Per Kg</td><td><span class="rate-pill">Rs. 92 – 98</span></td><td class="auto-date">Oct 2026</td></tr>
+            <tr><td><strong>Local River Sand (Screened)</strong></td><td>Civil</td><td>Per Tipper (250 cu.ft)</td><td><span class="rate-pill">Rs. 18,500 – 21,000</span></td><td class="auto-date">Oct 2026</td></tr>
+            <tr><td><strong>1st Class Red Clay Bricks</strong></td><td>Civil</td><td>Per 1,000 Pcs</td><td><span class="rate-pill">Rs. 15,000 – 17,000</span></td><td class="auto-date">Oct 2026</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="section" id="articles">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Design Journal</div>
+        <h2 class="section-title">Insights for <em>Homeowners in Nepal</em></h2>
+      </div>
+      <div class="articles-grid" id="articlesContainer">
+        <article class="article-card">
+          <div class="article-img-wrap"><img src="https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg" alt="Modular Kitchen" width="400" height="240" loading="lazy" /></div>
+          <div class="article-content">
+            <div>
+              <div class="article-meta"><span>Kitchen Planning</span><span class="auto-date">Oct 2026</span></div>
+              <div class="item-title">Modular Kitchen vs Carpenter Kitchen in Birgunj</div>
+              <p>Discover the true cost difference and durability of factory-made modular cabinets versus on-site carpentry in Nepal.</p>
+            </div>
+            <a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Discuss Kitchen Scope <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section slider-section" id="portfolio">
+    <div class="container">
+      <div class="slider-controls-top">
+        <div>
+          <div class="tag-badge"><span class="dot"></span> Selected Works</div>
+          <h2 class="section-title">Design Works &amp; AutoCAD Layouts</h2>
+        </div>
+        <div class="slider-buttons">
+          <button class="slide-arrow-btn" id="prevSlide" aria-label="Previous Slide"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="slide-arrow-btn" id="nextSlide" aria-label="Next Slide"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="slider-viewport" id="sliderViewport">
+        <div class="slider-track" id="sliderTrack">
+          <article class="slider-card" onclick="openModal('Modern Luxury Living Room Design', 'Residential Interior', 'Bespoke luxury living room design with warm LED coving and imported tile flooring.', 'https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg', 'Scale and Spaces')">
+            <div class="slide-img-box"><img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" alt="Living Room" width="400" height="280" loading="lazy" /><div class="slide-overlay"><span>View High-Res</span></div></div>
+            <div class="slide-desc"><span class="slide-tag">RESIDENTIAL LIVING</span><div class="item-title">Modern Luxury Living Room</div><p>Space-planned with custom wall panelling and warm LED coving.</p></div>
+          </article>
+          <article class="slider-card" onclick="openModal('Modern Master Bedroom Design', 'Master Suite', 'Photorealistic 3D interior render showcasing textured headboard accents.', 'https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png', 'Scale and Spaces')">
+            <div class="slide-img-box"><img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Bedroom" width="400" height="280" loading="lazy" /><div class="slide-overlay"><span>View High-Res</span></div></div>
+            <div class="slide-desc"><span class="slide-tag">MASTER BEDROOM</span><div class="item-title">Modern Bedroom Design</div><p>Textured feature headboard with floating consoles.</p></div>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="section" id="contact">
+  <section class="section contact-section" id="contact">
     <div class="container text-center">
-      <div class="tag-badge"><span class="dot"></span> Get In Touch</div>
-      <h2 class="section-title">Start Your Project with <em>Er. Chetan Sarraf</em></h2>
-      <p class="section-subtitle" style="margin: 0 auto 2.5rem;">Have questions about site planning, AutoCAD execution blueprints, or luxury interiors in Birgunj &amp; Parsa?</p>
-      <a href="https://wa.me/9779766188838" class="btn btn-primary">Chat Directly on WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+      <div class="tag-badge"><span class="dot"></span> Free Consultation</div>
+      <h2 class="section-title">Let's Plan Your Interior in Birgunj</h2>
+      <p class="section-subtitle" style="margin: 0 auto 2.5rem;">Book a free design consultation, request 3D photorealistic rendering, or partner for civil BOQ estimation and AutoCAD blueprints.</p>
+      <a href="https://wa.me/9779766188838" class="btn btn-primary">Chat on WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </section>
+
+  <!-- Lightbox Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <img src="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" id="modalImg" alt="Project Preview" />
+      <div class="modal-details">
+        <span id="modalCategory" class="slide-tag">Architecture</span>
+        <div class="modal-title" id="modalTitle">Project Title</div>
+        <p id="modalDesc">Project description</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -715,9 +1316,10 @@
     </div>
   </footer>
 
-  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <!-- ================= JAVASCRIPT & ENGINES ================= -->
   <script>
     const GOOGLE_SHEET_ID = "1cQ724gHkaWJCNc5n6b6-qtCgNw6y41YB8ZgQDgTgGO4";
+    const currentMonthYear = new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 
     function formatImageUrl(url) {
       if (!url || String(url).trim() === '') return '';
@@ -746,7 +1348,7 @@
         });
       }
 
-      // Nav Toggle
+      // Mobile Nav
       const navToggle = document.getElementById('navToggle');
       const navLinks = document.getElementById('navLinks');
       if (navToggle && navLinks) {
@@ -756,10 +1358,13 @@
       const yearEl = document.getElementById('year');
       if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-      // Initialize Site Planner
+      document.querySelectorAll('.auto-date').forEach(el => { el.textContent = currentMonthYear; });
+
+      // Initialize Calculations & Planner
+      calculateFullBOQ();
       redrawSitePlan();
 
-      // Load Google Sheets Data
+      // Load Google Sheets Live Data
       loadGoogleSheetLiveSync(GOOGLE_SHEET_ID);
     });
 
@@ -791,8 +1396,13 @@
       redrawSitePlan();
     }
 
-    // ================= TERAI LAND CONVERTER =================
+    function onCustomParamChange() {
+      document.getElementById('presetBylaws').value = 'custom';
+      redrawSitePlan();
+    }
+
     function sqftToTerai(sqft) {
+      if (sqft <= 0) return '0-0-0 (B-K-D)';
       const bigha = Math.floor(sqft / 72900);
       const remB = sqft % 72900;
       const kattha = Math.floor(remB / 3645);
@@ -801,7 +1411,7 @@
       return `${bigha}-${kattha}-${dhur} (B-K-D)`;
     }
 
-    // ================= 2D CAD SITE PLANNER ENGINE =================
+    // ================= 2D SITE PLANNER & TENTATIVE LAYOUT ENGINE =================
     let currentPlanTelemetry = {};
 
     function redrawSitePlan() {
@@ -810,7 +1420,7 @@
       const ctx = canvas.getContext('2d');
 
       const width = canvas.parentElement.clientWidth || 600;
-      const height = 480;
+      const height = 490;
       canvas.width = width;
       canvas.height = height;
 
@@ -819,53 +1429,56 @@
       const b = parseFloat(document.getElementById('sideB').value) || 0;
       const c = parseFloat(document.getElementById('sideC').value) || 0;
       const d = parseFloat(document.getElementById('sideD').value) || 0;
-      const d1 = parseFloat(document.getElementById('diagD1').value) || 0;
+      let d1 = parseFloat(document.getElementById('diagD1').value);
       const unit = document.getElementById('planUnit').value;
       const roadSide = document.getElementById('roadSide').value;
+      const numFloors = parseFloat(document.getElementById('numFloors').value) || 2.5;
+      const showTentative = document.getElementById('toggleTentativePlan').checked;
+      const layoutStyle = document.getElementById('layoutStyle').value;
 
       const sbFront = parseFloat(document.getElementById('setbackFront').value) || 0;
       const sbRear = parseFloat(document.getElementById('setbackRear').value) || 0;
       const sbSide1 = parseFloat(document.getElementById('setbackSide1').value) || 0;
       const sbSide2 = parseFloat(document.getElementById('setbackSide2').value) || 0;
-      const coveragePct = parseFloat(document.getElementById('coveragePct').value) || 70;
-      const farVal = parseFloat(document.getElementById('farVal').value) || 1.75;
-
-      // Map setbacks to side A, B, C, D based on selected road
-      let sbA = sbSide1, sbB = sbSide2, sbC = sbRear, sbD = sbSide1;
-      if (roadSide === 'A') { sbA = sbFront; sbC = sbRear; sbB = sbSide2; sbD = sbSide1; }
-      else if (roadSide === 'B') { sbB = sbFront; sbD = sbRear; sbA = sbSide1; sbC = sbSide2; }
-      else if (roadSide === 'C') { sbC = sbFront; sbA = sbRear; sbB = sbSide1; sbD = sbSide2; }
-      else if (roadSide === 'D') { sbD = sbFront; sbB = sbRear; sbA = sbSide2; sbC = sbSide1; }
-
-      // Validate Triangle Inequalities
-      const validT1 = (a + b > d1) && (a + d1 > b) && (b + d1 > a);
-      const validT2 = (c + d > d1) && (c + d1 > d) && (d + d1 > c);
+      const coveragePct = Math.max(1, Math.min(100, parseFloat(document.getElementById('coveragePct').value) || 70));
+      const farVal = Math.max(0.1, parseFloat(document.getElementById('farVal').value) || 1.75);
 
       ctx.clearRect(0, 0, width, height);
 
-      if (!validT1 || !validT2) {
+      // Check boundary validity
+      const maxSide = Math.max(a, b, c, d);
+      const sumOthers = (a + b + c + d) - maxSide;
+      if (sumOthers <= maxSide || a <= 0 || b <= 0 || c <= 0 || d <= 0) {
         ctx.fillStyle = '#ff4d4f';
         ctx.font = '14px JetBrains Mono, monospace';
         ctx.textAlign = 'center';
-        ctx.fillText('⚠️ Invalid Plot Geometry: Triangle Inequality Violated.', width / 2, height / 2 - 10);
-        ctx.fillStyle = '#888';
-        ctx.fillText('Check if Diagonal D1 connects Side A and Side B.', width / 2, height / 2 + 15);
+        ctx.fillText('⚠️ Invalid Plot: Sum of smaller sides must exceed longest side.', width / 2, height / 2);
         return;
       }
 
-      // Compute Point Coordinates
-      // A at (0, 0)
+      // ================= DIAGONAL IS 100% OPTIONAL =================
+      const isAutoDiagonal = isNaN(d1) || d1 <= 0;
+      if (isAutoDiagonal) {
+        const num = (a * c + b * d) * (a * d + b * c);
+        const den = (a * b + c * d);
+        d1 = Math.sqrt(Math.max(1, num / (den || 1)));
+      } else {
+        const minD1 = Math.max(Math.abs(a - b), Math.abs(c - d)) + 0.1;
+        const maxD1 = Math.min(a + b, c + d) - 0.1;
+        if (d1 <= minD1 || d1 >= maxD1) {
+          d1 = Math.max(minD1, Math.min(maxD1, d1));
+        }
+      }
+
+      // Compute Corner Coordinates
       const Ax = 0, Ay = 0;
-      // B at (a, 0)
       const Bx = a, By = 0;
 
-      // Triangle ABC: angle CAB
       const cosCAB = Math.max(-1, Math.min(1, (a * a + d1 * d1 - b * b) / (2 * a * d1)));
       const angCAB = Math.acos(cosCAB);
       const Cx = d1 * Math.cos(angCAB);
       const Cy = d1 * Math.sin(angCAB);
 
-      // Triangle ACD: angle CAD
       const cosCAD = Math.max(-1, Math.min(1, (d * d + d1 * d1 - c * c) / (2 * d * d1)));
       const angCAD = Math.acos(cosCAD);
       const angAD = angCAB + angCAD;
@@ -874,22 +1487,28 @@
 
       const poly = [{x: Ax, y: Ay}, {x: Bx, y: By}, {x: Cx, y: Cy}, {x: Dx, y: Dy}];
 
-      // Calculate Plot Area (Shoelace formula)
+      // Plot Area
       let plotArea = 0.5 * Math.abs(
         (Ax * By - Ay * Bx) + (Bx * Cy - By * Cx) + (Cx * Dy - Cy * Dx) + (Dx * Ay - Dy * Ax)
       );
 
-      // Inward Polygon Offsetting for Setbacks
+      // Setback mapping
+      let sbA = sbSide1, sbB = sbSide2, sbC = sbRear, sbD = sbSide1;
+      if (roadSide === 'A') { sbA = sbFront; sbC = sbRear; sbB = sbSide2; sbD = sbSide1; }
+      else if (roadSide === 'B') { sbB = sbFront; sbD = sbRear; sbA = sbSide1; sbC = sbSide2; }
+      else if (roadSide === 'C') { sbC = sbFront; sbA = sbRear; sbB = sbSide1; sbD = sbSide2; }
+      else if (roadSide === 'D') { sbD = sbFront; sbB = sbRear; sbA = sbSide2; sbC = sbSide1; }
+
+      // Polygon Offset for Setbacks
       function getOffsetLine(p1, p2, dist) {
         const dx = p2.x - p1.x;
         const dy = p2.y - p1.y;
-        const len = Math.hypot(dx, dy);
+        const len = Math.hypot(dx, dy) || 1;
         const nx = -dy / len;
         const ny = dx / len;
         return {
           p1: { x: p1.x + nx * dist, y: p1.y + ny * dist },
-          p2: { x: p2.x + nx * dist, y: p2.y + ny * dist },
-          nx, ny, dist
+          p2: { x: p2.x + nx * dist, y: p2.y + ny * dist }
         };
       }
 
@@ -912,7 +1531,6 @@
       const iC = lineIntersection(lB, lC);
       const iD = lineIntersection(lC, lD);
 
-      let footprintPoly = [iA, iB, iC, iD];
       let envelopeArea = 0;
       if (iA && iB && iC && iD) {
         envelopeArea = 0.5 * Math.abs(
@@ -920,55 +1538,108 @@
         );
       }
 
-      // Unit Conversions
-      let areaSqft = unit === 'm' ? plotArea * 10.7639 : plotArea;
-      let envelopeSqft = unit === 'm' ? envelopeArea * 10.7639 : envelopeArea;
-      let plinthAllowedSqft = areaSqft * (coveragePct / 100);
-      let farBuiltSqft = areaSqft * farVal;
+      // Calculations & Unit Conversions
+      const areaSqft = unit === 'm' ? plotArea * 10.7639 : plotArea;
+      const envelopeSqft = unit === 'm' ? envelopeArea * 10.7639 : envelopeArea;
+      const plinthAllowedSqft = areaSqft * (coveragePct / 100);
+      const actualFootprintSqft = Math.min(plinthAllowedSqft, envelopeSqft);
+      const proposedTotalBuiltSqft = actualFootprintSqft * numFloors;
+      const maxFARAllowedBuiltSqft = areaSqft * farVal;
+      const isFarCompliant = proposedTotalBuiltSqft <= maxFARAllowedBuiltSqft;
 
-      // Update Telemetry Display
+      // Telemetry Output
       document.getElementById('valPlotArea').textContent = `${Math.round(areaSqft).toLocaleString()} sq.ft`;
       document.getElementById('valPlotTerai').textContent = sqftToTerai(areaSqft);
-      document.getElementById('valPlinthAllowed').textContent = `${Math.round(plinthAllowedSqft).toLocaleString()} sq.ft`;
-      document.getElementById('valCoverageSub').textContent = `${coveragePct}% Ground Coverage Allowed`;
-      document.getElementById('valFootprintActual').textContent = `${Math.round(envelopeSqft).toLocaleString()} sq.ft`;
-      
-      const utilPct = ((envelopeSqft / areaSqft) * 100).toFixed(1);
-      document.getElementById('valEnvelopePct').textContent = `${utilPct}% Plot Footprint`;
-      document.getElementById('valFARBuilt').textContent = `${Math.round(farBuiltSqft).toLocaleString()} sq.ft`;
-      document.getElementById('valFARSub').textContent = `FAR ${farVal} Permissible`;
+      document.getElementById('valFootprintActual').textContent = `${Math.round(actualFootprintSqft).toLocaleString()} sq.ft`;
+      document.getElementById('valCoverageSub').textContent = `${coveragePct}% Max Coverage Limit`;
+      document.getElementById('valProposedBuilt').textContent = `${Math.round(proposedTotalBuiltSqft).toLocaleString()} sq.ft`;
+      document.getElementById('valFloorSub').textContent = `${numFloors} Storeys Selected`;
+
+      const farStatusEl = document.getElementById('valFARStatus');
+      if (isFarCompliant) {
+        farStatusEl.textContent = '✅ Fits FAR';
+        farStatusEl.style.color = '#25D366';
+        document.getElementById('valFARSub').textContent = `Max ${Math.round(maxFARAllowedBuiltSqft).toLocaleString()} sq.ft Allowed (FAR ${farVal})`;
+      } else {
+        const excess = Math.round(proposedTotalBuiltSqft - maxFARAllowedBuiltSqft);
+        farStatusEl.textContent = '⚠️ Exceeds FAR';
+        farStatusEl.style.color = '#ffaa00';
+        document.getElementById('valFARSub').textContent = `Exceeds by ~${excess.toLocaleString()} sq.ft (Limit: ${Math.round(maxFARAllowedBuiltSqft)} sq.ft)`;
+      }
 
       // NBC 205:2024 Check
       const nbcCard = document.getElementById('nbcComplianceCard');
       const nbcTitle = document.getElementById('nbcTitle');
       const nbcDesc = document.getElementById('nbcDesc');
 
-      if (envelopeSqft <= 1000) {
+      if (numFloors <= 2.5 && actualFootprintSqft <= 1000) {
         nbcCard.className = 'compliance-banner pass';
-        nbcTitle.textContent = 'NBC 205:2024 Ready-to-Use Detailing Compliant';
-        nbcDesc.textContent = `Footprint (${Math.round(envelopeSqft)} sq.ft) is ≤ 1000 sq.ft (Cl 4.2g). Eligible for simplified NBC 205:2024 residential design up to 3 storeys.`;
+        nbcTitle.textContent = 'NBC 205:2024 Section 8 Compliant (2-Storey Ready-to-Use)';
+        nbcDesc.textContent = `Footprint (${Math.round(actualFootprintSqft)} sq.ft) ≤ 1000 sq.ft. Column: 350×350 mm (4-16Ø + 4-12Ø Fe500), Footing ~1.5m×1.5m, Plinth Beam 250×355 mm (Cl 4.2 & Sec 8).`;
+      } else if (numFloors <= 3.5 && actualFootprintSqft <= 1000) {
+        nbcCard.className = 'compliance-banner pass';
+        nbcTitle.textContent = 'NBC 205:2024 Section 9 Compliant (3-Storey Ready-to-Use)';
+        nbcDesc.textContent = `Footprint (${Math.round(actualFootprintSqft)} sq.ft) ≤ 1000 sq.ft. Column: 400×400 mm for corner/staircase, Footing ~1.9m×1.9m, 3-Storey Detailing applies (Sec 9).`;
       } else {
-        nbcCard.className = 'compliance-banner info';
-        nbcTitle.textContent = 'Engineered Structural Design Required';
-        nbcDesc.textContent = `Footprint (${Math.round(envelopeSqft)} sq.ft) exceeds 1000 sq.ft. Requires full structural analysis under NBC 105:2020 / IS 456.`;
+        nbcCard.className = 'compliance-banner warn';
+        nbcTitle.textContent = 'Engineered Structural Analysis Required';
+        nbcDesc.textContent = `Footprint exceeds 1000 sq.ft or exceeds 3 storeys. Must be engineered individually under NBC 105:2020 / IS 456 (Outside NBC 205 RUD scope).`;
       }
+
+      // Tentative Room Schedule
+      const scheduleBody = document.getElementById('roomScheduleBody');
+      const fp = actualFootprintSqft;
+      let rooms = [];
+      if (layoutStyle === 'commercial') {
+        rooms = [
+          { name: 'Commercial Front Display / Office', zone: 'Ground - Front', w: (a * 0.7).toFixed(0), l: '20', area: Math.round(fp * 0.55) },
+          { name: 'Staircase & Lift Shaft', zone: 'Side Core', w: '8', l: '16', area: Math.round(fp * 0.15) },
+          { name: 'Storage / Restrooms / Pantry', zone: 'Rear Core', w: '12', l: '14', area: Math.round(fp * 0.20) },
+          { name: 'Rear Service Corridor', zone: 'Rear Access', w: '6', l: '15', area: Math.round(fp * 0.10) }
+        ];
+      } else if (layoutStyle === '2bhk' || fp < 850) {
+        rooms = [
+          { name: 'Living Room (Drawing Hall)', zone: 'Ground - Front', w: '14', l: '16', area: Math.round(fp * 0.28) },
+          { name: 'Kitchen & Dining Suite', zone: 'Ground - Side', w: '10', l: '12', area: Math.round(fp * 0.18) },
+          { name: 'Master Bedroom', zone: 'Ground - Rear', w: '12', l: '13', area: Math.round(fp * 0.22) },
+          { name: 'Bedroom 2 / Study', zone: 'Ground - Side', w: '11', l: '12', area: Math.round(fp * 0.16) },
+          { name: 'Dog-Legged Staircase', zone: 'NBC 205 Core', w: '7.5', l: '14', area: Math.round(fp * 0.10) },
+          { name: 'Common Bathroom & Toilet', zone: 'Plumbing Core', w: '5', l: '7', area: Math.round(fp * 0.06) }
+        ];
+      } else {
+        rooms = [
+          { name: 'Formal Living Room (Drawing)', zone: 'Front / Entrance', w: '15', l: '17', area: Math.round(fp * 0.26) },
+          { name: 'Kitchen & Dining Area', zone: 'Southeast / Rear', w: '11', l: '14', area: Math.round(fp * 0.17) },
+          { name: 'Master Suite (Attached Bath)', zone: 'Southwest / Rear', w: '13', l: '14', area: Math.round(fp * 0.20) },
+          { name: 'Bedroom 2 (Children / Guest)', zone: 'North / Side', w: '12', l: '12', area: Math.round(fp * 0.15) },
+          { name: 'Dog-Legged Staircase', zone: 'NBC 205 Cl 10.2 Core', w: '8', l: '15', area: Math.round(fp * 0.11) },
+          { name: 'Common Bathroom & Shaft', zone: 'Plumbing Core', w: '5', l: '8', area: Math.round(fp * 0.06) },
+          { name: 'Verandah / Entrance Foyer', zone: 'Road Access', w: '8', l: '6', area: Math.round(fp * 0.05) }
+        ];
+      }
+
+      scheduleBody.innerHTML = rooms.map(r => `
+        <tr><td><strong>${r.name}</strong></td><td><span class="room-tag">${r.zone}</span></td><td>~${r.w}' × ${r.l}' ft</td><td>${r.area} sq.ft</td></tr>
+      `).join('');
 
       currentPlanTelemetry = {
         areaSqft: Math.round(areaSqft),
         terai: sqftToTerai(areaSqft),
-        plinthAllowed: Math.round(plinthAllowedSqft),
-        envelopeSqft: Math.round(envelopeSqft),
-        farBuilt: Math.round(farBuiltSqft),
+        footprintActual: Math.round(actualFootprintSqft),
+        proposedBuilt: Math.round(proposedTotalBuiltSqft),
+        maxFARAllowed: Math.round(maxFARAllowedBuiltSqft),
+        numFloors,
         coveragePct,
         farVal,
-        roadSide
+        roadSide,
+        rooms
       };
 
-      // Transform Coordinates to Fit Canvas
-      let minX = Math.min(...poly.map(p => p.x));
-      let maxX = Math.max(...poly.map(p => p.x));
-      let minY = Math.min(...poly.map(p => p.y));
-      let maxY = Math.max(...poly.map(p => p.y));
+      // ================= CANVAS DRAWING =================
+      const minX = Math.min(...poly.map(p => p.x));
+      const maxX = Math.max(...poly.map(p => p.x));
+      const minY = Math.min(...poly.map(p => p.y));
+      const maxY = Math.max(...poly.map(p => p.y));
 
       const pad = 65;
       const scale = Math.min((width - 2 * pad) / (maxX - minX || 1), (height - 2 * pad) / (maxY - minY || 1));
@@ -985,13 +1656,13 @@
       const scrC = toScreen(poly[2]);
       const scrD = toScreen(poly[3]);
 
-      // 1. Draw Grid
+      // Grid
       ctx.strokeStyle = 'rgba(255,255,255,0.04)';
       ctx.lineWidth = 1;
       for (let x = 0; x < width; x += 30) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke(); }
       for (let y = 0; y < height; y += 30) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke(); }
 
-      // 2. Draw Plot Boundary
+      // Boundary
       ctx.beginPath();
       ctx.moveTo(scrA.x, scrA.y);
       ctx.lineTo(scrB.x, scrB.y);
@@ -1001,14 +1672,12 @@
       ctx.strokeStyle = '#ffffff';
       ctx.lineWidth = 2.5;
       ctx.stroke();
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.02)';
-      ctx.fill();
 
-      // 3. Draw Road Banner along the selected road side
+      // Road Banner
       function drawRoadSide(p1, p2, label) {
         const dx = p2.x - p1.x;
         const dy = p2.y - p1.y;
-        const len = Math.hypot(dx, dy);
+        const len = Math.hypot(dx, dy) || 1;
         const nx = -dy / len;
         const ny = dx / len;
         
@@ -1019,14 +1688,13 @@
         ctx.lineTo(p2.x - nx * 22, p2.y - ny * 22);
         ctx.lineTo(p1.x - nx * 22, p1.y - ny * 22);
         ctx.closePath();
-        ctx.fillStyle = 'rgba(27, 82, 145, 0.25)';
+        ctx.fillStyle = 'rgba(27, 82, 145, 0.32)';
         ctx.fill();
         ctx.strokeStyle = '#2c72c4';
         ctx.setLineDash([4, 4]);
         ctx.stroke();
         ctx.restore();
 
-        // Label
         const mx = (p1.x + p2.x) / 2 - nx * 12;
         const my = (p1.y + p2.y) / 2 - ny * 12;
         ctx.fillStyle = '#4dabf7';
@@ -1040,44 +1708,104 @@
       else if (roadSide === 'C') drawRoadSide(scrC, scrD, 'ROAD ACCESS (SIDE C)');
       else if (roadSide === 'D') drawRoadSide(scrD, scrA, 'ROAD ACCESS (SIDE D)');
 
-      // 4. Draw Building Footprint Envelope
+      // Building Footprint
       if (iA && iB && iC && iD && envelopeArea > 0) {
-        const sIA = toScreen(iA);
-        const sIB = toScreen(iB);
-        const sIC = toScreen(iC);
-        const sID = toScreen(iD);
+        const scaleFactor = Math.min(1.0, Math.sqrt(actualFootprintSqft / (envelopeSqft || 1)));
+        const cenX = (iA.x + iB.x + iC.x + iD.x) / 4;
+        const cenY = (iA.y + iB.y + iC.y + iD.y) / 4;
 
+        function scalePoint(p) {
+          return {
+            x: cenX + (p.x - cenX) * scaleFactor,
+            y: cenY + (p.y - cenY) * scaleFactor
+          };
+        }
+
+        const sIA = toScreen(scalePoint(iA));
+        const sIB = toScreen(scalePoint(iB));
+        const sIC = toScreen(scalePoint(iC));
+        const sID = toScreen(scalePoint(iD));
+
+        // Dashed Setbacks
+        const rawIA = toScreen(iA), rawIB = toScreen(iB), rawIC = toScreen(iC), rawID = toScreen(iD);
+        ctx.save();
+        ctx.setLineDash([4, 4]);
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
         ctx.beginPath();
-        ctx.moveTo(sIA.x, sIA.y);
-        ctx.lineTo(sIB.x, sIB.y);
-        ctx.lineTo(sIC.x, sIC.y);
-        ctx.lineTo(sID.x, sID.y);
+        ctx.moveTo(rawIA.x, rawIA.y); ctx.lineTo(rawIB.x, rawIB.y); ctx.lineTo(rawIC.x, rawIC.y); ctx.lineTo(rawID.x, rawID.y);
+        ctx.closePath(); ctx.stroke();
+        ctx.restore();
+
+        // Solid Footprint
+        ctx.beginPath();
+        ctx.moveTo(sIA.x, sIA.y); ctx.lineTo(sIB.x, sIB.y); ctx.lineTo(sIC.x, sIC.y); ctx.lineTo(sID.x, sID.y);
         ctx.closePath();
-        ctx.fillStyle = 'rgba(37, 211, 102, 0.18)';
+        ctx.fillStyle = 'rgba(37, 211, 102, 0.12)';
         ctx.fill();
         ctx.strokeStyle = '#25D366';
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 2.2;
         ctx.stroke();
 
-        // Center Footprint Label
-        const fcX = (sIA.x + sIB.x + sIC.x + sID.x) / 4;
-        const fcY = (sIA.y + sIB.y + sIC.y + sID.y) / 4;
-        ctx.fillStyle = '#25D366';
-        ctx.font = 'bold 12px Syne, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText('BUILDING FOOTPRINT', fcX, fcY - 8);
-        ctx.font = '11px JetBrains Mono, monospace';
-        ctx.fillText(`${Math.round(envelopeSqft).toLocaleString()} sq.ft`, fcX, fcY + 8);
+        // Tentative Layout Overlay
+        if (showTentative) {
+          ctx.save();
+          ctx.beginPath();
+          ctx.moveTo(sIA.x, sIA.y); ctx.lineTo(sIB.x, sIB.y); ctx.lineTo(sIC.x, sIC.y); ctx.lineTo(sID.x, sID.y);
+          ctx.closePath();
+          ctx.clip();
+
+          const fpMinX = Math.min(sIA.x, sIB.x, sIC.x, sID.x);
+          const fpMaxX = Math.max(sIA.x, sIB.x, sIC.x, sID.x);
+          const fpMinY = Math.min(sIA.y, sIB.y, sIC.y, sID.y);
+          const fpMaxY = Math.max(sIA.y, sIB.y, sIC.y, sID.y);
+          const fpW = fpMaxX - fpMinX;
+          const fpH = fpMaxY - fpMinY;
+
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.55)';
+          ctx.lineWidth = 1.5;
+          ctx.setLineDash([2, 2]);
+
+          const midY = fpMinY + fpH * 0.48;
+          ctx.beginPath(); ctx.moveTo(fpMinX, midY); ctx.lineTo(fpMaxX, midY); ctx.stroke();
+
+          const frontDivX = fpMinX + fpW * 0.62;
+          ctx.beginPath(); ctx.moveTo(frontDivX, midY); ctx.lineTo(frontDivX, fpMaxY); ctx.stroke();
+
+          const rearDivX = fpMinX + fpW * 0.50;
+          ctx.beginPath(); ctx.moveTo(rearDivX, fpMinY); ctx.lineTo(rearDivX, midY); ctx.stroke();
+
+          const bathDivX = rearDivX + fpW * 0.25;
+          ctx.beginPath(); ctx.moveTo(bathDivX, fpMinY); ctx.lineTo(bathDivX, fpMinY + fpH * 0.22); ctx.stroke();
+
+          ctx.setLineDash([]);
+
+          function drawRoomTag(name, areaStr, cx, cy) {
+            ctx.fillStyle = '#ffffff'; ctx.font = 'bold 10px Syne, sans-serif'; ctx.textAlign = 'center';
+            ctx.fillText(name, cx, cy - 4);
+            ctx.fillStyle = '#25D366'; ctx.font = '9px JetBrains Mono, monospace';
+            ctx.fillText(areaStr, cx, cy + 8);
+          }
+
+          drawRoomTag('LIVING ROOM', `~${Math.round(fp * 0.26)} sq.ft`, fpMinX + fpW * 0.31, midY + fpH * 0.25);
+          drawRoomTag('STAIRCASE', 'NBC 205 Cl 10.2', frontDivX + (fpMaxX - frontDivX) * 0.5, midY + fpH * 0.25);
+          drawRoomTag('MASTER BED', `~${Math.round(fp * 0.20)} sq.ft`, fpMinX + fpW * 0.25, fpMinY + fpH * 0.25);
+          drawRoomTag('KITCHEN', `~${Math.round(fp * 0.17)} sq.ft`, rearDivX + fpW * 0.25, fpMinY + fpH * 0.32);
+          drawRoomTag('BATH', 'Bath', bathDivX + (fpMaxX - bathDivX) * 0.5, fpMinY + fpH * 0.12);
+
+          ctx.restore();
+        } else {
+          const fcX = (sIA.x + sIB.x + sIC.x + sID.x) / 4;
+          const fcY = (sIA.y + sIB.y + sIC.y + sID.y) / 4;
+          ctx.fillStyle = '#25D366'; ctx.font = 'bold 12px Syne, sans-serif'; ctx.textAlign = 'center';
+          ctx.fillText('BUILDING FOOTPRINT', fcX, fcY - 8);
+          ctx.font = '11px JetBrains Mono, monospace';
+          ctx.fillText(`${Math.round(actualFootprintSqft).toLocaleString()} sq.ft`, fcX, fcY + 8);
+        }
       }
 
-      // 5. Draw Side Dimensions
       function drawDim(p1, p2, text) {
-        const mx = (p1.x + p2.x) / 2;
-        const my = (p1.y + p2.y) / 2;
-        ctx.fillStyle = '#f0f0f0';
-        ctx.font = '11px JetBrains Mono, monospace';
-        ctx.textAlign = 'center';
-        ctx.fillText(text, mx, my - 6);
+        ctx.fillStyle = '#e2e8f0'; ctx.font = '11px JetBrains Mono, monospace'; ctx.textAlign = 'center';
+        ctx.fillText(text, (p1.x + p2.x) / 2, (p1.y + p2.y) / 2 - 6);
       }
 
       drawDim(scrA, scrB, `A: ${a}${unit}`);
@@ -1086,7 +1814,7 @@
       drawDim(scrD, scrA, `D: ${d}${unit}`);
     }
 
-    // ================= EXPORTS (IMAGE, PDF, WHATSAPP) =================
+    // ================= EXPORTS =================
     function downloadSitePlanImage() {
       const canvas = document.getElementById('sitePlanCanvas');
       const link = document.createElement('a');
@@ -1099,19 +1827,23 @@
       const canvas = document.getElementById('sitePlanCanvas');
       const imgData = canvas.toDataURL('image/png');
 
+      const roomRows = (currentPlanTelemetry.rooms || []).map(r => `
+        <tr><td>${r.name}</td><td>${r.zone}</td><td>~${r.w}' × ${r.l}' ft</td><td>${r.area} sq.ft</td></tr>
+      `).join('');
+
       const printWindow = window.open('', '_blank');
       printWindow.document.write(`
         <html>
         <head>
-          <title>Site Planning Technical Report - Chetan Interiors</title>
+          <title>Tentative Site & Floor Planning Report - Chetan Interiors</title>
           <style>
             body { font-family: -apple-system, sans-serif; padding: 30px; color: #111; }
             .header { border-bottom: 2px solid #0e273f; padding-bottom: 15px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
             .title { font-size: 20px; font-weight: bold; color: #0e273f; }
             .sub { font-size: 13px; color: #666; }
-            .plan-img { width: 100%; max-height: 400px; object-fit: contain; border: 1px solid #ccc; margin: 15px 0; background: #0d1219; }
-            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-            th, td { border: 1px solid #ddd; padding: 10px; font-size: 13px; text-align: left; }
+            .plan-img { width: 100%; max-height: 400px; object-fit: contain; border: 1px solid #ccc; margin: 15px 0; background: #0b1017; }
+            table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; }
+            th, td { border: 1px solid #ddd; padding: 9px; font-size: 12px; text-align: left; }
             th { background: #f5f5f5; }
             .badge { background: #e6fcf5; color: #0ca678; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
           </style>
@@ -1123,25 +1855,27 @@
               <div class="sub">Er. Chetan Kumar Sarraf • Civil Engineer & Interior Designer • Birgunj, Nepal</div>
             </div>
             <div style="text-align: right; font-size: 12px; color: #777;">
-              Date: ${new Date().toLocaleDateString('en-US')}<br>Bylaws: NBC 205:2024 / IS 456
+              Date: ${new Date().toLocaleDateString('en-US')}<br>Bylaws: NBC 205:2024 / NBC 105:2020
             </div>
           </div>
-
-          <h3 style="margin-bottom: 5px;">2D Building Footprint & Site Clearance Drawing</h3>
+          <h3>2D Site Clearance & Tentative Floor Layout Idea</h3>
           <img src="${imgData}" class="plan-img" />
-
-          <h3>Municipal Site Telemetry & Compliance Summary</h3>
+          <h3>Municipal Site Telemetry Summary</h3>
           <table>
             <tr><th>Metric</th><th>Calculated Value</th><th>Remarks</th></tr>
             <tr><td>Total Plot Area</td><td>${currentPlanTelemetry.areaSqft || 0} sq.ft</td><td>${currentPlanTelemetry.terai || ''}</td></tr>
-            <tr><td>Allowed Ground Coverage</td><td>${currentPlanTelemetry.plinthAllowed || 0} sq.ft</td><td>${currentPlanTelemetry.coveragePct || 70}% Maximum Allowable</td></tr>
-            <tr><td>Building Envelope Footprint</td><td>${currentPlanTelemetry.envelopeSqft || 0} sq.ft</td><td>Fits inside specified setbacks</td></tr>
-            <tr><td>Permissible Built-up Area</td><td>${currentPlanTelemetry.farBuilt || 0} sq.ft</td><td>Floor Area Ratio (FAR): ${currentPlanTelemetry.farVal || 1.75}</td></tr>
+            <tr><td>Actual Ground Footprint</td><td>${currentPlanTelemetry.footprintActual || 0} sq.ft</td><td>Within Setbacks &amp; Ground Coverage (${currentPlanTelemetry.coveragePct}%)</td></tr>
+            <tr><td>Target Storeys</td><td>${currentPlanTelemetry.numFloors} Storeys</td><td>Selected by Owner/Client</td></tr>
+            <tr><td>Proposed Total Built-Up</td><td>${currentPlanTelemetry.proposedBuilt || 0} sq.ft</td><td>FAR ${currentPlanTelemetry.farVal} Allowance: ${currentPlanTelemetry.maxFARAllowed} sq.ft</td></tr>
             <tr><td>NBC 205:2024 Category C</td><td colspan="2"><span class="badge">Verified via Ready-to-Use Guidelines (Cl 4.2)</span></td></tr>
           </table>
-
-          <div style="margin-top: 40px; display: flex; justify-content: space-between; font-size: 12px; border-top: 1px solid #ccc; padding-top: 15px;">
-            <div>Prepared by: <strong>Chetan Kr. Sarraf</strong></div>
+          <h3>Tentative Architectural Room Feasibility</h3>
+          <table>
+            <tr><th>Room / Space</th><th>Zoning &amp; Level</th><th>Approx Dimensions</th><th>Estimated Area</th></tr>
+            ${roomRows}
+          </table>
+          <div style="margin-top: 30px; display: flex; justify-content: space-between; font-size: 12px; border-top: 1px solid #ccc; padding-top: 15px;">
+            <div>Prepared by: <strong>Er. Chetan Kr. Sarraf</strong></div>
             <div>Official Stamp & Signature: _______________________</div>
           </div>
         </body>
@@ -1153,77 +1887,191 @@
     }
 
     function sharePlanWhatsApp() {
-      const msg = `*Automated Site Planning Report - Chetan Interiors*%0A%0A*Plot Area:* ${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})%0A*Allowed Plinth:* ${currentPlanTelemetry.plinthAllowed} sq.ft (${currentPlanTelemetry.coveragePct}%%25)%0A*Building Envelope:* ${currentPlanTelemetry.envelopeSqft} sq.ft%0A*FAR Built-up:* ${currentPlanTelemetry.farBuilt} sq.ft%0A*NBC 205:2024 Category C:* Checked%0A%0AHi Chetan, I generated this site footprint on your website and would like to confirm my municipal drawing.`;
+      const msg = `*Automated Site & Floor Planning Report - Chetan Interiors*%0A%0A*Plot Area:* ${currentPlanTelemetry.areaSqft} sq.ft (${currentPlanTelemetry.terai})%0A*Footprint:* ${currentPlanTelemetry.footprintActual} sq.ft (${currentPlanTelemetry.coveragePct}%%25)%0A*Proposed Storeys:* ${currentPlanTelemetry.numFloors} Storeys%0A*Proposed Built-up:* ${currentPlanTelemetry.proposedBuilt} sq.ft%0A*FAR Limit:* ${currentPlanTelemetry.maxFARAllowed} sq.ft%0A*NBC 205:2024 Detailing:* Verified%0A%0AHi Chetan, I tested this tentative site and room layout on your website.`;
       window.open(`https://wa.me/9779766188838?text=${msg}`, '_blank');
     }
 
-    // ================= GOOGLE SHEETS LIVE SYNC =================
+    // ================= RESILIENT GOOGLE SHEETS LIVE SYNC ENGINE =================
+    // Supports direct fetch + automatic JSONP fallback (works even on local file://)
+    function fetchSheetJSONP(sheetId, tabName) {
+      return new Promise((resolve) => {
+        const callbackName = 'gvizCallback_' + Math.floor(Math.random() * 1000000);
+        window[callbackName] = function(json) {
+          delete window[callbackName];
+          if (script && script.parentNode) script.parentNode.removeChild(script);
+          if (json && json.table && json.table.rows) {
+            resolve(json.table.rows.map(r => (r.c || []).map(cell => (cell && cell.v !== null && cell.v !== undefined ? cell.v : ''))));
+          } else {
+            resolve([]);
+          }
+        };
+
+        const script = document.createElement('script');
+        script.src = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=responseHandler:${callbackName}&sheet=${encodeURIComponent(tabName)}&t=${Date.now()}`;
+        script.onerror = function() {
+          delete window[callbackName];
+          if (script.parentNode) script.parentNode.removeChild(script);
+          resolve([]);
+        };
+        document.body.appendChild(script);
+      });
+    }
+
+    async function fetchGoogleTab(sheetId, tabName) {
+      try {
+        const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(tabName)}&t=${Date.now()}`;
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('Fetch failed');
+        const txt = await res.text();
+        const json = JSON.parse(txt.substring(txt.indexOf('{'), txt.lastIndexOf('}') + 1));
+        if (!json.table || !json.table.rows) return [];
+        return json.table.rows.map(r => (r.c || []).map(cell => (cell && cell.v !== null && cell.v !== undefined ? cell.v : '')));
+      } catch (err) {
+        // Fallback to JSONP (fixes CORS on local file:// and restrictive network environments)
+        return await fetchSheetJSONP(sheetId, tabName);
+      }
+    }
+
     async function loadGoogleSheetLiveSync(sheetId) {
-      async function fetchTab(tabName) {
-        try {
-          const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json&sheet=${encodeURIComponent(tabName)}&t=${Date.now()}`;
-          const res = await fetch(url);
-          const txt = await res.text();
-          const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}") + 1));
-          if (!json.table || !json.table.rows) return [];
-          return json.table.rows.map(r => (r.c || []).map(cell => (cell && cell.v !== null ? cell.v : '')));
-        } catch { return []; }
-      }
+      console.log("🔄 Initiating Google Sheet Live Sync for ID:", sheetId);
 
-      // Posts Marquee
-      const postsRows = await fetchTab('Posts');
-      if (postsRows.length > 0) {
-        const valid = postsRows.filter(r => (r[0] || r[1]) && String(r[4] || 'Active').toLowerCase() !== 'inactive');
-        if (valid.length > 0) {
-          const track = document.getElementById('postsMarqueeTrack');
-          const cards = valid.map(([title, imgUrl, caption, linkUrl]) => `
-            <a class="floating-post-card" href="${linkUrl || '#contact'}" target="${linkUrl ? '_blank' : '_self'}">
-              <div class="floating-post-img-wrap"><img src="${formatImageUrl(imgUrl)}" alt="${title}" loading="lazy" /></div>
-              <div class="floating-post-body">
-                <div class="floating-post-title">${title}</div>
-                <p class="floating-post-caption">${caption || 'Chetan Interior'}</p>
+      // 1. Rates
+      try {
+        const rates = await fetchGoogleTab(sheetId, 'Rates');
+        if (rates.length > 0) {
+          const valid = rates.filter(r => r[0] && String(r[0]).trim() !== '');
+          if (valid.length > 0) {
+            const tbody = document.getElementById('ratesTableBody');
+            tbody.innerHTML = valid.map(r => `
+              <tr><td><strong>${r[0]}</strong></td><td>${r[1] || 'Civil'}</td><td>${r[2] || ''}</td><td><span class="rate-pill">${r[3] || ''}</span></td><td>${r[4] || currentMonthYear}</td></tr>
+            `).join('');
+            console.log("✅ Synced Rates Tab:", valid.length, "items");
+          }
+        }
+      } catch (e) { console.warn("Rates tab using local fallback"); }
+
+      // 2. Articles
+      try {
+        const articles = await fetchGoogleTab(sheetId, 'Articles');
+        if (articles.length > 0) {
+          const valid = articles.filter(r => r[0] && String(r[0]).trim() !== '');
+          if (valid.length > 0) {
+            const container = document.getElementById('articlesContainer');
+            container.innerHTML = valid.map(r => `
+              <article class="article-card">
+                <div class="article-img-wrap"><img src="${formatImageUrl(r[3]) || 'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg'}" alt="${r[0]}" width="400" height="240" loading="lazy" /></div>
+                <div class="article-content">
+                  <div>
+                    <div class="article-meta"><span>${r[2] || 'Planning'}</span><span>${r[1] || currentMonthYear}</span></div>
+                    <div class="item-title">${r[0]}</div>
+                    <p>${r[4] || ''}</p>
+                  </div>
+                  <a href="https://wa.me/9779766188838?text=Hi%20Chetan,%20I%20read%20your%20article%20'${encodeURIComponent(r[0])}'" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Consult on this Topic <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+              </article>
+            `).join('');
+            console.log("✅ Synced Articles Tab:", valid.length, "items");
+          }
+        }
+      } catch (e) { console.warn("Articles tab using local fallback"); }
+
+      // 3. Posts (Floating Album)
+      try {
+        const posts = await fetchGoogleTab(sheetId, 'Posts');
+        if (posts.length > 0) {
+          const valid = posts.filter(r => (r[0] || r[1]) && String(r[4] || 'Active').toLowerCase() !== 'inactive');
+          if (valid.length > 0) {
+            const track = document.getElementById('postsMarqueeTrack');
+            const cards = valid.map(([title, imgUrl, caption, linkUrl]) => `
+              <a class="floating-post-card" href="${linkUrl || '#contact'}" target="${linkUrl ? '_blank' : '_self'}">
+                <div class="floating-post-img-wrap"><img src="${formatImageUrl(imgUrl)}" alt="${title || 'Project'}" loading="lazy" /></div>
+                <div class="floating-post-body">
+                  <div class="floating-post-title">${title || 'Project'}</div>
+                  <p class="floating-post-caption">${caption || 'Chetan Interior'}</p>
+                </div>
+              </a>
+            `).join('');
+            track.innerHTML = cards + cards;
+            console.log("✅ Synced Posts (Floating Reel) Tab:", valid.length, "items");
+          }
+        }
+      } catch (e) { console.warn("Posts tab using local fallback"); }
+
+      // 4. Team
+      try {
+        const team = await fetchGoogleTab(sheetId, 'Team');
+        if (team.length > 0) {
+          const valid = team.filter(r => r[0]);
+          if (valid.length > 0) {
+            const container = document.getElementById('teamContainer');
+            container.innerHTML = valid.map(([name, role, photo, bio]) => `
+              <div class="team-card">
+                <img src="${formatImageUrl(photo) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
+                <div class="team-name">${name}</div>
+                <div class="team-role">${role || 'Associate'}</div>
+                <p class="team-bio">${bio || ''}</p>
               </div>
-            </a>
-          `).join('');
-          track.innerHTML = cards + cards;
+            `).join('');
+            console.log("✅ Synced Team Tab:", valid.length, "items");
+          }
         }
-      }
+      } catch (e) { console.warn("Team tab using local fallback"); }
 
-      // Team
-      const teamRows = await fetchTab('Team');
-      if (teamRows.length > 0) {
-        const valid = teamRows.filter(r => r[0]);
-        if (valid.length > 0) {
-          const container = document.getElementById('teamContainer');
-          container.innerHTML = valid.map(([name, role, photo, bio]) => `
-            <div class="team-card">
-              <img src="${formatImageUrl(photo) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
-              <div class="team-name">${name}</div>
-              <div class="team-role">${role || 'Associate'}</div>
-              <p class="team-bio">${bio || ''}</p>
-            </div>
-          `).join('');
-        }
-      }
-
-      // Downloads
-      const dlRows = await fetchTab('Downloads');
-      if (dlRows.length > 0) {
-        const valid = dlRows.filter(r => r[0] && r[2]);
-        if (valid.length > 0) {
-          const container = document.getElementById('downloadsContainer');
-          container.innerHTML = valid.map(([title, category, url, size]) => `
-            <div class="download-card">
-              <div class="download-meta">
-                <h4>${title}</h4>
-                <span>${category || 'Resource'} ${size ? '• ' + size : ''}</span>
+      // 5. Downloads
+      try {
+        const dl = await fetchGoogleTab(sheetId, 'Downloads');
+        if (dl.length > 0) {
+          const valid = dl.filter(r => r[0] && r[2]);
+          if (valid.length > 0) {
+            const container = document.getElementById('downloadsContainer');
+            container.innerHTML = valid.map(([title, category, url, size]) => `
+              <div class="download-card">
+                <div class="download-meta">
+                  <h4>${title}</h4>
+                  <span>${category || 'Resource'} ${size ? '• ' + size : ''}</span>
+                </div>
+                <a class="btn btn-primary" href="${url}" target="_blank" download>Download <i class="fa-solid fa-download"></i></a>
               </div>
-              <a class="btn btn-primary" href="${url}" target="_blank" download>Download <i class="fa-solid fa-download"></i></a>
-            </div>
-          `).join('');
+            `).join('');
+            console.log("✅ Synced Downloads Tab:", valid.length, "items");
+          }
         }
-      }
+      } catch (e) { console.warn("Downloads tab using local fallback"); }
+    }
+
+    // BOQ Estimator
+    function calculateFullBOQ() {
+      const scope = document.getElementById('boqScope').value;
+      const area = parseInt(document.getElementById('boqArea').value, 10) || 350;
+      document.getElementById('boqAreaDisplay').textContent = `${area} sq.ft`;
+      let minRate = 65, maxRate = 110;
+      if (scope === 'tier1') { minRate = 25; maxRate = 45; }
+      else if (scope === 'tier2') { minRate = 65; maxRate = 110; }
+      else if (scope === 'tier3') { minRate = 1600; maxRate = 2800; }
+      document.getElementById('boqPriceOut').textContent = `Rs. ${(area * minRate).toLocaleString()} – ${(area * maxRate).toLocaleString()}`;
+    }
+
+    function exportFullBOQToWhatsApp() {
+      const area = document.getElementById('boqArea').value;
+      const price = document.getElementById('boqPriceOut').textContent;
+      window.open(`https://wa.me/9779766188838?text=*BOQ Inquiry - Birgunj*%0A*Area:* ${area} sq.ft%0A*Investment:* ${encodeURIComponent(price)}`, '_blank');
+    }
+
+    // Modal
+    function openModal(title, category, desc, imgSrc) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalCategory').textContent = category;
+      document.getElementById('modalDesc').textContent = desc;
+      document.getElementById('modalImg').src = imgSrc;
+      document.getElementById('projectModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('projectModal').classList.remove('open');
+      document.body.style.overflow = 'auto';
     }
   </script>
 </body>
 </html>
+```
