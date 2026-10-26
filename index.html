@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- ================= STRICT SEO META TAGS ================= -->
+  <!-- ================= SEO META TAGS ================= -->
   <title>Chetan Kr. Sarraf | Interior Designer & Civil Engineer in Birgunj, Nepal</title>
   <meta name="description" content="Chetan Kr. Sarraf is the best interior designer &amp; civil engineer in Birgunj, Nepal. Offering 3D renders, space planning, AutoCAD blueprints &amp; BOQ estimation." />
   <meta name="keywords" content="best interior designer in birgunj, interior designer parsa nepal, civil engineer interior designer, chetan kumar sarraf, scale and spaces private limited, nbc 205 2024 calculator nepal, 360 panorama interior nepal" />
@@ -26,11 +26,8 @@
   <meta property="og:url" content="https://chetan-sarraf.github.io/chetan-interior/" />
   <meta property="og:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Chetan Kr. Sarraf | Interior Designer in Birgunj, Nepal" />
-  <meta name="twitter:description" content="Civil engineering accuracy, luxury interior design, and 3D visualization in Birgunj, Nepal." />
-  <meta name="twitter:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Google Local Business Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,11 +37,6 @@
     "description": "Best interior designer and civil engineering professional in Birgunj, Parsa, Nepal. Specializing in space planning, 3D visualization, 360° panoramas, and AutoCAD execution blueprints.",
     "telephone": "+9779766188838",
     "email": "master.er.cks@outlook.com",
-    "sameAs": [
-      "https://www.facebook.com/chetan.sarraf.3/",
-      "https://www.instagram.com/master.cks009/",
-      "https://np.linkedin.com/in/chetansarraf"
-    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Birgunj",
@@ -52,14 +44,8 @@
       "postalCode": "44300",
       "addressCountry": "NP"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 27.0149,
-      "longitude": 84.8773
-    },
-    "url": "https://chetan-sarraf.github.io/chetan-interior/",
-    "priceRange": "$$",
-    "areaServed": ["Birgunj", "Parsa", "Kathmandu", "Nepal"]
+    "geo": { "@type": "GeoCoordinates", "latitude": 27.0149, "longitude": 84.8773 },
+    "url": "https://chetan-sarraf.github.io/chetan-interior/"
   }
   </script>
 
@@ -135,7 +121,7 @@
       background-size: 26px 26px, 130px 130px, 130px 130px;
     }
 
-    /* Top Reading Scroll Progress Bar */
+    /* Top Reading Progress Bar */
     #scrollProgressBar {
       position: fixed; top: 0; left: 0; height: 3px;
       background: linear-gradient(90deg, var(--accent-azure), var(--brand-gold));
@@ -183,14 +169,14 @@
     .brand-logo { display: flex; align-items: center; gap: 0.6rem; font-size: 1.1rem; color: var(--text-main); }
     .brand-logo-img { width: 32px; height: 32px; object-fit: contain; }
     .brand-logo span { color: var(--brand-gold); font-weight: 600; }
-    .nav-links { display: flex; align-items: center; gap: 0.25rem; }
+    .nav-links { display: flex; align-items: center; gap: 0.2rem; }
     .nav-links a {
-      font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.68rem;
+      font-size: 0.75rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.65rem;
       border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition); white-space: nowrap;
     }
     .nav-links a:hover { color: var(--text-main); background: var(--brand-navy-soft); }
 
-    /* Polished Active Nav Item with Glow and Elevation */
+    /* Active Highlight State */
     .nav-links a.active {
       color: #ffffff !important;
       background: var(--brand-navy) !important;
@@ -638,6 +624,18 @@
     .footer { border-top: 1px solid var(--border-subtle); padding: 3rem 0; background: var(--bg-surface); color: var(--text-muted); font-size: 0.88rem; }
     .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.2rem; }
     .footer-social-links { display: flex; gap: 1.2rem; align-items: center; }
+
+    @media (max-width: 950px) {
+      .grid-about-unboxed { grid-template-columns: 1fr; padding: 2rem; gap: 2.5rem; }
+      .nav-toggle { display: block; }
+      .nav-links {
+        position: absolute; top: 115%; left: 0; width: 100%; background: var(--bg-surface);
+        flex-direction: column; padding: 1.6rem; gap: 0.5rem; border: 1px solid var(--border-navy);
+        border-radius: var(--radius-md); box-shadow: var(--shadow-elevated); display: none;
+      }
+      .nav-links.active { display: flex; }
+      .credentials-row { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -645,7 +643,7 @@
   <!-- Top Scroll Reading Progress Indicator -->
   <div id="scrollProgressBar"></div>
 
-  <!-- Navigation Capsule -->
+  <!-- Streamlined Navigation Capsule -->
   <nav class="navbar-capsule" id="navbarCapsule">
     <div class="nav-container">
       <a href="#home" class="brand-logo">
@@ -657,11 +655,13 @@
         <div class="nav-links" id="navLinks">
           <a href="#home" class="nav-item active">Overview</a>
           <a href="#about" class="nav-item">About</a>
+          <a href="#team" class="nav-item">Team</a>
           <a href="#site-planner" class="nav-item">2D CAD Planner</a>
           <a href="#boq-toolkit" class="nav-item">BOQ Toolkit</a>
           <a href="#hub" class="nav-item">Engineering Hub</a>
           <a href="#portfolio" class="nav-item">Works &amp; 360°</a>
           <a href="#resources" class="nav-item">Resources &amp; Rates</a>
+          <a href="#faq" class="nav-item">FAQs</a>
           <a href="#contact" class="nav-item btn-nav-capsule">Consultation</a>
         </div>
         <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
@@ -747,6 +747,26 @@
 
         <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 1.2rem;">
           <strong style="color: var(--text-main);">Languages:</strong> <span id="aboutLanguages">Nepali (Bilingual) • Bhojpuri (Bilingual) • Hindi (Professional) • English (Professional)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEDICATED TEAM SECTION ================= -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="tag-badge"><span class="dot"></span> Studio Crew</div>
+        <h2 class="section-title">Meet Our Studio &amp; <em>Engineering Team</em></h2>
+        <p class="section-subtitle">Dedicated engineers, visualizers, and project supervisors turning blueprints into living luxury.</p>
+      </div>
+      <div class="team-grid" id="teamContainer">
+        <!-- Renders all rows dynamically from Google Sheet 'Team' Tab -->
+        <div class="team-card">
+          <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Er. Chetan Kumar Sarraf" class="team-avatar" />
+          <div class="team-name">Er. Chetan Kr. Sarraf</div>
+          <div class="team-role">Civil Engineer &amp; Lead Designer</div>
+          <p class="team-bio">Specializing in structural blueprints, BOQ valuation, and photorealistic 3D interior design in Birgunj.</p>
         </div>
       </div>
     </div>
@@ -1311,7 +1331,6 @@
         <h2 class="section-title">Site Updates &amp; <em>360° VR Tours</em></h2>
       </div>
       <div class="showcase-grid" id="showcaseContainer">
-        <!-- Fallback Cards (Replaced dynamically by Google Sheet 'Showcase' tab) -->
         <article class="showcase-card">
           <div class="showcase-img-wrap">
             <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Walkthrough" loading="lazy" />
@@ -1388,33 +1407,17 @@
     </div>
   </section>
 
-  <!-- ================= TEAM SECTION ================= -->
-  <section class="section" id="team">
-    <div class="container">
-      <div class="section-header text-center">
-        <div class="tag-badge"><span class="dot"></span> Studio Crew</div>
-        <h2 class="section-title">Meet Our Studio &amp; <em>Engineering Team</em></h2>
-      </div>
-      <div class="team-grid" id="teamContainer">
-        <div class="team-card">
-          <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Er. Chetan Kumar Sarraf" class="team-avatar" />
-          <div class="team-name">Er. Chetan Kr. Sarraf</div>
-          <div class="team-role">Civil Engineer &amp; Lead Designer</div>
-          <p class="team-bio">Specializing in structural blueprints, BOQ valuation, and photorealistic 3D interior design in Birgunj.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CLIENT FAQS ================= -->
+  <!-- ================= DEDICATED FAQS SECTION ================= -->
   <section class="section" id="faq">
     <div class="container">
       <div class="section-header text-center">
         <div class="tag-badge"><span class="dot"></span> Clear Answers</div>
         <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+        <p class="section-subtitle">Common questions about architectural drafting, BOQ valuation, and interior turnkey execution in Nepal.</p>
       </div>
-      <div class="faq-container">
-        <div class="faq-item">
+      <div class="faq-container" id="faqContainer">
+        <!-- Renders all rows dynamically from Google Sheet 'FAQs' Tab -->
+        <div class="faq-item open">
           <div class="faq-question"><span>How much does interior design cost per sq. ft. in Birgunj, Nepal?</span><i class="fa-solid fa-chevron-down"></i></div>
           <div class="faq-answer"><p>Pricing ranges from Rs. 25–45 per sq. ft. for 2D AutoCAD planning &amp; MEP, Rs. 65–110 for complete 3D realistic rendering, and Rs. 1,600–2,800 per sq. ft. for full turnkey execution.</p></div>
         </div>
@@ -1526,19 +1529,17 @@
         });
       }
 
-      // ================= ENHANCED SCROLL-SPY & PROGRESS BAR =================
+      // ================= SCROLL-SPY & READING PROGRESS BAR =================
       const progressBar = document.getElementById('scrollProgressBar');
       const trackedSections = document.querySelectorAll('header, section');
       const navItems = document.querySelectorAll('.nav-links .nav-item:not(.btn-nav-capsule)');
 
       window.addEventListener('scroll', () => {
-        // 1. Reading Progress Bar
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPct = (scrollTop / (docHeight || 1)) * 100;
         if (progressBar) progressBar.style.width = `${scrollPct}%`;
 
-        // 2. Active Section Spy
         let currentSectionId = '';
         trackedSections.forEach(section => {
           const top = section.offsetTop - 140;
@@ -1556,21 +1557,8 @@
         });
       }, { passive: true });
 
-      // FAQ Accordion
-      document.querySelectorAll('.faq-item').forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-          const isOpen = item.classList.contains('open');
-          document.querySelectorAll('.faq-item').forEach(el => {
-            el.classList.remove('open');
-            el.querySelector('.faq-answer').style.maxHeight = null;
-          });
-          if (!isOpen) {
-            item.classList.add('open');
-            item.querySelector('.faq-answer').style.maxHeight = item.querySelector('.faq-answer').scrollHeight + 'px';
-          }
-        });
-      });
+      // FAQ Accordion Attacher
+      bindFaqAccordion();
 
       // Before/After Slider
       const baOverlay = document.getElementById('baOverlay');
@@ -1638,6 +1626,26 @@
       // Start Resilient Google Sheets Live Sync
       loadGoogleSheetLiveSync(GOOGLE_SHEET_ID);
     });
+
+    function bindFaqAccordion() {
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (!question) return;
+        question.onclick = () => {
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(el => {
+            el.classList.remove('open');
+            const ans = el.querySelector('.faq-answer');
+            if (ans) ans.style.maxHeight = null;
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            const ans = item.querySelector('.faq-answer');
+            if (ans) ans.style.maxHeight = ans.scrollHeight + 'px';
+          }
+        };
+      });
+    }
 
     // ================= PORTFOLIO CAROUSEL =================
     let carouselIndex = 0;
@@ -1874,7 +1882,7 @@
         return;
       }
 
-      // Optional Diagonal Calculation
+      // Optional Diagonal Auto-Calculation
       if (isNaN(d1) || d1 <= 0) {
         d1 = Math.sqrt(Math.max(1, ((a * c + b * d) * (a * d + b * c)) / (a * b + c * d || 1)));
       } else {
@@ -2207,93 +2215,158 @@
         }
       } catch (e) {}
 
-      // 3. Rates
-      try {
-        const r = await fetchGoogleTab(sheetId, 'Rates');
-        const v = r.filter(row => row[0] && String(row[0]).trim() !== '');
-        if (v.length > 0) {
-          document.getElementById('ratesTableBody').innerHTML = v.map(row => `<tr><td><strong>${row[0]}</strong></td><td>${row[1]||'Civil'}</td><td>${row[2]||''}</td><td><span class="rate-pill">${row[3]||''}</span></td><td>${row[4]||currentMonthYear}</td></tr>`).join('');
-        }
-      } catch (e) {}
-
-      // 4. Articles
-      try {
-        const a = await fetchGoogleTab(sheetId, 'Articles');
-        const v = a.filter(row => row[0] && String(row[0]).trim() !== '');
-        if (v.length > 0) {
-          document.getElementById('articlesContainer').innerHTML = v.map(row => `<article class="article-card"><div class="article-img-wrap"><img src="${formatImageUrl(row[3])||'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg'}" alt="${row[0]}" loading="lazy" /></div><div class="article-content"><div><div class="item-title">${row[0]}</div><p>${row[4]||''}</p></div><a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Discuss <i class="fa-brands fa-whatsapp"></i></a></div></article>`).join('');
-        }
-      } catch (e) {}
-
-      // 5. Showcase
-      try {
-        const s = await fetchGoogleTab(sheetId, 'Showcase');
-        const v = s.filter(row => row[0] && String(row[0]).trim() !== '');
-        if (v.length > 0) {
-          document.getElementById('showcaseContainer').innerHTML = v.map(row => {
-            const platform = (row[1] || 'Project').toLowerCase();
-            const badge = platform.includes('instagram') ? 'badge-instagram' : platform.includes('facebook') ? 'badge-facebook' : 'badge-project';
-            const icon = platform.includes('instagram') ? 'fa-brands fa-instagram' : platform.includes('facebook') ? 'fa-solid fa-vr-cardboard' : 'fa-solid fa-building';
-            const btn = platform.includes('instagram') ? 'Watch on Instagram' : platform.includes('facebook') ? 'Launch 360° Tour' : 'View Scope';
-            return `<article class="showcase-card"><div class="showcase-img-wrap"><img src="${formatImageUrl(row[3])}" alt="${row[0]}" loading="lazy" /><span class="platform-badge ${badge}"><i class="${icon}"></i> ${row[1]||'Project'}</span></div><div class="showcase-body"><div><div class="item-title">${row[0]}</div><p>${row[5]||''}</p></div><a href="${row[4]||'#contact'}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">${btn} <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>`;
-          }).join('');
-        }
-      } catch (e) {}
-
-      // 6. Portfolio
-      try {
-        const p = await fetchGoogleTab(sheetId, 'Portfolio');
-        const v = p.filter(row => row[0] && String(row[0]).trim() !== '');
-        if (v.length > 0) {
-          const track = document.getElementById('sliderTrack');
-          track.innerHTML = v.map(row => `
-            <article class="slider-card" onclick="openModal('${row[0]}', '${row[1]||'Design'}', '${row[2]||''}', '${formatImageUrl(row[3])}')">
-              <div class="slide-img-box"><img src="${formatImageUrl(row[3])}" alt="${row[0]}" loading="lazy" /></div>
-              <div class="slide-desc"><span class="slide-tag">${row[1]||'PORTFOLIO'}</span><div class="item-title">${row[0]}</div><p>${row[2]||''}</p></div>
-            </article>
-          `).join('');
-          setupPortfolioSlider();
-        }
-      } catch (e) {}
-
-      // 7. Posts
-      try {
-        const po = await fetchGoogleTab(sheetId, 'Posts');
-        const v = po.filter(row => (row[0] || row[1]) && String(row[4]||'Active').toLowerCase() !== 'inactive');
-        if (v.length > 0) {
-          const cards = v.map(([title, img, cap, link]) => `<a class="floating-post-card" href="${link||'#contact'}"><div class="floating-post-img-wrap"><img src="${formatImageUrl(img)}" alt="${title||'Project'}" loading="lazy" /></div><div class="floating-post-body"><div class="floating-post-title">${title||'Project'}</div><p class="floating-post-caption">${cap||'Chetan Interior'}</p></div></a>`).join('');
-          document.getElementById('postsMarqueeTrack').innerHTML = cards + cards;
-        }
-      } catch (e) {}
-
-      // 8. Team
+      // 3. Dedicated Team Tab (Dynamic Row Count)
       try {
         const t = await fetchGoogleTab(sheetId, 'Team');
-        const v = t.filter(row => row[0]);
-        if (v.length > 0) {
-          document.getElementById('teamContainer').innerHTML = v.map(([name, role, photo, bio]) => `<div class="team-card"><img src="${formatImageUrl(photo)||'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" /><div class="team-name">${name}</div><div class="team-role">${role||'Associate'}</div><p class="team-bio">${bio||''}</p></div>`).join('');
+        if (t && t.length > 0) {
+          const valid = t.filter((r, idx) => {
+            if (idx === 0 && /^(name|member|title)/i.test(String(r[0]).trim())) return false;
+            return r[0] && String(r[0]).trim() !== '';
+          });
+          if (valid.length > 0) {
+            document.getElementById('teamContainer').innerHTML = valid.map(([name, role, photo, bio]) => `
+              <div class="team-card">
+                <img src="${formatImageUrl(photo) || 'https://i.postimg.cc/05wwzfcw/Profile-Pic.png'}" alt="${name}" class="team-avatar" />
+                <div class="team-name">${name}</div>
+                <div class="team-role">${role || 'Interior Associate'}</div>
+                <p class="team-bio">${bio || ''}</p>
+              </div>
+            `).join('');
+          }
         }
       } catch (e) {}
 
-      // 9. Downloads
+      // 4. Dedicated FAQs Tab (Dynamic Accordion Rows)
+      try {
+        const f = await fetchGoogleTab(sheetId, 'FAQs');
+        if (f && f.length > 0) {
+          const validFaqs = f.filter((r, idx) => {
+            if (idx === 0 && /^(question|faq|q)/i.test(String(r[0]).trim())) return false;
+            return r[0] && String(r[0]).trim() !== '';
+          });
+          if (validFaqs.length > 0) {
+            document.getElementById('faqContainer').innerHTML = validFaqs.map(([q, a], idx) => `
+              <div class="faq-item ${idx === 0 ? 'open' : ''}">
+                <div class="faq-question"><span>${q}</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>${a || 'Details updating shortly.'}</p></div>
+              </div>
+            `).join('');
+            bindFaqAccordion();
+          }
+        }
+      } catch (e) {}
+
+      // 5. Rates
+      try {
+        const r = await fetchGoogleTab(sheetId, 'Rates');
+        if (r && r.length > 0) {
+          const v = r.filter((row, idx) => {
+            if (idx === 0 && /^(item|material)/i.test(String(row[0]).trim())) return false;
+            return row[0] && String(row[0]).trim() !== '';
+          });
+          if (v.length > 0) {
+            document.getElementById('ratesTableBody').innerHTML = v.map(row => `<tr><td><strong>${row[0]}</strong></td><td>${row[1]||'Civil'}</td><td>${row[2]||''}</td><td><span class="rate-pill">${row[3]||''}</span></td><td>${row[4]||currentMonthYear}</td></tr>`).join('');
+          }
+        }
+      } catch (e) {}
+
+      // 6. Articles
+      try {
+        const a = await fetchGoogleTab(sheetId, 'Articles');
+        if (a && a.length > 0) {
+          const v = a.filter((row, idx) => {
+            if (idx === 0 && /^(title|article)/i.test(String(row[0]).trim())) return false;
+            return row[0] && String(row[0]).trim() !== '';
+          });
+          if (v.length > 0) {
+            document.getElementById('articlesContainer').innerHTML = v.map(row => `<article class="article-card"><div class="article-img-wrap"><img src="${formatImageUrl(row[3])||'https://i.postimg.cc/1XH29vcT/Modular-Kitchen-vs-Carpenters-Kitchen-in-Birgunj.jpg'}" alt="${row[0]}" loading="lazy" /></div><div class="article-content"><div><div class="item-title">${row[0]}</div><p>${row[4]||''}</p></div><a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">Discuss <i class="fa-brands fa-whatsapp"></i></a></div></article>`).join('');
+          }
+        }
+      } catch (e) {}
+
+      // 7. Showcase (Site Updates & 360)
+      try {
+        const s = await fetchGoogleTab(sheetId, 'Showcase');
+        if (s && s.length > 0) {
+          const v = s.filter((row, idx) => {
+            if (idx === 0 && /^(title|project)/i.test(String(row[0]).trim())) return false;
+            return row[0] && String(row[0]).trim() !== '';
+          });
+          if (v.length > 0) {
+            document.getElementById('showcaseContainer').innerHTML = v.map(row => {
+              const platform = (row[1] || 'Project').toLowerCase();
+              const badge = platform.includes('instagram') ? 'badge-instagram' : platform.includes('facebook') ? 'badge-facebook' : 'badge-project';
+              const icon = platform.includes('instagram') ? 'fa-brands fa-instagram' : platform.includes('facebook') ? 'fa-solid fa-vr-cardboard' : 'fa-solid fa-building';
+              const btn = platform.includes('instagram') ? 'Watch on Instagram' : platform.includes('facebook') ? 'Launch 360° Tour' : 'View Scope';
+              return `<article class="showcase-card"><div class="showcase-img-wrap"><img src="${formatImageUrl(row[3])}" alt="${row[0]}" loading="lazy" /><span class="platform-badge ${badge}"><i class="${icon}"></i> ${row[1]||'Project'}</span></div><div class="showcase-body"><div><div class="item-title">${row[0]}</div><p>${row[5]||''}</p></div><a href="${row[4]||'#contact'}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%; justify-content: center;">${btn} <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>`;
+            }).join('');
+          }
+        }
+      } catch (e) {}
+
+      // 8. Portfolio (Selected Works Carousel)
+      try {
+        const p = await fetchGoogleTab(sheetId, 'Portfolio');
+        if (p && p.length > 0) {
+          const v = p.filter((row, idx) => {
+            if (idx === 0 && /^(title|design)/i.test(String(row[0]).trim())) return false;
+            return row[0] && String(row[0]).trim() !== '';
+          });
+          if (v.length > 0) {
+            document.getElementById('sliderTrack').innerHTML = v.map(row => `
+              <article class="slider-card" onclick="openModal('${row[0]}', '${row[1]||'Design'}', '${row[2]||''}', '${formatImageUrl(row[3])}')">
+                <div class="slide-img-box"><img src="${formatImageUrl(row[3])}" alt="${row[0]}" loading="lazy" /></div>
+                <div class="slide-desc"><span class="slide-tag">${row[1]||'PORTFOLIO'}</span><div class="item-title">${row[0]}</div><p>${row[2]||''}</p></div>
+              </article>
+            `).join('');
+            setupPortfolioSlider();
+          }
+        }
+      } catch (e) {}
+
+      // 9. Posts (Continuous Reel)
+      try {
+        const po = await fetchGoogleTab(sheetId, 'Posts');
+        if (po && po.length > 0) {
+          const v = po.filter((row, idx) => {
+            if (idx === 0 && /^(title|post)/i.test(String(row[0]).trim())) return false;
+            return (row[0] || row[1]) && String(row[4]||'Active').toLowerCase() !== 'inactive';
+          });
+          if (v.length > 0) {
+            const cards = v.map(([title, img, cap, link]) => `<a class="floating-post-card" href="${link||'#contact'}"><div class="floating-post-img-wrap"><img src="${formatImageUrl(img)}" alt="${title||'Project'}" loading="lazy" /></div><div class="floating-post-body"><div class="floating-post-title">${title||'Project'}</div><p class="floating-post-caption">${cap||'Chetan Interior'}</p></div></a>`).join('');
+            document.getElementById('postsMarqueeTrack').innerHTML = cards + cards;
+          }
+        }
+      } catch (e) {}
+
+      // 10. Downloads
       try {
         const d = await fetchGoogleTab(sheetId, 'Downloads');
-        const v = d.filter(row => row[0] && row[2]);
-        if (v.length > 0) {
-          document.getElementById('downloadsContainer').innerHTML = v.map(([title, cat, url, size]) => `<div class="download-card"><div><h4>${title}</h4><span>${cat||'Resource'} ${size?'• '+size:''}</span></div><a class="btn btn-primary" href="${url}" target="_blank" download>Download <i class="fa-solid fa-download"></i></a></div>`).join('');
+        if (d && d.length > 0) {
+          const v = d.filter((row, idx) => {
+            if (idx === 0 && /^(title|file)/i.test(String(row[0]).trim())) return false;
+            return row[0] && row[2];
+          });
+          if (v.length > 0) {
+            document.getElementById('downloadsContainer').innerHTML = v.map(([title, cat, url, size]) => `<div class="download-card"><div><h4>${title}</h4><span>${cat||'Resource'} ${size?'• '+size:''}</span></div><a class="btn btn-primary" href="${url}" target="_blank" download>Download <i class="fa-solid fa-download"></i></a></div>`).join('');
+          }
         }
       } catch (e) {}
     }
 
     // Modal Lightbox
     function openModal(t, c, d, img) {
-      document.getElementById('modalTitle').textContent = t; document.getElementById('modalCategory').textContent = c;
-      document.getElementById('modalDesc').textContent = d; document.getElementById('modalImg').src = img;
-      document.getElementById('projectModal').classList.add('open'); document.body.style.overflow = 'hidden';
+      document.getElementById('modalTitle').textContent = t;
+      document.getElementById('modalCategory').textContent = c;
+      document.getElementById('modalDesc').textContent = d;
+      document.getElementById('modalImg').src = img;
+      document.getElementById('projectModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
-      document.getElementById('projectModal').classList.remove('open'); document.body.style.overflow = 'auto';
+      document.getElementById('projectModal').classList.remove('open');
+      document.body.style.overflow = 'auto';
     }
   </script>
 </body>
