@@ -15,7 +15,7 @@
   <meta name="robots" content="index, follow" />
 
   <meta name="google-site-verification" content="IBW1Eh-JYKAhipDCHpF6wfc2WBQoLed1nZNsuQ0_GtM" />
-  <link rel="canonical" href="https://chetan-sarraf.github.io/chetan-interior/" />
+  <link rel="canonical" href="https://chetan-sarraf.github.io/chetan-portfolio/" />
   <link rel="icon" type="image/png" href="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" />
   <link rel="apple-touch-icon" href="https://i.postimg.cc/k5x1yj6h/Favicon-01.png" />
 
@@ -23,11 +23,11 @@
   <meta property="og:title" content="Chetan Kr. Sarraf | Interior Designer in Birgunj, Nepal" />
   <meta property="og:description" content="Civil engineering accuracy, luxury interior design, interactive cost calculator, 3D realistic rendering, and 360° virtual tours in Birgunj, Nepal." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://chetan-sarraf.github.io/chetan-interior/" />
+  <meta property="og:url" content="https://chetan-sarraf.github.io/chetan-portfolio/" />
   <meta property="og:image" content="https://i.postimg.cc/SRvT1GYp/Modern-Luxuary-Living-room-Project1.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Google Local Business Schema -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,7 +45,7 @@
       "addressCountry": "NP"
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 27.0149, "longitude": 84.8773 },
-    "url": "https://chetan-sarraf.github.io/chetan-interior/"
+    "url": "https://chetan-sarraf.github.io/chetan-portfolio/"
   }
   </script>
 
@@ -169,9 +169,9 @@
     .brand-logo { display: flex; align-items: center; gap: 0.6rem; font-size: 1.1rem; color: var(--text-main); }
     .brand-logo-img { width: 32px; height: 32px; object-fit: contain; }
     .brand-logo span { color: var(--brand-gold); font-weight: 600; }
-    .nav-links { display: flex; align-items: center; gap: 0.2rem; }
+    .nav-links { display: flex; align-items: center; gap: 0.25rem; }
     .nav-links a {
-      font-size: 0.75rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.65rem;
+      font-size: 0.76rem; font-weight: 600; color: var(--text-muted); padding: 0.42rem 0.68rem;
       border-radius: var(--radius-pill); letter-spacing: -0.01em; transition: var(--transition); white-space: nowrap;
     }
     .nav-links a:hover { color: var(--text-main); background: var(--brand-navy-soft); }
@@ -334,7 +334,7 @@
     .compliance-banner.warn { border-left: 5px solid var(--brand-gold); }
     .planner-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.5rem; justify-content: flex-end; }
 
-    /* Team */
+    /* Dedicated Team Grid */
     .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 3rem; }
     .team-card {
       background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
@@ -550,7 +550,7 @@
     .article-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
     .article-content { padding: 1.6rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; }
 
-    /* FAQ */
+    /* Dedicated FAQs */
     .faq-container { max-width: 860px; margin: 3rem auto 0; display: flex; flex-direction: column; gap: 1.1rem; }
     .faq-item { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); }
     .faq-item:hover { border-color: var(--border-navy); }
@@ -643,7 +643,7 @@
   <!-- Top Scroll Reading Progress Indicator -->
   <div id="scrollProgressBar"></div>
 
-  <!-- Streamlined Navigation Capsule -->
+  <!-- Streamlined Navigation Capsule with Dynamic Highlighting -->
   <nav class="navbar-capsule" id="navbarCapsule">
     <div class="nav-container">
       <a href="#home" class="brand-logo">
@@ -669,7 +669,7 @@
     </div>
   </nav>
 
-  <!-- Floating Contact Dock (All 4 Links Preserved) -->
+  <!-- Floating Contact Dock (All 4 Media Links Preserved) -->
   <div class="floating-contact-bar">
     <a href="https://wa.me/9779766188838" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     <a href="https://www.facebook.com/chetan.sarraf.3/" target="_blank" rel="noopener noreferrer" class="float-btn float-facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -752,7 +752,7 @@
     </div>
   </section>
 
-  <!-- ================= DEDICATED TEAM SECTION ================= -->
+  <!-- ================= DEDICATED TEAM SECTION (DYNAMIC ROWS) ================= -->
   <section class="section" id="team">
     <div class="container">
       <div class="section-header text-center">
@@ -761,7 +761,7 @@
         <p class="section-subtitle">Dedicated engineers, visualizers, and project supervisors turning blueprints into living luxury.</p>
       </div>
       <div class="team-grid" id="teamContainer">
-        <!-- Renders all rows dynamically from Google Sheet 'Team' Tab -->
+        <!-- Automatically scales to as many rows as you add in your 'Team' tab -->
         <div class="team-card">
           <img src="https://i.postimg.cc/05wwzfcw/Profile-Pic.png" alt="Er. Chetan Kumar Sarraf" class="team-avatar" />
           <div class="team-name">Er. Chetan Kr. Sarraf</div>
@@ -1331,6 +1331,7 @@
         <h2 class="section-title">Site Updates &amp; <em>360° VR Tours</em></h2>
       </div>
       <div class="showcase-grid" id="showcaseContainer">
+        <!-- Fallback Cards (Replaced dynamically by Google Sheet 'Showcase' tab) -->
         <article class="showcase-card">
           <div class="showcase-img-wrap">
             <img src="https://i.postimg.cc/ryKvxdrN/Bedroom-render-Project2-1.png" alt="Walkthrough" loading="lazy" />
@@ -1407,7 +1408,7 @@
     </div>
   </section>
 
-  <!-- ================= DEDICATED FAQS SECTION ================= -->
+  <!-- ================= DEDICATED FAQS SECTION (DYNAMIC ACCORDION) ================= -->
   <section class="section" id="faq">
     <div class="container">
       <div class="section-header text-center">
@@ -1416,7 +1417,7 @@
         <p class="section-subtitle">Common questions about architectural drafting, BOQ valuation, and interior turnkey execution in Nepal.</p>
       </div>
       <div class="faq-container" id="faqContainer">
-        <!-- Renders all rows dynamically from Google Sheet 'FAQs' Tab -->
+        <!-- Automatically scales to as many rows as you add in your 'FAQs' tab -->
         <div class="faq-item open">
           <div class="faq-question"><span>How much does interior design cost per sq. ft. in Birgunj, Nepal?</span><i class="fa-solid fa-chevron-down"></i></div>
           <div class="faq-answer"><p>Pricing ranges from Rs. 25–45 per sq. ft. for 2D AutoCAD planning &amp; MEP, Rs. 65–110 for complete 3D realistic rendering, and Rs. 1,600–2,800 per sq. ft. for full turnkey execution.</p></div>
@@ -1447,7 +1448,7 @@
         </div>
 
         <form class="contact-form" id="dualContactForm">
-          <input type="hidden" name="_next" value="https://chetan-sarraf.github.io/chetan-interior/#contact" />
+          <input type="hidden" name="_next" value="https://chetan-sarraf.github.io/chetan-portfolio/#contact" />
           <div class="form-title">Request a Quotation</div>
           <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" placeholder="John Doe" required /></div>
           <div class="form-group"><label for="phone">Your WhatsApp / Phone</label><input type="tel" id="phone" placeholder="+977 98XXXXXXXX" required /></div>
@@ -1529,7 +1530,7 @@
         });
       }
 
-      // ================= SCROLL-SPY & READING PROGRESS BAR =================
+      // Scroll-Spy & Reading Progress Bar
       const progressBar = document.getElementById('scrollProgressBar');
       const trackedSections = document.querySelectorAll('header, section');
       const navItems = document.querySelectorAll('.nav-links .nav-item:not(.btn-nav-capsule)');
@@ -1815,6 +1816,21 @@
       document.getElementById('septicBreakdown').textContent = `Liquid Volume: ~${Math.round(u * 300)} Liters`;
     }
 
+    // ================= BOQ ESTIMATOR =================
+    function calculateFullBOQ() {
+      const scope = document.getElementById('boqScope').value;
+      const area = parseInt(document.getElementById('boqArea').value, 10) || 350;
+      document.getElementById('boqAreaDisplay').textContent = `${area} sq.ft`;
+      const min = scope === 'tier1' ? 25 : scope === 'tier2' ? 65 : 1600;
+      const max = scope === 'tier1' ? 45 : scope === 'tier2' ? 110 : 2800;
+      document.getElementById('boqPriceOut').textContent = `Rs. ${(area * min).toLocaleString()} – ${(area * max).toLocaleString()}`;
+    }
+
+    function exportFullBOQToWhatsApp() {
+      const a = document.getElementById('boqArea').value, p = document.getElementById('boqPriceOut').textContent;
+      window.open(`https://wa.me/9779766188838?text=*BOQ Inquiry*%0A*Area:* ${a} sq.ft%0A*Investment:* ${encodeURIComponent(p)}`, '_blank');
+    }
+
     // ================= SITE PLANNER & TENTATIVE 2D LAYOUT =================
     let currentPlanTelemetry = {};
 
@@ -1882,7 +1898,7 @@
         return;
       }
 
-      // Optional Diagonal Auto-Calculation
+      // Optional Diagonal Calculation
       if (isNaN(d1) || d1 <= 0) {
         d1 = Math.sqrt(Math.max(1, ((a * c + b * d) * (a * d + b * c)) / (a * b + c * d || 1)));
       } else {
@@ -2215,7 +2231,7 @@
         }
       } catch (e) {}
 
-      // 3. Dedicated Team Tab (Dynamic Row Count)
+      // 3. Dedicated Team Tab (Dynamic Row Scaling)
       try {
         const t = await fetchGoogleTab(sheetId, 'Team');
         if (t && t.length > 0) {
@@ -2256,7 +2272,7 @@
         }
       } catch (e) {}
 
-      // 5. Rates
+      // 5. Rates Tab
       try {
         const r = await fetchGoogleTab(sheetId, 'Rates');
         if (r && r.length > 0) {
@@ -2270,7 +2286,7 @@
         }
       } catch (e) {}
 
-      // 6. Articles
+      // 6. Articles Tab
       try {
         const a = await fetchGoogleTab(sheetId, 'Articles');
         if (a && a.length > 0) {
@@ -2284,7 +2300,7 @@
         }
       } catch (e) {}
 
-      // 7. Showcase (Site Updates & 360)
+      // 7. Showcase Tab
       try {
         const s = await fetchGoogleTab(sheetId, 'Showcase');
         if (s && s.length > 0) {
@@ -2304,7 +2320,7 @@
         }
       } catch (e) {}
 
-      // 8. Portfolio (Selected Works Carousel)
+      // 8. Portfolio Tab
       try {
         const p = await fetchGoogleTab(sheetId, 'Portfolio');
         if (p && p.length > 0) {
@@ -2324,7 +2340,7 @@
         }
       } catch (e) {}
 
-      // 9. Posts (Continuous Reel)
+      // 9. Posts Tab (Continuous Reel)
       try {
         const po = await fetchGoogleTab(sheetId, 'Posts');
         if (po && po.length > 0) {
@@ -2339,7 +2355,7 @@
         }
       } catch (e) {}
 
-      // 10. Downloads
+      // 10. Downloads Tab
       try {
         const d = await fetchGoogleTab(sheetId, 'Downloads');
         if (d && d.length > 0) {
